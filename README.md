@@ -16,7 +16,7 @@ The **R programming language** is used to scrape most of the data sets. For data
 ### **Data**
 | Data Sub-Folder | Description |
 | --------------- | ----------- |
-| `Consumer Price Index/` | Contains Consumer Price Index data sets scraped/downloaded from OpenStat and the PSA website. |
+| `CPI and Inflation/` | Contains Consumer Price Index data sets scraped/downloaded from OpenStat and the PSA website. |
 | `Fiscal Data/` | Contains fiscal data extracted and compiled from various government websites. |
 | `Labor and Employment/` | Contains Labor and Employment data sets manually extracted and compiled from the PSA website. |
 | `National Accounts/` | Contains National Accounts data sets scraped/downloaded from PSA, OpenStat, and BSP. |
@@ -63,7 +63,7 @@ The latest base year for the SNA is 2018.
 National Accounts data can be downloaded from the [PSA website](https://psa.gov.ph/national-accounts), [OpenStat platform](https://openstat.psa.gov.ph/Database/Economic-Accounts/National-Accounts-of-the-Philippines), or [BSP website](https://www.bsp.gov.ph/SitePages/Statistics/RealSectorAccounts.aspx).  
   
   
-### **Consumer Price Index**
+### **Consumer Price Index and Inflation**
 The Consumer Price Index is an indicator of the change in the average prices of a fixed basket of goods and services commonly purchased by households relative to a base year. The Inflation Rate is the annual rate of change or the year-on-year change in the Consumer Price Index.
   
 The latest base year for the CPI is 2012.  
