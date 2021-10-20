@@ -88,8 +88,10 @@ Fiscal data includes various data on the national government's revenue and expen
 ### **Agricultural and Food Data**
 A number of agriculture data sets are available in this repository:
 *  value of production
+*  volume of production
 *  supply utilization accounts
-*  prices, costs, and returns
+*  production costs and returns
+*  farm gate prices
 
 
 The OpenStat platform is the best publicly available source for [agricultural data](https://openstat.psa.gov.ph/Database/Agriculture-Forestry-Fisheries), [agricultural accounts](https://openstat.psa.gov.ph/Database/Agriculture-Forestry-Fisheries/Agricultural-Accounts), and [price data](https://openstat.psa.gov.ph/Database/Prices).

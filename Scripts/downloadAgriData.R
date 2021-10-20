@@ -82,19 +82,19 @@ for (i in 1:6) {
 left_join(
     POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/AA/CR/0012B5FCOP0.px",
          body = '{"query": [{"code": "Type", "selection": {"filter": "item", "values": ["0", "1", "2"]}},
-                        {"code": "Season", "selection": {"filter": "item", "values": ["0"]}}],
-             "response": {"format": "csv"}}') %>%
+                 {"code": "Season", "selection": {"filter": "item", "values": ["0"]}}],
+                 "response": {"format": "csv"}}') %>%
         content(encoding = "UTF-8"),
     POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/AA/CR/0012B5FCOP0.px",
          body = '{"query": [{"code": "Type", "selection": {"filter": "item", "values": ["0", "1", "2"]}},
-                        {"code": "Season", "selection": {"filter": "item", "values": ["1"]}}],
-             "response": {"format": "csv"}}') %>%
+                 {"code": "Season", "selection": {"filter": "item", "values": ["1"]}}],
+                 "response": {"format": "csv"}}') %>%
         content(encoding = "UTF-8")
 ) %>% left_join(
     POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/AA/CR/0012B5FCOP0.px",
          body = '{"query": [{"code": "Type", "selection": {"filter": "item", "values": ["0", "1", "2"]}},
-                        {"code": "Season", "selection": {"filter": "item", "values": ["2"]}}],
-             "response": {"format": "csv"}}') %>%
+                 {"code": "Season", "selection": {"filter": "item", "values": ["2"]}}],
+                 "response": {"format": "csv"}}') %>%
         content(encoding = "UTF-8")
 ) %>% write_csv("Data/Agriculture and Food/Openstat-Production-Cost-Returns-Palay.csv") %>%
     suppressMessages() %>% suppressWarnings()
@@ -103,24 +103,91 @@ left_join(
 left_join(
     POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/AA/CR/0012B5FCOP0.px",
          body = '{"query": [{"code": "Type", "selection": {"filter": "item", "values": ["3", "4", "5"]}},
-                        {"code": "Season", "selection": {"filter": "item", "values": ["0"]}}],
-             "response": {"format": "csv"}}') %>%
+                 {"code": "Season", "selection": {"filter": "item", "values": ["0"]}}],
+                 "response": {"format": "csv"}}') %>%
         content(encoding = "UTF-8"),
     POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/AA/CR/0012B5FCOP0.px",
          body = '{"query": [{"code": "Type", "selection": {"filter": "item", "values": ["3", "4", "5"]}},
-                        {"code": "Season", "selection": {"filter": "item", "values": ["1"]}}],
-             "response": {"format": "csv"}}') %>%
+                 {"code": "Season", "selection": {"filter": "item", "values": ["1"]}}],
+                 "response": {"format": "csv"}}') %>%
         content(encoding = "UTF-8")
 ) %>% left_join(
     POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/AA/CR/0012B5FCOP0.px",
          body = '{"query": [{"code": "Type", "selection": {"filter": "item", "values": ["3", "4", "5"]}},
-                        {"code": "Season", "selection": {"filter": "item", "values": ["2"]}}],
-             "response": {"format": "csv"}}') %>%
+                 {"code": "Season", "selection": {"filter": "item", "values": ["2"]}}],
+                 "response": {"format": "csv"}}') %>%
         content(encoding = "UTF-8")
 ) %>% write_csv("Data/Agriculture and Food/Openstat-Production-Cost-Returns-Corn.csv") %>%
     suppressMessages() %>% suppressWarnings()
 
 rm(costreturns_items, i)
+
+
+
+# Openstat Volume of Production -------------------------------------------
+writeLines("Downloading Volume of Production Data from the Openstat API.")
+
+## Palay and Corn Volume of Production
+POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2E/CS/0012E4EVCP0.px",
+     body = '{"query": [{"code": "Ecosystem/Croptype", "selection": {"filter": "item", "values": ["0", "1", "2"]}}],
+             "response": {"format": "csv"}}') %>%
+    content(encoding = "UTF-8") %>%
+    write_csv("Data/Agriculture and Food/Openstat-Volume-of-Production-Palay.csv") %>%
+    suppressMessages() %>% suppressWarnings()
+
+POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2E/CS/0012E4EVCP0.px",
+     body = '{"query": [{"code": "Ecosystem/Croptype", "selection": {"filter": "item", "values": ["3", "4", "5"]}}],
+             "response": {"format": "csv"}}') %>%
+    content(encoding = "UTF-8") %>%
+    write_csv("Data/Agriculture and Food/Openstat-Volume-of-Production-Corn.csv") %>%
+    suppressMessages() %>% suppressWarnings()
+
+## Other Crops Volume of Production
+OtherCropsVolume <- tibble()
+for (i in 0:99) {
+    OtherCropsVolume <- bind_rows(
+        OtherCropsVolume,
+        POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2E/CS/0062E4EVCP1.px",
+             body = as.character(str_c('{"query": [{"code": "Geolocation", "selection": {"filter": "item", "values": ["',
+                                       i, '"]}}], "response": {"format": "csv"}}'))) %>%
+            content(encoding = "UTF-8") %>%
+            suppressMessages() %>% suppressWarnings()
+    )
+    Sys.sleep(0.5)
+}
+OtherCropsVolume %>% write_csv("Data/Agriculture and Food/Openstat-Volume-of-Production-Other-Crops.csv")
+
+## Livestock Volume of Production
+POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2E/LP/0012E4FPLS0.px",
+     body = '{"query": [], "response": {"format": "csv"}}') %>%
+    content(encoding = "UTF-8") %>%
+    write_csv("Data/Agriculture and Food/Openstat-Volume-of-Production-Livestock.csv") %>%
+    suppressMessages() %>% suppressWarnings()
+
+## Poultry Volume of Production
+POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2E/LP/0022E4FPPE0.px",
+     body = '{"query": [], "response": {"format": "csv"}}') %>%
+    content(encoding = "UTF-8") %>%
+    write_csv("Data/Agriculture and Food/Openstat-Volume-of-Production-Poultry.csv") %>%
+    suppressMessages() %>% suppressWarnings()
+
+## Fisheries Volume of Production
+FisheriesVolume <- tibble()
+for (i in str_c(str_pad(string = 0:65, width = 2, side = "left", pad = "0"))) {
+    FisheriesVolume <- bind_rows(
+        FisheriesVolume,
+        POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2E/FS/0112E4GVFP0.px",
+             body = as.character(str_c('{"query": [{"code": "Species", "selection": {"filter": "item", "values": ["',
+                                       i, '"]}}], "response": {"format": "csv"}}'))) %>%
+            content(encoding = "UTF-8") %>%
+            mutate(across(.cols = everything(), .fns = as.character)) %>%
+            suppressMessages() %>% suppressWarnings()
+    )
+    Sys.sleep(1)
+}
+FisheriesVolume %>% write_csv("Data/Agriculture and Food/Openstat-Volume-of-Production-Fisheries.csv")
+
+rm(list = ls())
 
 
 
