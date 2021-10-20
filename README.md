@@ -16,6 +16,7 @@ The **R programming language** is used to scrape most of the data sets. For data
 ### **Data**
 | Data Sub-Folder | Description |
 | --------------- | ----------- |
+| `Agriculture and Food/` | Contains data on agriculture and food scraped/downloaded from OpenStat and the PSA website. |
 | `CPI and Inflation/` | Contains Consumer Price Index data sets scraped/downloaded from OpenStat and the PSA website. |
 | `Fiscal Data/` | Contains fiscal data extracted and compiled from various government websites. |
 | `Labor and Employment/` | Contains Labor and Employment data sets manually extracted and compiled from the PSA website. |
@@ -26,6 +27,7 @@ The **R programming language** is used to scrape most of the data sets. For data
 ### **Scripts**
 | Script | Description |
 | ------ | ----------- |
+| `downloadAgriData.R` | Scrapes/downloads agriculture and food data from various sources. |
 | `downloadCPIData.R` | Scrapes/downloads Consumer Price Index data from various sources. |
 | `downloadSNAData.R` | Scrapes/downloads National Accounts data from various sources. |
 | `loadCPIData.R` | Loads CPI and inflation data into R. |
@@ -82,3 +84,12 @@ Fiscal data includes various data on the national government's revenue and expen
 
 [National cash operations data](https://www.treasury.gov.ph/?page_id=4221) and [national debt data](https://www.treasury.gov.ph/?page_id=12407) can be downloaded the Bureau of Treasury. Local government fiscal data can be downloaded from the [Bureau of Local Government Finance](https://blgf.gov.ph/lgu-fiscal-data/). Budget documents can be found on the [Department of Budget and Management website](https://dbm.gov.ph/).
   
+  
+### **Agricultural and Food Data**
+A number of agriculture data sets are available in this repository:
+*  value of production
+*  supply utilization accounts
+*  prices, costs, and returns
+
+
+The OpenStat platform is the best publicly available source for [agricultural data](https://openstat.psa.gov.ph/Database/Agriculture-Forestry-Fisheries), [agricultural accounts](https://openstat.psa.gov.ph/Database/Agriculture-Forestry-Fisheries/Agricultural-Accounts), and [price data](https://openstat.psa.gov.ph/Database/Prices).
