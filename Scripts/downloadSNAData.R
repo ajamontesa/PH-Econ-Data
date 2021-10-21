@@ -47,7 +47,16 @@ download.file(url = psafiles[43], method = "curl",
 download.file(url = psafiles[44], method = "curl",
               destfile = "Data/National Accounts/PSA-Annual-1946-to-latest.xlsx")
 
-rm(psafiles)
+# Download Other SNA files
+for (f in psafiles[3:42]) {
+    download.file(url = f, method = "curl",
+                  destfile = str_c("Data/National Accounts/PSA-",
+                                   str_extract(str_remove(f, "^h.+/"), "\\d.+(Qrt|Ann)"),
+                                   ".xlsx"))
+}
+
+
+rm(psafiles, f)
 
 
 
@@ -90,4 +99,92 @@ POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/NA/QT/1SUM/0122B5C
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
     write_csv("Data/National Accounts/Openstat-SNA-Quarterly-PC.csv") %>%
+    suppressMessages() %>% suppressWarnings()
+
+
+
+# Openstat Gross Regional Domestic Product --------------------------------
+writeLines("Downloading Gross Regional Domestic Product Data from the Openstat API.")
+
+POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/GP/RG/GRD/0012B5CPGD1.px",
+     body = '{"query": [], "response": {"format": "csv"}}') %>%
+    content(encoding = "UTF-8") %>%
+    write_csv("Data/National Accounts/Openstat-GRDP.csv") %>%
+    suppressMessages() %>% suppressWarnings()
+
+POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/GP/RG/PCI/0772B5CPCP1.px",
+     body = '{"query": [], "response": {"format": "csv"}}') %>%
+    content(encoding = "UTF-8") %>%
+    write_csv("Data/National Accounts/Openstat-GRDP-PC.csv") %>%
+    suppressMessages() %>% suppressWarnings()
+
+POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/GP/RG/AFF/0052B5CPAF1.px",
+     body = '{"query": [], "response": {"format": "csv"}}') %>%
+    content(encoding = "UTF-8") %>%
+    write_csv("Data/National Accounts/Openstat-GRDP-Agriculture.csv") %>%
+    suppressMessages() %>% suppressWarnings()
+
+POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/GP/RG/IND/0092B5CPIN1.px",
+     body = '{"query": [], "response": {"format": "csv"}}') %>%
+    content(encoding = "UTF-8") %>%
+    write_csv("Data/National Accounts/Openstat-GRDP-Industry.csv") %>%
+    suppressMessages() %>% suppressWarnings()
+
+POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/GP/RG/SER/0292B5CPSR1.px",
+     body = '{"query": [], "response": {"format": "csv"}}') %>%
+    content(encoding = "UTF-8") %>%
+    write_csv("Data/National Accounts/Openstat-GRDP-Services.csv") %>%
+    suppressMessages() %>% suppressWarnings()
+
+
+
+# Openstat Gross Regional Domestic Expenditure ----------------------------
+writeLines("Downloading Gross Regional Domestic Expenditure Data from the Openstat API.")
+
+POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/EA/BR/GR/0012B5CEGR1.px",
+     body = '{"query": [], "response": {"format": "csv"}}') %>%
+    content(encoding = "UTF-8") %>%
+    write_csv("Data/National Accounts/Openstat-GRDE.csv") %>%
+    suppressMessages() %>% suppressWarnings()
+
+POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/EA/BR/GRC/1412B5CPCG1.px",
+     body = '{"query": [], "response": {"format": "csv"}}') %>%
+    content(encoding = "UTF-8") %>%
+    write_csv("Data/National Accounts/Openstat-GRDE-PC.csv") %>%
+    suppressMessages() %>% suppressWarnings()
+
+POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/EA/BR/HF/0052B5CEHF1.px",
+     body = '{"query": [], "response": {"format": "csv"}}') %>%
+    content(encoding = "UTF-8") %>%
+    write_csv("Data/National Accounts/Openstat-GRDE-01HFCE.csv") %>%
+    suppressMessages() %>% suppressWarnings()
+
+POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/EA/BR/PHF/0672B5CEPC1.px",
+     body = '{"query": [], "response": {"format": "csv"}}') %>%
+    content(encoding = "UTF-8") %>%
+    write_csv("Data/National Accounts/Openstat-GRDE-01HFCE-PC.csv") %>%
+    suppressMessages() %>% suppressWarnings()
+
+POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/EA/BR/GF/0092B5CEGF1.px",
+     body = '{"query": [], "response": {"format": "csv"}}') %>%
+    content(encoding = "UTF-8") %>%
+    write_csv("Data/National Accounts/Openstat-GRDE-02GFCE.csv") %>%
+    suppressMessages() %>% suppressWarnings()
+
+POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/EA/BR/GCF/0132B5CECF1.px",
+     body = '{"query": [], "response": {"format": "csv"}}') %>%
+    content(encoding = "UTF-8") %>%
+    write_csv("Data/National Accounts/Openstat-GRDE-03GCF.csv") %>%
+    suppressMessages() %>% suppressWarnings()
+
+POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/EA/BR/EGS/0422B5CEXP1.px",
+     body = '{"query": [], "response": {"format": "csv"}}') %>%
+    content(encoding = "UTF-8") %>%
+    write_csv("Data/National Accounts/Openstat-GRDE-04Exports.csv") %>%
+    suppressMessages() %>% suppressWarnings()
+
+POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/EA/BR/IGS/0542B5CEMP1.px",
+     body = '{"query": [], "response": {"format": "csv"}}') %>%
+    content(encoding = "UTF-8") %>%
+    write_csv("Data/National Accounts/Openstat-GRDE-05Imports.csv") %>%
     suppressMessages() %>% suppressWarnings()
