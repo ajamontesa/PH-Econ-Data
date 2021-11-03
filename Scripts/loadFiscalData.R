@@ -8,7 +8,7 @@ library(RcppRoll)
 # Fiscal Data -------------------------------------------------------------
 writeLines("Loading Fiscal Data into R.")
 
-snaColNames81 <- str_c(seq.Date(as.Date("1981-01-01"), Sys.Date()-weeks(16), by = "quarter"))
+snaColNames81 <- str_c(seq.Date(as.Date("1981-01-01"), Sys.Date()-weeks(19), by = "quarter"))
 
 ngcor <- left_join(
     read_xlsx("Data/Fiscal Data/ngcor.xlsx") %>%
