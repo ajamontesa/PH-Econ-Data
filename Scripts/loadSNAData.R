@@ -73,7 +73,7 @@ SNA1946_Annual_Ind <- bind_rows(
     suppressMessages() %>% suppressWarnings()
 
 ## Load Quarterly SNA data from 2000 Q1 to latest quarter
-SNA2000_Quarter_Exp <- bind_rows(
+SNA2000_Quarterly_Exp <- bind_rows(
     read_xlsx("Data/National Accounts/PSA-01Summary_2018PSNA_Qrt.xlsx", skip = 49, n_max = 23,
               col_names = c("Expenditure", snaColNames00)) %>%
         filter(!is.na(Expenditure)) %>%
@@ -91,7 +91,7 @@ SNA2000_Quarter_Exp <- bind_rows(
     mutate(Expenditure = as_factor(str_remove_all(Expenditure, "Less : "))) %>%
     suppressMessages() %>% suppressWarnings()
 
-SNA2000_Quarter_Ind <- bind_rows(
+SNA2000_Quarterly_Ind <- bind_rows(
     read_xlsx("Data/National Accounts/PSA-01Summary_2018PSNA_Qrt.xlsx", skip = 315, n_max = 24,
               col_names = c("Industry", snaColNames00)) %>%
         filter(!is.na(Industry)) %>%
@@ -104,7 +104,7 @@ SNA2000_Quarter_Ind <- bind_rows(
         mutate(Quarter = as.Date(Quarter), Valuation = "Current Prices")
 )  %>%
     group_by(Valuation, Industry) %>%
-    mutate(Growth = (MillionPesos/lag(MillionPesos, 4) - 1)) %>%
+    mutate(GrowthRate = (MillionPesos/lag(MillionPesos, 4) - 1)) %>%
     ungroup() %>%
     mutate(Industry = as_factor(str_remove_all(Industry, ",.+"))) %>%
     suppressMessages() %>% suppressWarnings()
@@ -118,6 +118,6 @@ SNA2000_Quarterly_PC <- read_csv("Data/National Accounts/Openstat-SNA-Quarterly-
            Industry = str_remove(str_extract(Industry, "Per.+at"), " at")) %>%
     select(Industry, Quarter, Valuation, Pesos = value) %>%
     group_by(Industry, Valuation) %>%
-    mutate(Growth = Pesos/lag(Pesos, 4) - 1) %>%
+    mutate(GrowthRate = Pesos/lag(Pesos, 4) - 1) %>%
     ungroup() %>%
     suppressWarnings() %>% suppressMessages()
