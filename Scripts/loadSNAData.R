@@ -13,8 +13,8 @@ library(RcppRoll)
 # National Accounts -------------------------------------------------------
 writeLines("Loading National Accounts Data into R.")
 
-snaColNames81 <- str_c(seq.Date(as.Date("1981-01-01"), Sys.Date()-weeks(19), by = "quarter"))
-snaColNames00 <- str_c(seq.Date(as.Date("2000-01-01"), Sys.Date()-weeks(19), by = "quarter"))
+snaColNames81 <- str_c(seq.Date(as.Date("1981-01-01"), Sys.Date()-weeks(18), by = "quarter"))
+snaColNames00 <- str_c(seq.Date(as.Date("2000-01-01"), Sys.Date()-weeks(18), by = "quarter"))
 
 ## Load Quarterly SNA data from 1981 Q1 to latest quarter
 SNA1981_Quarterly_Exp <- bind_rows(

@@ -69,18 +69,21 @@ POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/NA/AN/1SUM/0012B5C
     content(encoding = "UTF-8") %>%
     write_csv("Data/National Accounts/Openstat-SNA-Annual-Exp.csv") %>%
     suppressMessages() %>% suppressWarnings()
+Sys.sleep(1)
 
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/NA/AN/1SUM/0052B5CPRA1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
     write_csv("Data/National Accounts/Openstat-SNA-Annual-Ind.csv") %>%
     suppressMessages() %>% suppressWarnings()
+Sys.sleep(1)
 
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/NA/AN/1SUM/0122B5CPCA1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
     write_csv("Data/National Accounts/Openstat-SNA-Annual-PC.csv") %>%
     suppressMessages() %>% suppressWarnings()
+Sys.sleep(1)
 
 # Download Quarterly Data; By Expenditure, By Industry, Per Capita
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/NA/QT/1SUM/0012B5CEXQ1.px",
@@ -88,18 +91,21 @@ POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/NA/QT/1SUM/0012B5C
     content(encoding = "UTF-8") %>%
     write_csv("Data/National Accounts/Openstat-SNA-Quarterly-Exp.csv") %>%
     suppressMessages() %>% suppressWarnings()
+Sys.sleep(1)
 
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/NA/QT/1SUM/0052B5CPRQ1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
     write_csv("Data/National Accounts/Openstat-SNA-Quarterly-Ind.csv") %>%
     suppressMessages() %>% suppressWarnings()
+Sys.sleep(1)
 
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/NA/QT/1SUM/0122B5CPCQ1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
     write_csv("Data/National Accounts/Openstat-SNA-Quarterly-PC.csv") %>%
     suppressMessages() %>% suppressWarnings()
+Sys.sleep(1)
 
 
 
@@ -111,30 +117,35 @@ POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/GP/RG/GRD/0012B5CP
     content(encoding = "UTF-8") %>%
     write_csv("Data/National Accounts/Openstat-GRDP.csv") %>%
     suppressMessages() %>% suppressWarnings()
+Sys.sleep(1)
 
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/GP/RG/PCI/0772B5CPCP1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
     write_csv("Data/National Accounts/Openstat-GRDP-PC.csv") %>%
     suppressMessages() %>% suppressWarnings()
+Sys.sleep(1)
 
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/GP/RG/AFF/0052B5CPAF1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
     write_csv("Data/National Accounts/Openstat-GRDP-Agriculture.csv") %>%
     suppressMessages() %>% suppressWarnings()
+Sys.sleep(1)
 
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/GP/RG/IND/0092B5CPIN1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
     write_csv("Data/National Accounts/Openstat-GRDP-Industry.csv") %>%
     suppressMessages() %>% suppressWarnings()
+Sys.sleep(1)
 
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/GP/RG/SER/0292B5CPSR1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
     write_csv("Data/National Accounts/Openstat-GRDP-Services.csv") %>%
     suppressMessages() %>% suppressWarnings()
+Sys.sleep(1)
 
 
 
@@ -146,45 +157,53 @@ POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/EA/BR/GR/0012B5CEG
     content(encoding = "UTF-8") %>%
     write_csv("Data/National Accounts/Openstat-GRDE.csv") %>%
     suppressMessages() %>% suppressWarnings()
+Sys.sleep(1)
 
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/EA/BR/GRC/1412B5CPCG1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
     write_csv("Data/National Accounts/Openstat-GRDE-PC.csv") %>%
     suppressMessages() %>% suppressWarnings()
+Sys.sleep(1)
 
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/EA/BR/HF/0052B5CEHF1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
     write_csv("Data/National Accounts/Openstat-GRDE-01HFCE.csv") %>%
     suppressMessages() %>% suppressWarnings()
+Sys.sleep(1)
 
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/EA/BR/PHF/0672B5CEPC1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
     write_csv("Data/National Accounts/Openstat-GRDE-01HFCE-PC.csv") %>%
     suppressMessages() %>% suppressWarnings()
+Sys.sleep(1)
 
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/EA/BR/GF/0092B5CEGF1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
     write_csv("Data/National Accounts/Openstat-GRDE-02GFCE.csv") %>%
     suppressMessages() %>% suppressWarnings()
+Sys.sleep(1)
 
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/EA/BR/GCF/0132B5CECF1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
     write_csv("Data/National Accounts/Openstat-GRDE-03GCF.csv") %>%
     suppressMessages() %>% suppressWarnings()
+Sys.sleep(1)
 
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/EA/BR/EGS/0422B5CEXP1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
     write_csv("Data/National Accounts/Openstat-GRDE-04Exports.csv") %>%
     suppressMessages() %>% suppressWarnings()
+Sys.sleep(1)
 
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/EA/BR/IGS/0542B5CEMP1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
     write_csv("Data/National Accounts/Openstat-GRDE-05Imports.csv") %>%
     suppressMessages() %>% suppressWarnings()
+Sys.sleep(1)
