@@ -8,7 +8,7 @@ library(RcppRoll)
 # Fiscal Data -------------------------------------------------------------
 writeLines("Loading Fiscal Data into R.")
 
-snaColNames81 <- str_c(seq.Date(as.Date("1981-01-01"), Sys.Date()-weeks(19), by = "quarter"))
+snaColNames81 <- str_c(seq.Date(as.Date("1981-01-01"), Sys.Date()-weeks(18), by = "quarter"))
 
 ngcor <- left_join(
     read_xlsx("Data/Fiscal Data/ngcor.xlsx") %>%
@@ -29,7 +29,7 @@ ngcor <- left_join(
     suppressMessages() %>% suppressWarnings()
 
 
-left_join(
+ngdebt <- left_join(
     read_xlsx("Data/Fiscal Data/ngdebt.xlsx") %>%
         pivot_longer(cols = -Particulars, names_to = "Month", values_to = "MillionPesos") %>%
         filter(Particulars %in% c("Actual Obligations", "Domestic Debt", "External Debt"),
