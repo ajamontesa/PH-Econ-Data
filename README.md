@@ -21,6 +21,7 @@ The **R programming language** is used to scrape most of the data sets. For data
 | `Fiscal Data/` | Contains fiscal data extracted and compiled from various government websites. |
 | `Labor and Employment/` | Contains Labor and Employment data sets manually extracted and compiled from the PSA website. |
 | `National Accounts/` | Contains National Accounts data sets scraped/downloaded from PSA, OpenStat, and BSP. |
+| `Poverty/` | Contains poverty statistics data scraped/downloaded from the PSA website. |
 
   
 
@@ -33,6 +34,7 @@ The **R programming language** is used to scrape most of the data sets. For data
 | `loadCPIData.R` | Loads CPI and inflation data into R. |
 | `loadFiscalData.R` | Loads fiscal data into R. |
 | `loadLaborData.R` | Loads labor and employment data into R. |
+| `loadPovertyData.R` | Loads poverty statistics data into R. |
 | `loadSNAData.R` | Loads National Accounts data into R. |
 
   
@@ -53,6 +55,7 @@ In particular, data sets were compiled from the following links:
 *  [National Government Cash Operations](https://www.treasury.gov.ph/?page_id=4221)
 *  [National Government Debt](https://www.treasury.gov.ph/?page_id=12407)
 *  [Agriculture Data](https://openstat.psa.gov.ph/Database/Agriculture-Forestry-Fisheries)
+*  [Poverty Statistics](https://psa.gov.ph/poverty-press-releases/data)
   
   
 ### **National Accounts**
@@ -95,3 +98,13 @@ A number of agriculture data sets are available in this repository:
 
 
 The OpenStat platform is the best publicly available source for [agricultural data](https://openstat.psa.gov.ph/Database/Agriculture-Forestry-Fisheries), [agricultural accounts](https://openstat.psa.gov.ph/Database/Agriculture-Forestry-Fisheries/Agricultural-Accounts), and [price data](https://openstat.psa.gov.ph/Database/Prices).
+
+
+### **Poverty Statistics**
+Poverty statistics are generated from the Family Income and Expenditure Survey (FIES), a nationwide survey of households undertaken every three years.  It is the main source of data on family income and expenditure, which include among others, levels of consumption by item of expenditure as well as sources of income in cash and in kind.  The results of FIES provide information on the levels of living and disparities in income of Filipino families, as well as their spending patterns.
+([*Source*](https://psa.gov.ph/income-expenditure/fies-technical-notes))
+
+The [PSA's glossary of poverty statistics](https://psa.gov.ph/poverty-press-releases/glossary) describes measures such as poverty threshold, poverty incidence, poverty severity, poverty gap, and other indicators.
+
+Poverty data can be downloaded from the [PSA](https://psa.gov.ph/poverty-press-releases/data).
+
