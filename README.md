@@ -29,7 +29,7 @@ The **R programming language** is used to scrape most of the data sets. For data
 | Script | Description |
 | ------ | ----------- |
 | `downloadAgriData.R` | Scrapes/downloads agriculture and food data from various sources. |
-| `downloadCPIData.R` | Scrapes/downloads Consumer Price Index data from various sources. |
+| `downloadCPIDataBase2018.R` | Scrapes/downloads Consumer Price Index data from various sources. |
 | `downloadSNAData.R` | Scrapes/downloads National Accounts data from various sources. |
 | `loadCPIData.R` | Loads CPI and inflation data into R. |
 | `loadFiscalData.R` | Loads fiscal data into R. |
@@ -50,7 +50,7 @@ Data in this repository are downloaded from publicly accessible sources:
 In particular, data sets were compiled from the following links:  
 
 *  [National Income Accounts (Base Year 2018)](https://psa.gov.ph/national-accounts/base-2018/data-series)
-*  [Consumer Price Index and Inflation (Base Year 2012)](https://psa.gov.ph/price-indices/cpi-ir/downloads)
+*  [Consumer Price Index and Inflation (Base Year 2018)](https://psa.gov.ph/price-indices/cpi-ir/downloads)
 *  [Labor and Employment](https://psa.gov.ph/statistics/survey/labor-and-employment/labor-force-survey/table)
 *  [National Government Cash Operations](https://www.treasury.gov.ph/?page_id=4221)
 *  [National Government Debt](https://www.treasury.gov.ph/?page_id=12407)
@@ -71,7 +71,7 @@ National Accounts data can be downloaded from the [PSA website](https://psa.gov.
 ### **Consumer Price Index and Inflation**
 The Consumer Price Index is an indicator of the change in the average prices of a fixed basket of goods and services commonly purchased by households relative to a base year. The Inflation Rate is the annual rate of change or the year-on-year change in the Consumer Price Index.
   
-The latest base year for the CPI is 2012.  
+The latest base year for the CPI is 2018.  
   
 CPI and Inflation data can be downloaded from [OpenStat](https://openstat.psa.gov.ph/Database/Prices/Price-Indices), [PSA](https://psa.gov.ph/price-indices/cpi-ir/downloads), or [BSP](https://www.bsp.gov.ph/SitePages/Statistics/Prices.aspx?TabId=1).
   
