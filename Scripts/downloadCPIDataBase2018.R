@@ -30,7 +30,7 @@ cpi_links <- read_html("https://psa.gov.ph/price-indices/cpi-ir/downloads") %>%
 
 # Download CPI xlsx files from the scraped links
 download.file(url = cpi_links %>% str_subset("Statistical") %>% .[1],
-              destfile = "Data/CPI and Inflation/Base 2018/PSA-CPI.xlsx", method = "curl")
+              destfile = "Data/CPI and Inflation/Base 2018/PSA-CPI-Tables.xlsx", method = "curl")
 
 download.file(url = cpi_links %>% str_subset("CORE") %>% .[1],
               destfile = "Data/CPI and Inflation/Base 2018/PSA-CoreCPI.xlsx", method = "curl")
