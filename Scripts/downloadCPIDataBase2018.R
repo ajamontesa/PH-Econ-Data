@@ -11,6 +11,8 @@ if (!dir.exists("Data/CPI and Inflation/Base 2012")) {dir.create("Data/CPI and I
 if (!dir.exists("Data/CPI and Inflation/Base 2018")) {dir.create("Data/CPI and Inflation/Base 2018")}
 
 
+# Set ssl_verifypper=0 since OpenStat's SSL Certificate is problematic
+set_config(config(ssl_verifypeer=0))
 
 # BSP Consumer Price Index ------------------------------------------------
 writeLines("Downloading CPI Data from the BSP website.")

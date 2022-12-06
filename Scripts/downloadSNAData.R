@@ -8,6 +8,9 @@ if (!dir.exists("Data")) {dir.create("Data")}
 if (!dir.exists("Data/National Accounts")) {dir.create("Data/National Accounts")}
 
 
+# Set ssl_verifypper=0 since OpenStat's SSL Certificate is problematic
+set_config(config(ssl_verifypeer=0))
+
 # BSP National Accounts ---------------------------------------------------
 writeLines("Downloading National Accounts Data from the BSP website.")
 
