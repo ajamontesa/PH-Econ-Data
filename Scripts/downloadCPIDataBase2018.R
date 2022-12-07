@@ -136,6 +136,44 @@ if (!file.exists("Data/CPI and Inflation/Base 2018/Openstat-cpi1994to2017.csv"))
 
 
 
+# Download Core CPI data from 2018 Jan to latest month
+{## Latest Data
+    codes <- str_c('{"query": [{"code": "Year", "selection": {"filter": "item", "values": ["',
+                   rep(0:(year(Sys.Date()-months(1)) - 2018), each = 13),
+                   '"]}}, {"code": "Period", "selection": {"filter": "item", "values": ["',
+                   0:12,
+                   '"]}}], "response": {"format": "csv"}}')
+    
+    
+    corecpi2018 <- POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/CPI/2018/0012M4ACP17.px",
+                        body = codes[1]) %>%
+        content(encoding = "UTF-8") %>%
+        select(1:2) %>%
+        rename(`Commodity Description` = `Commodity Description`) %>%
+        suppressMessages() %>% suppressWarnings()
+    
+    writeLines(paste0("Downloading Core CPI data for 2018 to present"))
+    for (code in codes) {
+        corecpi2018 <- bind_cols(
+            corecpi2018,
+            POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/CPI/2018/0012M4ACP17.px",
+                 body = code) %>%
+                content(encoding = "UTF-8") %>%
+                select(-(1:2)) %>%
+                suppressMessages() %>% suppressWarnings()
+        )
+        Sys.sleep(1)
+    }
+    
+    corecpi2018 %>%
+        write_csv("Data/CPI and Inflation/Base 2018/Openstat-corecpi2018.csv") %>%
+        suppressMessages() %>% suppressWarnings()
+    
+    rm(list = ls())
+}
+
+
+
 # Openstat CPI for Bottom 30% Income Households ---------------------------
 
 ## Download Commodity Weights for BIH CPI
