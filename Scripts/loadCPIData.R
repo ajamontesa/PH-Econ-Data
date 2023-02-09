@@ -13,10 +13,10 @@ library(RcppRoll)
 # CPI and Inflation -------------------------------------------------------
 writeLines("Loading CPI and Inflation Data into R.")
 
-inflation_large <- full_join(read_csv("Data/CPI and Inflation/Openstat-cpi1994to2011.csv", na = ".."),
-          read_csv("Data/CPI and Inflation/Openstat-cpi2012.csv", na = "..") %>%
+inflation_large <- full_join(read_csv("Data/CPI and Inflation/Base 2018/Openstat-cpi1994to2017.csv", na = ".."),
+          read_csv("Data/CPI and Inflation/Base 2018/Openstat-cpi2018.csv", na = "..") %>%
               mutate(Geolocation = str_remove(Geolocation, "Bansamoro "))) %>%
-    select(1:(2 + (year(Sys.Date()) - 1994)*13 + (month(Sys.Date()) - 1))) %>%
+    select(1:(2 + (year(Sys.Date()) - 1994)*13 + (month(Sys.Date() - days(5)) - 1))) %>%
     rename(Commodity = `Commodity Description`) %>%
     pivot_longer(cols = -(Geolocation:Commodity), names_to = "Month",
                  values_to = "CPI", values_transform = list(CPI = as.double)) %>%
@@ -27,7 +27,7 @@ inflation_large <- full_join(read_csv("Data/CPI and Inflation/Openstat-cpi1994to
     ungroup() %>%
     suppressMessages() %>% suppressWarnings()
 
-inflation_core <- read_xlsx("Data/CPI and Inflation/PSA-CoreCPI.xlsx", skip = 4) %>%
+inflation_core <- read_xlsx("Data/CPI and Inflation/Base 2018/PSA-CoreCPI.xlsx", skip = 4) %>%
     select(Month = 2, Core = 5) %>%
     filter(!is.na(Month)) %>%
     mutate(Year = case_when(str_detect(Month, "\\d") ~ Month),
@@ -44,14 +44,14 @@ inflation_core <- read_xlsx("Data/CPI and Inflation/PSA-CoreCPI.xlsx", skip = 4)
 
 inflation_small <- bind_rows(filter(inflation_large,
                                     Geolocation == "PHILIPPINES",
-                                    Commodity %in% c("ALL ITEMS",
-                                                     "FOOD AND NON-ALCOHOLIC BEVERAGES",
-                                                     "NON-FOOD")),
+                                    Commodity %in% c("0 - ALL ITEMS",
+                                                     "01 - FOOD AND NON-ALCOHOLIC BEVERAGES",
+                                                     "02.900 - NON-FOOD")),
                              inflation_core) %>%
     mutate(Commodity = recode(Commodity,
-                              "ALL ITEMS" = "Headline",
-                              "FOOD AND NON-ALCOHOLIC BEVERAGES" = "Food",
-                              "NON-FOOD" = "Non-Food",
+                              "0 - ALL ITEMS" = "Headline",
+                              "01 - FOOD AND NON-ALCOHOLIC BEVERAGES" = "Food",
+                              "02.900 - NON-FOOD" = "Non-Food",
                               "CORE" = "Core"),
            Commodity = factor(Commodity, levels = c("Headline", "Core", "Food", "Non-Food"))) %>%
     suppressMessages() %>% suppressWarnings()
