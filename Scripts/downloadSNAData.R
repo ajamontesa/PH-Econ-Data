@@ -63,6 +63,35 @@ rm(psafiles, f)
 
 
 
+# PSA Website Regional Accounts -------------------------------------------
+writeLines("Downloading Regional Accounts Data from the PSA website.")
+
+# Scrape a list of links from the latest GRDP release from the PSA site
+psa_grdp_files <- read_html("https://psa.gov.ph/grdp/data-series") %>%
+    html_nodes(xpath = '//*[@id="content"]/div/div[1]/div/div/div[1]/div/div/div/table/tbody/tr/td[2]/table/tr/td[1]/div/div/ul/li/span/a') %>% 
+    html_attr("href")
+
+# Download the Annual GRDP data
+download.file(url = psa_grdp_files[1], method = "curl",
+              destfile = "Data/National Accounts/PSA-GRDP-Ind-2018PSNA.xlsx")
+download.file(url = psa_grdp_files[2], method = "curl",
+              destfile = "Data/National Accounts/PSA-GRDP-Reg-2018PSNA.xlsx")
+
+# Scrape a list of links from the latest GRDE release from the PSA site
+psa_grde_files <- read_html("https://psa.gov.ph/grde/data-series") %>%
+    html_nodes(xpath = '//*[@id="content"]/div/div[1]/div/div/div[1]/div/div/div/table/tbody/tr/td[2]/table/tr/td[1]/div/div/ul/li/span/a') %>% 
+    html_attr("href")
+
+# Download the Annual GRDE data
+download.file(url = psa_grde_files[1], method = "curl",
+              destfile = "Data/National Accounts/PSA-GRDE-Exp-2018PSNA.xlsx")
+download.file(url = psa_grde_files[2], method = "curl",
+              destfile = "Data/National Accounts/PSA-GRDE-Reg-2018PSNA.xlsx")
+
+rm(psa_grdp_files, psa_grde_files)
+
+
+
 # Openstat National Accounts ----------------------------------------------
 writeLines("Downloading National Accounts Data from the Openstat API.")
 
