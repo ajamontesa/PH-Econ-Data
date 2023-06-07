@@ -64,11 +64,11 @@ if (!file.exists("Data/CPI and Inflation/Base 2018/Openstat-cpi1957to1993.csv"))
 }
 
 ## Download CPI data from 1994 to 2017 (Base 2018)
-if (!file.exists("Data/CPI and Inflation/Base 2018/Openstat-cpi1994to2017.csv")) {
+if (!file.exists("Data/CPI and Inflation/Base 2018/Openstat-cpi1994to2005.csv")) {
     codes <- str_c('{"query": [{"code": "Year", "selection": {"filter": "item", "values": ["',
-                   rep(0:(2017-1994), each = 3),
+                   rep(0:(2017-1994), each = 13),
                    '"]}}, {"code": "Period", "selection": {"filter": "item", "values": ["',
-                   c('0", "1", "2", "3", "4", "5', '6", "7", "8", "9", "10", "11', '12'),
+                   rep(0:12, times = length(0:(2017-1994))),
                    '"]}}], "response": {"format": "csv"}}')
     
     cpi1994 <- POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/CPI/2018/0012M4ACP15.px",
@@ -80,6 +80,8 @@ if (!file.exists("Data/CPI and Inflation/Base 2018/Openstat-cpi1994to2017.csv"))
     
     writeLines(paste0("Downloading CPI data for 1994 to 2017"))
     for (code in codes) {
+        #print(str_extract_all(code, "\\d+"))
+        
         cpi1994 <- bind_cols(
             cpi1994,
             POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/CPI/2018/0012M4ACP15.px",
@@ -92,8 +94,18 @@ if (!file.exists("Data/CPI and Inflation/Base 2018/Openstat-cpi1994to2017.csv"))
     }
     
     cpi1994 %>%
-        write_csv("Data/CPI and Inflation/Base 2018/Openstat-cpi1994to2017.csv") %>%
+        select(1:2, `1994 Jan`:`2005 Ave`) %>%
+        write_csv("Data/CPI and Inflation/Base 2018/Openstat-cpi1994to2005.csv") %>%
         suppressMessages() %>% suppressWarnings()
+    
+    cpi1994 %>%
+        select(1:2, `2006 Jan`:`2017 Ave`) %>%
+        write_csv("Data/CPI and Inflation/Base 2018/Openstat-cpi2006to2017.csv") %>%
+        suppressMessages() %>% suppressWarnings()
+    
+    #cpi1994 %>%
+    #    write_csv("Data/CPI and Inflation/Base 2018/Openstat-cpi1994to2017.csv") %>%
+    #    suppressMessages() %>% suppressWarnings()
     
     rm(list = ls())
 }
@@ -103,7 +115,7 @@ if (!file.exists("Data/CPI and Inflation/Base 2018/Openstat-cpi1994to2017.csv"))
     codes <- str_c('{"query": [{"code": "Year", "selection": {"filter": "item", "values": ["',
                    rep(0:(year(Sys.Date()-months(1)) - 2018), each = 13),
                    '"]}}, {"code": "Period", "selection": {"filter": "item", "values": ["',
-                   0:12,
+                   rep(0:12, times = length(0:(year(Sys.Date()-months(1)) - 2018))),
                    '"]}}], "response": {"format": "csv"}}')
     
     
@@ -141,7 +153,7 @@ if (!file.exists("Data/CPI and Inflation/Base 2018/Openstat-cpi1994to2017.csv"))
     codes <- str_c('{"query": [{"code": "Year", "selection": {"filter": "item", "values": ["',
                    rep(0:(year(Sys.Date()-months(1)) - 2018), each = 13),
                    '"]}}, {"code": "Period", "selection": {"filter": "item", "values": ["',
-                   0:12,
+                   rep(0:12, times = length(0:(year(Sys.Date()-months(1)) - 2018))),
                    '"]}}], "response": {"format": "csv"}}')
     
     
@@ -239,12 +251,59 @@ if (!file.exists("Data/CPI and Inflation/Base 2018/Openstat-cpiBIHWeights.csv"))
         suppressMessages() %>% suppressWarnings()
 }
 
+## Download Base 2018 BIH CPI from 2000 to 2011
+if (!file.exists("Data/CPI and Inflation/Base 2018/Openstat-cpiBIH2000to2011.csv")) {
+    writeLines(paste0("Downloading Bottom 30% CPI data for 2000 to 2011"))
+    POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/BIH/2018/0022M4ABOT5.px",
+         body = '{"query": [], "response": {"format": "csv"}}') %>%
+        content(encoding = "UTF-8") %>%
+        write_csv("Data/CPI and Inflation/Base 2018/Openstat-cpiBIH2000to2011.csv") %>%
+        suppressMessages() %>% suppressWarnings()
+}
+
+## Download Base 2018 BIH CPI from 2012 to 2017
+if (!file.exists("Data/CPI and Inflation/Base 2018/Openstat-cpiBIH2012to2017.csv")) {
+    codes <- str_c('{"query": [{"code": "Year", "selection": {"filter": "item", "values": ["',
+                   rep(0:(2017-2012), each = 1),
+                   #'"]}}, {"code": "Period", "selection": {"filter": "item", "values": ["',
+                   #rep(0:12, times = length(0:(2017-2012))),
+                   '"]}}], "response": {"format": "csv"}}')
+    
+    cpibih2012 <- POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/BIH/2018/0022M4ABOT4.px",
+                       body = codes[1]) %>%
+        content(encoding = "UTF-8") %>%
+        select(1:2) %>%
+        rename(`Commodity Description` = `Commodity Description`) %>%
+        suppressMessages() %>% suppressWarnings()
+    
+    writeLines(paste0("Downloading Bottom 30% CPI data for 2012 to 2017"))
+    for (code in codes) {
+        #print(str_extract_all(code, "\\d+"))
+        
+        cpibih2012 <- bind_cols(
+            cpibih2012,
+            POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/BIH/2018/0022M4ABOT4.px",
+                 body = code) %>%
+                content(encoding = "UTF-8") %>%
+                select(-(1:2)) %>%
+                suppressMessages() %>% suppressWarnings()
+        )
+        Sys.sleep(1)
+    }
+    
+    cpibih2012 %>%
+        write_csv("Data/CPI and Inflation/Base 2018/Openstat-cpiBIH2012to2017.csv") %>%
+        suppressMessages() %>% suppressWarnings()
+    
+    rm(list = ls())
+}
+
 ## Download Base 2018 BIH CPI from 2018 to latest
 {# Latest Data
     codes <- str_c('{"query": [{"code": "Year", "selection": {"filter": "item", "values": ["',
                    rep(0:(year(Sys.Date()-months(1)) - 2018), each = 13),
                    '"]}}, {"code": "Period", "selection": {"filter": "item", "values": ["',
-                   0:12,
+                   rep(0:12, times = length(0:(year(Sys.Date()-months(1)) - 2018))),
                    '"]}}], "response": {"format": "csv"}}')
     
     cpibih2018 <- POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/BIH/2018/0022M4ABOT1.px",
