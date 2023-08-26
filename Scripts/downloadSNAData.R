@@ -34,24 +34,52 @@ download.file(url = "https://www.bsp.gov.ph/Statistics/Real%20Sector%20Accounts/
 writeLines("Downloading National Accounts Data from the PSA website.")
 
 # Scrape a list of links from the latest SNA release from the PSA site
-psafiles <- read_html("https://psa.gov.ph/national-accounts/base-2018/data-series") %>% 
-    html_nodes(xpath = '//*[@id="content"]/div/div[1]/div/section/div/div/div/div/table/tbody/tr/td[2]/table/tr/td[1]/div/div/ul/li/span/a') %>% 
-    html_attr("href")
+
+# Old PSA Website : https://psa.gov.ph/national-accounts/base-2018/data-series
+#psafiles <- read_html("https://psa.gov.ph/national-accounts/base-2018/data-series") %>% 
+#    html_nodes(xpath = '//*[@id="content"]/div/div[1]/div/section/div/div/div/div/table/tbody/tr/td[2]/table/tr/td[1]/div/div/ul/li/span/a') %>% 
+#    html_attr("href")
 
 # Download the latest Quarterly and Annual SNA data
-download.file(url = psafiles[1], method = "curl",
+#download.file(url = psafiles[1], method = "curl",
+#              destfile = "Data/National Accounts/PSA-01Summary_2018PSNA_Qrt.xlsx")
+#download.file(url = psafiles[2], method = "curl",
+#              destfile = "Data/National Accounts/PSA-01Summary_2018PSNA_Ann.xlsx")
+
+# Download the Quarterly and Annual Long Time Series SNA data
+#download.file(url = psafiles[43], method = "curl",
+#              destfile = "Data/National Accounts/PSA-Quarter-Q1-1981-to-latest.xlsx")
+#download.file(url = psafiles[44], method = "curl",
+#              destfile = "Data/National Accounts/PSA-Annual-1946-to-latest.xlsx")
+# Download Other SNA files
+#for (f in psafiles[c(3:42)]) {
+#    download.file(url = f, method = "curl",
+#                  destfile = str_c("Data/National Accounts/PSA-",
+#                                   str_extract(str_remove(f, "^h.+/"), "\\d.+(Qrt|Ann)"),
+#                                   ".xlsx"))
+#}
+
+# New PSA Website
+psafiles <- read_html("https://psa.gov.ph/statistics/national-accounts/data-series") %>% 
+    html_nodes(xpath = '//*[@id="content"]/div/div/div/div[1]/div/div/div/div/div/div/div/table/tbody/tr/td[2]/span/a') %>% 
+    html_attr("href")
+
+psafiles <- str_c("https://psa.gov.ph", psafiles)
+
+# Download the latest Quarterly and Annual SNA data
+download.file(url = psafiles[str_detect(psafiles, "Summary(.*)Qrt")], method = "curl",
               destfile = "Data/National Accounts/PSA-01Summary_2018PSNA_Qrt.xlsx")
-download.file(url = psafiles[2], method = "curl",
+download.file(url = psafiles[str_detect(psafiles, "Summary(.*)Ann")], method = "curl",
               destfile = "Data/National Accounts/PSA-01Summary_2018PSNA_Ann.xlsx")
 
 # Download the Quarterly and Annual Long Time Series SNA data
-download.file(url = psafiles[43], method = "curl",
+download.file(url = psafiles[str_detect(psafiles, "1981")], method = "curl",
               destfile = "Data/National Accounts/PSA-Quarter-Q1-1981-to-latest.xlsx")
-download.file(url = psafiles[44], method = "curl",
+download.file(url = psafiles[str_detect(psafiles, "1946")], method = "curl",
               destfile = "Data/National Accounts/PSA-Annual-1946-to-latest.xlsx")
 
 # Download Other SNA files
-for (f in psafiles[3:42]) {
+for (f in psafiles[str_detect(psafiles, "(HFCE|DEQ|EOG|EOS|IOG|IOS|AFF|MAQ|MFG|ESWW|CNS|TRD|TAS|AFSA|IAC|FIA|REOD|EDUC|HHSW|OS)")]) {
     download.file(url = f, method = "curl",
                   destfile = str_c("Data/National Accounts/PSA-",
                                    str_extract(str_remove(f, "^h.+/"), "\\d.+(Qrt|Ann)"),
@@ -67,9 +95,19 @@ rm(psafiles, f)
 writeLines("Downloading Regional Accounts Data from the PSA website.")
 
 # Scrape a list of links from the latest GRDP release from the PSA site
-psa_grdp_files <- read_html("https://psa.gov.ph/grdp/data-series") %>%
-    html_nodes(xpath = '//*[@id="content"]/div/div[1]/div/div/div[1]/div/div/div/table/tbody/tr/td[2]/table/tr/td[1]/div/div/ul/li/span/a') %>% 
+
+# Old PSA website
+#psa_grdp_files <- read_html("https://psa.gov.ph/grdp/data-series") %>%
+#    html_nodes(xpath = '//*[@id="content"]/div/div[1]/div/div/div[1]/div/div/div/table/tbody/tr/td[2]/table/tr/td[1]/div/div/ul/li/span/a') %>% 
+#    html_attr("href")
+
+
+# New PSA website
+psa_grdp_files <- read_html("https://psa.gov.ph/statistics/grdp/data-series") %>%
+    html_nodes(xpath = '//*[@id="content"]/div/div/div/div[1]/div/div/div/div/div/div/div/div/div/div[2]/span/div/table/tbody/tr[2]/td[2]/p/span/a') %>% 
     html_attr("href")
+
+psa_grdp_files <- str_c("https://psa.gov.ph", psa_grdp_files)
 
 # Download the Annual GRDP data
 download.file(url = psa_grdp_files[1], method = "curl",
@@ -77,10 +115,20 @@ download.file(url = psa_grdp_files[1], method = "curl",
 download.file(url = psa_grdp_files[2], method = "curl",
               destfile = "Data/National Accounts/PSA-GRDP-Reg-2018PSNA.xlsx")
 
+
 # Scrape a list of links from the latest GRDE release from the PSA site
-psa_grde_files <- read_html("https://psa.gov.ph/grde/data-series") %>%
-    html_nodes(xpath = '//*[@id="content"]/div/div[1]/div/div/div[1]/div/div/div/table/tbody/tr/td[2]/table/tr/td[1]/div/div/ul/li/span/a') %>% 
+
+# Old PSA website
+#psa_grde_files <- read_html("https://psa.gov.ph/grde/data-series") %>%
+#    html_nodes(xpath = '//*[@id="content"]/div/div[1]/div/div/div[1]/div/div/div/table/tbody/tr/td[2]/table/tr/td[1]/div/div/ul/li/span/a') %>% 
+#    html_attr("href")
+
+# New PSA website
+psa_grde_files <- read_html("https://psa.gov.ph/statistics/grde/data-series") %>%
+    html_nodes(xpath = '//*[@id="content"]/div/div/div/div[1]/div/div/div/div/div/div/div/div/div/div/span/div/table/tbody/tr[2]/td[2]/p/span/a') %>% 
     html_attr("href")
+
+psa_grde_files <- str_c("https://psa.gov.ph", psa_grde_files)
 
 # Download the Annual GRDE data
 download.file(url = psa_grde_files[1], method = "curl",
