@@ -26,16 +26,24 @@ download.file(url = "https://www.bsp.gov.ph/Statistics/Prices/prices2018.xls",
 writeLines("Downloading CPI Data from the PSA Website.")
 
 ## Scrape a list of links from the latest (Base 2018) CPI release from the PSA site
-cpi_links <- read_html("https://psa.gov.ph/price-indices/cpi-ir/downloads") %>%
+
+# Old PSA website
+#cpi_links <- read_html("https://psa.gov.ph/price-indices/cpi-ir/downloads") %>%
+#    html_nodes("table") %>% html_nodes("td") %>% html_nodes("span") %>% html_nodes("a") %>%
+#    html_attr("href")
+
+# New PSA website
+cpi_links <- read_html("https://psa.gov.ph/price-indices/cpi-ir/stat-tables") %>%
     html_nodes("table") %>% html_nodes("td") %>% html_nodes("span") %>% html_nodes("a") %>%
     html_attr("href")
 
+
 # Download CPI xlsx files from the scraped links
-download.file(url = cpi_links %>% str_subset("Statistical") %>% .[1],
+download.file(url = cpi_links %>% str_subset("Statistical") %>% .[1] %>% str_c("https://psa.gov.ph", .),
               destfile = "Data/CPI and Inflation/Base 2018/PSA-CPI-Tables.xlsx", method = "curl")
 
-download.file(url = cpi_links %>% str_subset("CORE") %>% .[1],
-              destfile = "Data/CPI and Inflation/Base 2018/PSA-CoreCPI.xlsx", method = "curl")
+#download.file(url = cpi_links %>% str_subset("CORE") %>% .[1],
+#              destfile = "Data/CPI and Inflation/Base 2018/PSA-CoreCPI.xlsx", method = "curl")
 
 rm(list = ls())
 
