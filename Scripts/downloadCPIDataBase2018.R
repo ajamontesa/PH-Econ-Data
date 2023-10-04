@@ -196,59 +196,6 @@ if (!file.exists("Data/CPI and Inflation/Base 2018/Openstat-cpi1994to2005.csv"))
 
 # Openstat CPI for Bottom 30% Income Households ---------------------------
 
-## Base 2012
-## Download Commodity Weights for Base 2012 BIH CPI
-if (!file.exists("Data/CPI and Inflation/Base 2012/Openstat-cpiBIHWeights.csv")) {
-    POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/BIH/0022M4AB303.px",
-         body = '{"query": [], "response": {"format": "csv"}}') %>%
-        content(encoding = "UTF-8") %>%
-        write_csv("Data/CPI and Inflation/Base 2012/Openstat-cpiBIHWeights.csv") %>%
-        suppressMessages() %>% suppressWarnings()
-}
-
-## Download Base 2012 BIH CPI from 2000 to 2011
-if (!file.exists("Data/CPI and Inflation/Base 2012/Openstat-cpiBIH2000to2011.csv")) {
-    writeLines(paste0("Downloading Bottom 30% CPI data for 2000 to 2011"))
-    POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/BIH/2012/0022M4AB304.px",
-         body = '{"query": [], "response": {"format": "csv"}}') %>%
-        content(encoding = "UTF-8") %>%
-        write_csv("Data/CPI and Inflation/Base 2012/Openstat-cpiBIH2000to2011.csv") %>%
-        suppressMessages() %>% suppressWarnings()
-}
-
-## Download Base 2012 BIH CPI from 2012 to latest
-{# Latest Data
-    codes <- str_c('{"query": [{"code": "Year", "selection": {"filter": "item", "values": ["',
-                   rep(0:(year(Sys.Date()-months(1)) - 2012)),
-                   '"]}}], "response": {"format": "csv"}}')
-    
-    cpibih2012 <- POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/BIH/2012/0022M4AB301.px",
-                       body = codes[1]) %>%
-        content(encoding = "UTF-8") %>%
-        select(1:2) %>%
-        suppressMessages() %>% suppressWarnings()
-    
-    writeLines(paste0("Downloading Bottom 30% CPI data for 2012 to present"))
-    for (code in codes) {
-        cpibih2012 <- bind_cols(
-            cpibih2012,
-            POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/BIH/0022M4AB301.px",
-                 body = code) %>%
-                content(encoding = "UTF-8") %>%
-                select(-(1:2)) %>%
-                suppressMessages() %>% suppressWarnings()
-        )
-        Sys.sleep(0.5)
-    }
-    
-    cpibih2012 %>%
-        write_csv("Data/CPI and Inflation/Base 2012/Openstat-cpiBIH2012.csv") %>%
-        suppressMessages() %>% suppressWarnings()
-    
-    rm(list = ls())
-}
-
-
 ## Base 2018
 ## Download Commodity Weights for Base 2018 BIH CPI
 if (!file.exists("Data/CPI and Inflation/Base 2018/Openstat-cpiBIHWeights.csv")) {
