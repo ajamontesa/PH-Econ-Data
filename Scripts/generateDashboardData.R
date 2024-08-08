@@ -85,10 +85,11 @@ SNA2000_Quarterly_PC <- read_csv("Data/National Accounts/Openstat-SNA-Quarterly-
 
 
 # Load CPI and Inflation Data ---------------------------------------------
-inflation_large <- full_join(read_csv("Data/CPI and Inflation/Base 2018/Openstat-cpi1994to2017.csv", na = ".."),
-                             read_csv("Data/CPI and Inflation/Base 2018/Openstat-cpi2018.csv", na = "..") %>%
-                                 mutate(Geolocation = str_remove(Geolocation, "Bansamoro "))) %>%
-    select(1:(2 + (year(Sys.Date()) - 1994)*13 + (month(Sys.Date()) - 3))) %>%
+inflation_large <- read_csv("Data/CPI and Inflation/Base 2018/Openstat-cpi1994to2005.csv", na = "..") %>%
+    full_join(read_csv("Data/CPI and Inflation/Base 2018/Openstat-cpi2006to2017.csv", na = "..")) %>%
+    full_join(read_csv("Data/CPI and Inflation/Base 2018/Openstat-cpi2018.csv", na = "..") %>%
+                  mutate(Geolocation = str_remove(Geolocation, "Bansamoro "))) %>%
+    select(1:(2 + (year(Sys.Date()) - 2006)*13 + (month(Sys.Date()) - 3))) %>%
     rename(Commodity = `Commodity Description`) %>%
     pivot_longer(cols = -(Geolocation:Commodity), names_to = "Month",
                  values_to = "CPI", values_transform = list(CPI = as.double)) %>%
@@ -142,7 +143,8 @@ rm(inflation_large)
 # Load Employment Data ----------------------------------------------------
 labor <- read_xlsx("Data/Labor and Employment/Labor and Employment.xlsx") %>%
     filter(Round != "Annual") %>%
-    mutate(Period = parse_date(`LFS Round`, "%Y %b")) %>%
+    mutate(Period = case_when(str_detect(`LFS Round`, "Q") ~ yq(`LFS Round`),
+                              TRUE ~ parse_date(`LFS Round`, "%Y %b"))) %>%
     rename_with(~ str_remove_all(., "\\s|\\+")) %>%
     select(LFSRound:Round, Period, everything())
 
