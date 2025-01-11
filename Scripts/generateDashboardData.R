@@ -115,21 +115,25 @@ inflation_core <- read_xlsx("Data/CPI and Inflation/Base 2018/PSA-CoreCPI.xlsx",
     select(Geolocation, Commodity, Month, CPI, Inflation) %>%
     suppressMessages() %>% suppressWarnings()
 
-inflation_small <- bind_rows(filter(mutate(inflation_large, Commodity = str_remove(Commodity, "^.+\\-\\s")),
-                                    Geolocation == "PHILIPPINES",
-                                    Commodity %in% c("ALL ITEMS", "FOOD AND NON-ALCOHOLIC BEVERAGES", "NON-FOOD")),
-                             inflation_core) %>%
+inflation_small <- bind_rows(
+    filter(mutate(inflation_large, Commodity = str_remove(Commodity, "^.+\\-\\s")),
+           Geolocation == "PHILIPPINES",
+           Commodity %in% c("ALL ITEMS", "FOOD AND NON-ALCOHOLIC BEVERAGES", "NON-FOOD")),
+    inflation_core
+) %>%
     mutate(Commodity = recode(Commodity, "ALL ITEMS" = "Headline", "FOOD AND NON-ALCOHOLIC BEVERAGES" = "Food", "NON-FOOD" = "Non-Food", "CORE" = "Core"),
            Commodity = factor(Commodity, levels = c("Headline", "Core", "Food", "Non-Food"))) %>%
     suppressMessages() %>% suppressWarnings()
 
-main_commodities <- c("ALL ITEMS", "FOOD AND NON-ALCOHOLIC BEVERAGES",
-                      "ALCOHOLIC BEVERAGES, TOBACCO AND OTHER VEGETABLE-BASED TOBACCO PRODUCTS",
-                      "NON-FOOD", "CLOTHING AND FOOTWEAR",
-                      "HOUSING, WATER, ELECTRICITY, GAS AND OTHER FUELS",
-                      "FURNISHINGS, HOUSEHOLD EQUIPMENT AND ROUTINE HOUSEHOLD MAINTENANCE",
-                      "HEALTH", "TRANSPORT", "COMMUNICATION", "RECREATION AND CULTURE", "EDUCATION",
-                      "RESTAURANTS AND MISCELLANEOUS GOODS AND SERVICES")
+main_commodities <- c(
+    "ALL ITEMS", "FOOD AND NON-ALCOHOLIC BEVERAGES",
+    "ALCOHOLIC BEVERAGES, TOBACCO AND OTHER VEGETABLE-BASED TOBACCO PRODUCTS",
+    "NON-FOOD", "CLOTHING AND FOOTWEAR",
+    "HOUSING, WATER, ELECTRICITY, GAS AND OTHER FUELS",
+    "FURNISHINGS, HOUSEHOLD EQUIPMENT AND ROUTINE HOUSEHOLD MAINTENANCE",
+    "HEALTH", "TRANSPORT", "COMMUNICATION", "RECREATION AND CULTURE", "EDUCATION",
+    "RESTAURANTS AND MISCELLANEOUS GOODS AND SERVICES"
+)
 
 inflation_main <- inflation_large %>%
     mutate(Commodity = str_remove(Commodity, "^.+\\-\\s")) %>%
@@ -188,6 +192,23 @@ ngdebt <- left_join(
         select(Quarter, NominalGDP)
 ) %>% mutate(NominalGDP4Q = roll_sumr(NominalGDP, 4)) %>%
     suppressMessages() %>% suppressWarnings()
+
+
+tax_types <- left_join(
+    read_xlsx("Data/Fiscal Data/BIR-Tax-Statistics.xlsx") %>%
+        rename(TaxType = `Tax Classification`) %>%
+        pivot_longer(cols = -TaxType, names_to = "Particular", values_to = "Thousands") %>%
+        mutate(Year = str_extract(Particular, "\\d{4}"),
+               Particular = str_remove(Particular, "\\d{4}\\s"),
+               Year = as.Date(str_c(Year, "-10-01"))) %>%
+        pivot_wider(names_from = "Particular", values_from = "Thousands") %>%
+        mutate(Quarter = Year),
+    ngcor %>%
+        filter(quarter(Quarter) == 4) %>%
+        select(Quarter, BIRRevenues4Q, NominalGDP4Q)
+) %>%
+    mutate(Effort = Collection/(NominalGDP4Q*4),
+           Share = Collection/(BIRRevenues4Q*4))
 
 
 save.image("Data/dashboardData.RData")
