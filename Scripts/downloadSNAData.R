@@ -195,35 +195,35 @@ writeLines("Downloading Gross Regional Domestic Product Data from the Openstat A
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/GP/RG/GRD/0012B5CPGD1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
-    write_csv("Data/National Accounts/Openstat-GRDP.csv") %>%
+    write_csv("Data/National Accounts/Regional Accounts/Openstat-GRDP.csv") %>%
     suppressMessages() %>% suppressWarnings()
 Sys.sleep(1)
 
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/GP/RG/PCI/0772B5CPCP1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
-    write_csv("Data/National Accounts/Openstat-GRDP-PC.csv") %>%
+    write_csv("Data/National Accounts/Regional Accounts/Openstat-GRDP-PC.csv") %>%
     suppressMessages() %>% suppressWarnings()
 Sys.sleep(1)
 
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/GP/RG/AFF/0052B5CPAF1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
-    write_csv("Data/National Accounts/Openstat-GRDP-Agriculture.csv") %>%
+    write_csv("Data/National Accounts/Regional Accounts/Openstat-GRDP-Agriculture.csv") %>%
     suppressMessages() %>% suppressWarnings()
 Sys.sleep(1)
 
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/GP/RG/IND/0092B5CPIN1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
-    write_csv("Data/National Accounts/Openstat-GRDP-Industry.csv") %>%
+    write_csv("Data/National Accounts/Regional Accounts/Openstat-GRDP-Industry.csv") %>%
     suppressMessages() %>% suppressWarnings()
 Sys.sleep(1)
 
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/GP/RG/SER/0292B5CPSR1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
-    write_csv("Data/National Accounts/Openstat-GRDP-Services.csv") %>%
+    write_csv("Data/National Accounts/Regional Accounts/Openstat-GRDP-Services.csv") %>%
     suppressMessages() %>% suppressWarnings()
 Sys.sleep(1)
 
@@ -235,55 +235,81 @@ writeLines("Downloading Gross Regional Domestic Expenditure Data from the Openst
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/EA/BR/GR/0012B5CEGR1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
-    write_csv("Data/National Accounts/Openstat-GRDE.csv") %>%
+    write_csv("Data/National Accounts/Regional Accounts/Openstat-GRDE.csv") %>%
     suppressMessages() %>% suppressWarnings()
 Sys.sleep(1)
 
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/EA/BR/GRC/1412B5CPCG1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
-    write_csv("Data/National Accounts/Openstat-GRDE-PC.csv") %>%
+    write_csv("Data/National Accounts/Regional Accounts/Openstat-GRDE-PC.csv") %>%
     suppressMessages() %>% suppressWarnings()
 Sys.sleep(1)
 
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/EA/BR/HF/0052B5CEHF1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
-    write_csv("Data/National Accounts/Openstat-GRDE-01HFCE.csv") %>%
+    write_csv("Data/National Accounts/Regional Accounts/Openstat-GRDE-01HFCE.csv") %>%
     suppressMessages() %>% suppressWarnings()
 Sys.sleep(1)
 
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/EA/BR/PHF/0672B5CEPC1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
-    write_csv("Data/National Accounts/Openstat-GRDE-01HFCE-PC.csv") %>%
+    write_csv("Data/National Accounts/Regional Accounts/Openstat-GRDE-01HFCE-PC.csv") %>%
     suppressMessages() %>% suppressWarnings()
 Sys.sleep(1)
 
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/EA/BR/GF/0092B5CEGF1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
-    write_csv("Data/National Accounts/Openstat-GRDE-02GFCE.csv") %>%
+    write_csv("Data/National Accounts/Regional Accounts/Openstat-GRDE-02GFCE.csv") %>%
     suppressMessages() %>% suppressWarnings()
 Sys.sleep(1)
 
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/EA/BR/GCF/0132B5CECF1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
-    write_csv("Data/National Accounts/Openstat-GRDE-03GCF.csv") %>%
+    write_csv("Data/National Accounts/Regional Accounts/Openstat-GRDE-03GCF.csv") %>%
     suppressMessages() %>% suppressWarnings()
 Sys.sleep(1)
 
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/EA/BR/EGS/0422B5CEXP1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
-    write_csv("Data/National Accounts/Openstat-GRDE-04Exports.csv") %>%
+    write_csv("Data/National Accounts/Regional Accounts/Openstat-GRDE-04Exports.csv") %>%
     suppressMessages() %>% suppressWarnings()
 Sys.sleep(1)
 
 POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/EA/BR/IGS/0542B5CEMP1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
-    write_csv("Data/National Accounts/Openstat-GRDE-05Imports.csv") %>%
+    write_csv("Data/National Accounts/Regional Accounts/Openstat-GRDE-05Imports.csv") %>%
+    suppressMessages() %>% suppressWarnings()
+Sys.sleep(1)
+
+
+
+# Openstat Provincial Product Accounts ------------------------------------
+writeLines("Downloading Provincial Product Accounts Data from the Openstat API.")
+
+POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2A/PPA/0012A5GPPA0.px",
+     body = '{"query": [], "response": {"format": "csv"}}') %>%
+    content(encoding = "UTF-8") %>%
+    write_csv("Data/National Accounts/Provincial Accounts/Openstat-PPA.csv") %>%
+    suppressMessages() %>% suppressWarnings()
+Sys.sleep(1)
+
+POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2A/PPA/0022A5GPPA1.px",
+     body = '{"query": [], "response": {"format": "csv"}}') %>%
+    content(encoding = "UTF-8") %>%
+    write_csv("Data/National Accounts/Provincial Accounts/Openstat-PPA-Industry.csv") %>%
+    suppressMessages() %>% suppressWarnings()
+Sys.sleep(1)
+
+POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2A/PPA/0092A5GPPA8.px",
+     body = '{"query": [], "response": {"format": "csv"}}') %>%
+    content(encoding = "UTF-8") %>%
+    write_csv("Data/National Accounts/Provincial Accounts/Openstat-PPA-PC.csv") %>%
     suppressMessages() %>% suppressWarnings()
 Sys.sleep(1)
