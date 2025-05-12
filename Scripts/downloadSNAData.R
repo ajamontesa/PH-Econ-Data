@@ -239,7 +239,7 @@ POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/EA/BR/GR/0012B5CEG
     suppressMessages() %>% suppressWarnings()
 Sys.sleep(1)
 
-POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/EA/BR/GRC/1412B5CPCG1.px",
+POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/EA/BR/GRC/1452B5CPCG1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
     write_csv("Data/National Accounts/Regional Accounts/Openstat-GRDE-PC.csv") %>%
