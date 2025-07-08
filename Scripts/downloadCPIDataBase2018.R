@@ -54,7 +54,7 @@ writeLines("Downloading CPI Data from Openstat.")
 
 ## Download Base 2018 Commodity Weights
 if (!file.exists("Data/CPI and Inflation/Base 2018/Openstat-cpiBase2018Weights.csv")) {
-    POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/CPI/2018/0012M4ACP12.px",
+    POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/CPI/2018NEW/0012M4ACP25.px",
          body = '{"query": [], "response": {"format": "csv"}}') %>%
         content(encoding = "UTF-8") %>%
         write_csv("Data/CPI and Inflation/Base 2018/Openstat-cpiBase2018Weights.csv") %>%
@@ -64,7 +64,7 @@ if (!file.exists("Data/CPI and Inflation/Base 2018/Openstat-cpiBase2018Weights.c
 ## Download CPI data from 1957 to 1993 (Base 2018)
 if (!file.exists("Data/CPI and Inflation/Base 2018/Openstat-cpi1957to1993.csv")) {
     writeLines(paste0("Downloading CPI data for 1957 to 1993"))
-    POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/CPI/2018/0012M4ACP13.px",
+    POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/CPI/2018NEW/0012M4ACP26.px",
          body = '{"query": [], "response": {"format": "csv"}}') %>%
         content(encoding = "UTF-8") %>%
         write_csv("Data/CPI and Inflation/Base 2018/Openstat-cpi1957to1993.csv") %>%
@@ -79,7 +79,7 @@ if (!file.exists("Data/CPI and Inflation/Base 2018/Openstat-cpi1994to2005.csv"))
                    rep(0:12, times = length(0:(2017-1994))),
                    '"]}}], "response": {"format": "csv"}}')
     
-    cpi1994 <- POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/CPI/2018/0012M4ACP15.px",
+    cpi1994 <- POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/CPI/2018NEW/0012M4ACP28.px",
                     body = codes[1]) %>%
         content(encoding = "UTF-8") %>%
         select(1:2) %>%
@@ -92,7 +92,7 @@ if (!file.exists("Data/CPI and Inflation/Base 2018/Openstat-cpi1994to2005.csv"))
         
         cpi1994 <- bind_cols(
             cpi1994,
-            POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/CPI/2018/0012M4ACP15.px",
+            POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/CPI/2018NEW/0012M4ACP28.px",
                  body = code) %>%
                 content(encoding = "UTF-8") %>%
                 select(-(1:2)) %>%
@@ -127,7 +127,7 @@ if (!file.exists("Data/CPI and Inflation/Base 2018/Openstat-cpi1994to2005.csv"))
                    '"]}}], "response": {"format": "csv"}}')
     
     
-    cpi2018 <- POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/CPI/2018/0012M4ACP09.px",
+    cpi2018 <- POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/CPI/2018NEW/0012M4ACP22.px",
                     body = codes[1]) %>%
         content(encoding = "UTF-8") %>%
         select(1:2) %>%
@@ -138,7 +138,7 @@ if (!file.exists("Data/CPI and Inflation/Base 2018/Openstat-cpi1994to2005.csv"))
     for (code in codes) {
         cpi2018 <- bind_cols(
             cpi2018,
-            POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/CPI/2018/0012M4ACP09.px",
+            POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/CPI/2018NEW/0012M4ACP22.px",
                  body = code) %>%
                 content(encoding = "UTF-8") %>%
                 select(-(1:2)) %>%
@@ -165,7 +165,7 @@ if (!file.exists("Data/CPI and Inflation/Base 2018/Openstat-cpi1994to2005.csv"))
                    '"]}}], "response": {"format": "csv"}}')
     
     
-    corecpi2018 <- POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/CPI/2018/0012M4ACP17.px",
+    corecpi2018 <- POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/CPI/2018NEW/0012M4ACP30.px",
                         body = codes[1]) %>%
         content(encoding = "UTF-8") %>%
         select(1:2) %>%
@@ -199,7 +199,7 @@ if (!file.exists("Data/CPI and Inflation/Base 2018/Openstat-cpi1994to2005.csv"))
 ## Base 2018
 ## Download Commodity Weights for Base 2018 BIH CPI
 if (!file.exists("Data/CPI and Inflation/Base 2018/Openstat-cpiBIHWeights.csv")) {
-    POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/BIH/2018/0022M4ABOT3.px",
+    POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/BIH/2018NEW/0022M4ABIR3.px",
          body = '{"query": [], "response": {"format": "csv"}}') %>%
         content(encoding = "UTF-8") %>%
         write_csv("Data/CPI and Inflation/Base 2018/Openstat-cpiBIHWeights.csv") %>%
@@ -261,7 +261,7 @@ if (!file.exists("Data/CPI and Inflation/Base 2018/Openstat-cpiBIH2012to2017.csv
                    rep(0:12, times = length(0:(year(Sys.Date()-months(1)) - 2018))),
                    '"]}}], "response": {"format": "csv"}}')
     
-    cpibih2018 <- POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/BIH/2018/0022M4ABOT1.px",
+    cpibih2018 <- POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/BIH/2018NEW/0022M4ABIR1.px",
                        body = codes[1]) %>%
         content(encoding = "UTF-8") %>%
         select(1:2) %>%
@@ -271,7 +271,7 @@ if (!file.exists("Data/CPI and Inflation/Base 2018/Openstat-cpiBIH2012to2017.csv
     for (code in codes) {
         cpibih2018 <- bind_cols(
             cpibih2018,
-            POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/BIH/2018/0022M4ABOT1.px",
+            POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/BIH/2018NEW/0022M4ABIR1.px",
                  body = code) %>%
                 content(encoding = "UTF-8") %>%
                 select(-(1:2)) %>%

@@ -190,6 +190,19 @@ ngdebt <- left_join(
         pivot_longer(cols = -Expenditure, names_to = "Quarter", values_to = "NominalGDP") %>%
         mutate(Quarter = as.Date(Quarter)) %>%
         select(Quarter, NominalGDP)
+) %>% left_join(
+    read_xlsx("Data/Fiscal Data/ngdebt.xlsx") %>%
+        pivot_longer(cols = -Particulars, names_to = "Month", values_to = "MillionPesos") %>%
+        filter(Particulars %in% c("Debt Service - Interest Payment")) %>%
+        mutate(Particulars = as_factor(str_remove_all(Particulars, "\\s|-|/|\\(|\\)")),
+               Month = parse_date(Month, "%B %Y"),
+               Quarter = yq(str_c(str_sub(Month, 1, 4), "Q", quarter(Month)))) %>%
+        group_by(Particulars, Quarter) %>%
+        summarize(MillionPesos = sum(MillionPesos, na.rm = TRUE)) %>%
+        ungroup() %>%
+        pivot_wider(names_from = Particulars, values_from = MillionPesos) %>%
+        mutate(DebtService4Q = roll_sumr(DebtServiceInterestPayment, 4)) %>%
+        filter(year(Quarter) >= 1993)
 ) %>% mutate(NominalGDP4Q = roll_sumr(NominalGDP, 4)) %>%
     suppressMessages() %>% suppressWarnings()
 
