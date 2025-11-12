@@ -293,21 +293,45 @@ Sys.sleep(1)
 # Openstat Provincial Product Accounts ------------------------------------
 writeLines("Downloading Provincial Product Accounts Data from the Openstat API.")
 
-POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2A/PPA/0012A5GPPA0.px",
+## Old Provincial Accounts
+#POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2A/PPA/0012A5GPPA0.px",
+#     body = '{"query": [], "response": {"format": "csv"}}') %>%
+#    content(encoding = "UTF-8") %>%
+#    write_csv("Data/National Accounts/Provincial Accounts/Openstat-PPA.csv") %>%
+#    suppressMessages() %>% suppressWarnings()
+#Sys.sleep(1)
+#
+#POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2A/PPA/0022A5GPPA1.px",
+#     body = '{"query": [], "response": {"format": "csv"}}') %>%
+#    content(encoding = "UTF-8") %>%
+#    write_csv("Data/National Accounts/Provincial Accounts/Openstat-PPA-Industry.csv") %>%
+#    suppressMessages() %>% suppressWarnings()
+#Sys.sleep(1)
+#
+#POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2A/PPA/0092A5GPPA8.px",
+#     body = '{"query": [], "response": {"format": "csv"}}') %>%
+#    content(encoding = "UTF-8") %>%
+#    write_csv("Data/National Accounts/Provincial Accounts/Openstat-PPA-PC.csv") %>%
+#    suppressMessages() %>% suppressWarnings()
+#Sys.sleep(1)
+
+
+## New Provincial Accounts
+POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2A/PPA/2025/0012A5GPPA0.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
     write_csv("Data/National Accounts/Provincial Accounts/Openstat-PPA.csv") %>%
     suppressMessages() %>% suppressWarnings()
 Sys.sleep(1)
 
-POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2A/PPA/0022A5GPPA1.px",
+POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2A/PPA/2025/0022A5GPPA1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
     write_csv("Data/National Accounts/Provincial Accounts/Openstat-PPA-Industry.csv") %>%
     suppressMessages() %>% suppressWarnings()
 Sys.sleep(1)
 
-POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2A/PPA/0092A5GPPA8.px",
+POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2A/PPA/2025/0092A5GPPA8.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
     write_csv("Data/National Accounts/Provincial Accounts/Openstat-PPA-PC.csv") %>%
