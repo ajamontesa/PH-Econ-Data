@@ -175,6 +175,8 @@ ngcor <- left_join(
     suppressMessages() %>% suppressWarnings()
 
 
+
+
 ngdebt <- left_join(
     read_xlsx("Data/Fiscal Data/ngdebt.xlsx") %>%
         pivot_longer(cols = -Particulars, names_to = "Month", values_to = "MillionPesos") %>%
@@ -184,7 +186,7 @@ ngdebt <- left_join(
                Month = parse_date(Month, "%B %Y"),
                Quarter = yq(str_c(str_sub(Month, 1, 4), "Q", quarter(Month)))) %>%
         pivot_wider(names_from = Particulars, values_from = MillionPesos) %>%
-        filter(year(Quarter) >= 1993),
+        filter(year(Quarter) >= 2009),
     read_xlsx("Data/National Accounts/PSA-Quarter-Q1-1981-to-latest.xlsx",
               skip = 18, n_max = 1, col_names = c("Expenditure", snaColNames81)) %>%
         pivot_longer(cols = -Expenditure, names_to = "Quarter", values_to = "NominalGDP") %>%
@@ -202,9 +204,83 @@ ngdebt <- left_join(
         ungroup() %>%
         pivot_wider(names_from = Particulars, values_from = MillionPesos) %>%
         mutate(DebtService4Q = roll_sumr(DebtServiceInterestPayment, 4)) %>%
-        filter(year(Quarter) >= 1993)
+        filter(year(Quarter) >= 2009)
 ) %>% mutate(NominalGDP4Q = roll_sumr(NominalGDP, 4)) %>%
     suppressMessages() %>% suppressWarnings()
+
+
+ngdebtservice <- read_xlsx("Data/Fiscal Data/ngdebt.xlsx") %>%
+    pivot_longer(cols = -Particulars, names_to = "Month", values_to = "MillionPesos") %>%
+    filter(Particulars %in% c("Debt Service - Interest Payment")) %>%
+    mutate(Particulars = as_factor(str_remove_all(Particulars, "\\s|-|/|\\(|\\)")),
+           Month = parse_date(Month, "%B %Y"),
+           Quarter = yq(str_c(str_sub(Month, 1, 4), "Q", quarter(Month)))) %>%
+    group_by(Particulars, Quarter) %>%
+    summarize(MillionPesos = sum(MillionPesos, na.rm = TRUE)) %>%
+    ungroup() %>%
+    pivot_wider(names_from = Particulars, values_from = MillionPesos) %>%
+    mutate(DebtService4Q = roll_sumr(DebtServiceInterestPayment, 4))
+
+
+
+ngdebt_quarterly <- left_join(
+    read_xlsx("Data/Fiscal Data/ngdebt.xlsx") %>%
+        pivot_longer(cols = -Particulars, names_to = "Month", values_to = "MillionPesos") %>%
+        filter(Particulars %in% c("Total Obligations", "Actual Obligations",
+                                  "Domestic Debt", "External Debt",
+                                  "Domestic Guaranteed Obligations", "External Guaranteed Obligations"),
+               str_detect(Month, "Mar|Jun|Sep|Dec")) %>%
+        pivot_wider(names_from = "Particulars", values_from = "MillionPesos") %>%
+        transmute(Month = parse_date(Month,  "%B %Y"),
+                  Quarter = yq(str_c(str_sub(Month, 1, 4), "Q", quarter(Month))),
+                  `Total Obligations`,
+                  `Domestic Debt` = `Domestic Debt` + `Domestic Guaranteed Obligations`,
+                  `External Debt` = `External Debt` + `External Guaranteed Obligations`) %>%
+        pivot_longer(cols = -(Month:Quarter), names_to = "Particulars", values_to = "MillionPesos") %>%
+        mutate(Particulars = as_factor(str_remove_all(Particulars, "\\s|-|/|\\(|\\)"))) %>%
+        pivot_wider(names_from = Particulars, values_from = MillionPesos) %>%
+        filter(year(Quarter) >= 2008),
+    read_xlsx("Data/National Accounts/PSA-Quarter-Q1-1981-to-latest.xlsx",
+              skip = 18, n_max = 1, col_names = c("Expenditure", snaColNames81)) %>%
+        pivot_longer(cols = -Expenditure, names_to = "Quarter", values_to = "NominalGDP") %>%
+        mutate(Quarter = as.Date(Quarter)) %>%
+        select(Quarter, NominalGDP)
+) %>% left_join(ngdebtservice) %>%
+    mutate(NominalGDP4Q = roll_sumr(NominalGDP, 4)) %>%
+    suppressMessages() %>% suppressWarnings()
+
+ngdebt_annual <- left_join(
+    read_xlsx("Data/Fiscal Data/ngdebt.xlsx", sheet = "annual") %>%
+        pivot_longer(cols = -Particulars, names_to = "Month", values_to = "MillionPesos") %>%
+        filter(Particulars %in% c("Total Obligations", "Actual Obligations",
+                                  "Domestic Debt", "External Debt",
+                                  "Domestic Guaranteed Obligations", "External Guaranteed Obligations"),
+               as.double(Month) >= 1986) %>%
+        pivot_wider(names_from = "Particulars", values_from = "MillionPesos") %>%
+        transmute(Month = str_c(Month, "-12-01"),
+                  Month = parse_date(Month),
+                  Quarter = yq(str_c(str_sub(Month, 1, 4), "Q", quarter(Month))),
+                  `Total Obligations`,
+                  `Domestic Debt` = `Domestic Debt` + `Domestic Guaranteed Obligations`,
+                  `External Debt` = `External Debt` + `External Guaranteed Obligations`) %>%
+        pivot_longer(cols = -(Month:Quarter), names_to = "Particulars", values_to = "MillionPesos") %>%
+        mutate(Particulars = as_factor(str_remove_all(Particulars, "\\s|-|/|\\(|\\)"))) %>%
+        pivot_wider(names_from = Particulars, values_from = MillionPesos) %>%
+        filter(year(Quarter) <= 2008),
+    read_xlsx("Data/National Accounts/PSA-Quarter-Q1-1981-to-latest.xlsx",
+              skip = 18, n_max = 1, col_names = c("Expenditure", snaColNames81)) %>%
+        pivot_longer(cols = -Expenditure, names_to = "Quarter", values_to = "NominalGDP") %>%
+        mutate(Quarter = as.Date(Quarter)) %>%
+        select(Quarter, NominalGDP) %>%
+        mutate(NominalGDP4Q = roll_sumr(NominalGDP, 4)) %>%
+        suppressMessages() %>% suppressWarnings()
+) %>% left_join(ngdebtservice)
+
+ngdebt <- bind_rows(
+    ngdebt_annual,
+    ngdebt_quarterly %>% filter(Month >= as.Date("2009-01-01"))
+)
+
 
 
 tax_types <- left_join(
