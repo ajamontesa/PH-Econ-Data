@@ -89,7 +89,7 @@ inflation_large <- read_csv("Data/CPI and Inflation/Base 2018/Openstat-cpi1994to
     full_join(read_csv("Data/CPI and Inflation/Base 2018/Openstat-cpi2006to2017.csv", na = "..")) %>%
     full_join(read_csv("Data/CPI and Inflation/Base 2018/Openstat-cpi2018.csv", na = "..") %>%
                   mutate(Geolocation = str_remove(Geolocation, "Bansamoro "))) %>%
-    select(1:(2 + (year(Sys.Date()) - 2006)*13 + (month(Sys.Date()) - 3))) %>%
+    select(1:(2 + (year(Sys.Date()) - 1994)*13 + (month(Sys.Date()) - 2))) %>%
     rename(Commodity = `Commodity Description`) %>%
     pivot_longer(cols = -(Geolocation:Commodity), names_to = "Month",
                  values_to = "CPI", values_transform = list(CPI = as.double)) %>%
@@ -99,6 +99,7 @@ inflation_large <- read_csv("Data/CPI and Inflation/Base 2018/Openstat-cpi1994to
     mutate(Inflation = (CPI/lag(CPI, 12) - 1)) %>%
     ungroup() %>%
     suppressMessages() %>% suppressWarnings()
+
 
 inflation_core <- read_xlsx("Data/CPI and Inflation/Base 2018/PSA-CoreCPI.xlsx", skip = 4) %>%
     select(Month = 2, Core = 5) %>%
@@ -113,6 +114,20 @@ inflation_core <- read_xlsx("Data/CPI and Inflation/Base 2018/PSA-CoreCPI.xlsx",
            Inflation = (Core/lag(Core, 12)) - 1,
            Geolocation = "PHILIPPINES", Commodity = "CORE", CPI = Core) %>%
     select(Geolocation, Commodity, Month, CPI, Inflation) %>%
+    suppressMessages() %>% suppressWarnings()
+
+inflation_core <- read_csv("Data/CPI and Inflation/Base 2018/Openstat-corecpi2018.csv") %>%
+    rename(Commodity = `Commodity Description`) %>%
+    pivot_longer(cols = -(Geolocation:Commodity), names_to = "Month",
+                 values_to = "CPI", values_transform = list(CPI = as.double)) %>%
+    #filter(!str_detect(Month, "Ave")) %>%
+    mutate(Month = parse_date(Month, "%Y %b")) %>%
+    filter(!is.na(Month),
+           Commodity == "0 - ALL ITEMS") %>%
+    group_by(Geolocation, Commodity) %>%
+    mutate(Inflation = (CPI/lag(CPI, 12) - 1),
+           Commodity = "CORE") %>%
+    ungroup() %>%
     suppressMessages() %>% suppressWarnings()
 
 inflation_small <- bind_rows(
