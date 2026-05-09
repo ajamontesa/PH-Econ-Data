@@ -7,8 +7,13 @@ rm(list = ls())
 
 
 # Load National Accounts Data ---------------------------------------------
-snaColNames81 <- str_c(seq.Date(as.Date("1981-01-01"), Sys.Date()-weeks(16), by = "quarter"))
+#snaColNames81 <- str_c(seq.Date(as.Date("1981-01-01"), Sys.Date()-weeks(16), by = "quarter"))
 snaColNames00 <- str_c(seq.Date(as.Date("2000-01-01"), Sys.Date()-weeks(16), by = "quarter"))
+
+sna_ncols <- read_xlsx("Data/National Accounts/PSA-Quarter-Q1-1981-to-latest.xlsx",
+                       skip = 18, n_max = 1) %>%
+    dim() %>% .[[2]] - 1
+snaColNames81 <- str_c(seq.Date(from = as.Date("1981-01-01"), length.out = sna_ncols, by = "quarter"))
 
 
 ## Load Quarterly SNA data from 2000 Q1 to latest quarter
@@ -187,9 +192,8 @@ ngcor <- left_join(
         mutate(Quarter = as.Date(Quarter)) %>%
         select(Quarter, NominalGDP)
 ) %>% mutate(across(.cols = -Quarter, .fns = ~roll_meanr(.x, 4), .names = "{.col}4Q")) %>%
+    filter(NominalGDP > 0) %>%
     suppressMessages() %>% suppressWarnings()
-
-
 
 
 ngdebt <- left_join(
@@ -221,6 +225,7 @@ ngdebt <- left_join(
         mutate(DebtService4Q = roll_sumr(DebtServiceInterestPayment, 4)) %>%
         filter(year(Quarter) >= 2009)
 ) %>% mutate(NominalGDP4Q = roll_sumr(NominalGDP, 4)) %>%
+    filter(NominalGDP > 0) %>%
     suppressMessages() %>% suppressWarnings()
 
 
@@ -235,7 +240,6 @@ ngdebtservice <- read_xlsx("Data/Fiscal Data/ngdebt.xlsx") %>%
     ungroup() %>%
     pivot_wider(names_from = Particulars, values_from = MillionPesos) %>%
     mutate(DebtService4Q = roll_sumr(DebtServiceInterestPayment, 4))
-
 
 
 ngdebt_quarterly <- left_join(
@@ -262,6 +266,7 @@ ngdebt_quarterly <- left_join(
         select(Quarter, NominalGDP)
 ) %>% left_join(ngdebtservice) %>%
     mutate(NominalGDP4Q = roll_sumr(NominalGDP, 4)) %>%
+    filter(NominalGDP > 0) %>%
     suppressMessages() %>% suppressWarnings()
 
 ngdebt_annual <- left_join(
