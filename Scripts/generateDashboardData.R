@@ -162,6 +162,22 @@ inflation_main <- inflation_large %>%
 
 rm(inflation_large)
 
+deflators <- left_join(
+    read_xlsx("Data/National Accounts/PSA-Annual-1946-to-latest.xlsx", sheet = "Current_2018based", 
+              range = cell_limits(c(9, 1), c(14, NA))) %>%
+        filter(`Major Industries` == "Gross Domestic Product") %>%
+        pivot_longer(cols = -`Major Industries`, names_to = "Year", values_to = "NominalGDP"),
+    read_xlsx("Data/National Accounts/PSA-Annual-1946-to-latest.xlsx", sheet = "Constant_2018based", 
+              range = cell_limits(c(9, 1), c(14, NA))) %>%
+        filter(`Major Industries` == "Gross Domestic Product") %>%
+        pivot_longer(cols = -`Major Industries`, names_to = "Year", values_to = "RealGDP")
+) %>%
+    transmute(Year, GDPDeflator = NominalGDP/RealGDP*100) %>%
+    right_join(
+        read_xls("Data/CPI and Inflation/Base 2018/BSP-prices2018.xls", sheet = "Annual PHL", 
+                 range = cell_limits(c(7, 2), c(NA, 4))) %>%
+            select(Year, CPI = `All Items`)
+    )
 
 
 # Load Employment Data ----------------------------------------------------

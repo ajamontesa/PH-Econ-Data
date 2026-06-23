@@ -33,62 +33,49 @@ download.file(url = "https://www.bsp.gov.ph/Statistics/Real%20Sector%20Accounts/
 # PSA Website National Accounts -------------------------------------------
 writeLines("Downloading National Accounts Data from the PSA website.")
 
-# Scrape a list of links from the latest SNA release from the PSA site
+# Scrape the .xlsx links (needs a fresh cf_clearance cookie + UA; see helper).
+source("Scripts/getPSALinks.R")   # -> creates `psafiles` and `psa_get()`
 
-# Old PSA Website : https://psa.gov.ph/national-accounts/base-2018/data-series
-#psafiles <- read_html("https://psa.gov.ph/national-accounts/base-2018/data-series") %>% 
-#    html_nodes(xpath = '//*[@id="content"]/div/div[1]/div/section/div/div/div/div/table/tbody/tr/td[2]/table/tr/td[1]/div/div/ul/li/span/a') %>% 
-#    html_attr("href")
-
-# Download the latest Quarterly and Annual SNA data
-#download.file(url = psafiles[1], method = "curl",
-#              destfile = "Data/National Accounts/PSA-01Summary_2018PSNA_Qrt.xlsx")
-#download.file(url = psafiles[2], method = "curl",
-#              destfile = "Data/National Accounts/PSA-01Summary_2018PSNA_Ann.xlsx")
-
-# Download the Quarterly and Annual Long Time Series SNA data
-#download.file(url = psafiles[43], method = "curl",
-#              destfile = "Data/National Accounts/PSA-Quarter-Q1-1981-to-latest.xlsx")
-#download.file(url = psafiles[44], method = "curl",
-#              destfile = "Data/National Accounts/PSA-Annual-1946-to-latest.xlsx")
-# Download Other SNA files
-#for (f in psafiles[c(3:42)]) {
-#    download.file(url = f, method = "curl",
-#                  destfile = str_c("Data/National Accounts/PSA-",
-#                                   str_extract(str_remove(f, "^h.+/"), "\\d.+(Qrt|Ann)"),
-#                                   ".xlsx"))
-#}
-
-# New PSA Website
-psafiles <- read_html("https://psa.gov.ph/statistics/national-accounts/data-series") %>% 
-    html_nodes(xpath = '//*[@id="content"]/div/div/div/div[1]/div/div/div/div/div/div/div/table/tbody/tr/td[2]/span/a') %>% 
-    html_attr("href")
-
-psafiles <- str_c("https://psa.gov.ph", psafiles)
-
-# Download the latest Quarterly and Annual SNA data
-download.file(url = psafiles[str_detect(psafiles, "Summary(.*)Qrt")], method = "curl",
-              destfile = "Data/National Accounts/PSA-01Summary_2018PSNA_Qrt.xlsx")
-download.file(url = psafiles[str_detect(psafiles, "Summary(.*)Ann")], method = "curl",
-              destfile = "Data/National Accounts/PSA-01Summary_2018PSNA_Ann.xlsx")
-
-# Download the Quarterly and Annual Long Time Series SNA data
-download.file(url = psafiles[str_detect(psafiles, "1981")], method = "curl",
-              destfile = "Data/National Accounts/PSA-Quarter-Q1-1981-to-latest.xlsx")
-download.file(url = psafiles[str_detect(psafiles, "1946")], method = "curl",
-              destfile = "Data/National Accounts/PSA-Annual-1946-to-latest.xlsx")
-
-# Download Other SNA files
-for (f in psafiles[str_detect(psafiles, "(HFCE|DEQ|EOG|EOS|IOG|IOS|AFF|MAQ|MFG|ESWW|CNS|TRD|TAS|AFSA|IAC|FIA|REOD|EDUC|HHSW|OS)")]) {
-    download.file(url = f, method = "curl",
-                  destfile = str_c("Data/National Accounts/PSA-",
-                                   str_extract(str_remove(f, "^h.+/"), "\\d.+(Qrt|Ann)"),
-                                   ".xlsx"))
+# Download one known URL, validating that we really got an .xlsx (zip = "PK").
+fetch_xlsx <- function(url, dest) {
+    path <- file.path("Data/National Accounts", dest)
+    psa_get(url, path)
+    ok <- file.exists(path) && file.size(path) > 1000 &&
+        identical(readBin(path, "raw", 2), as.raw(c(0x50, 0x4b)))
+    if (!ok) warning("Bad download for ", dest, " (", file.size(path),
+                     " bytes) - cf_clearance may have expired; refresh & retry.")
+    else writeLines(str_c("  saved ", dest))
+    invisible(ok)
 }
 
+# Select a single link by regex, then download it.
+fetch_by <- function(pattern, dest) {
+    hit <- psafiles[str_detect(psafiles, pattern)]
+    if (length(hit) != 1) {
+        warning("No unique match for '", pattern, "' (", length(hit),
+                " found); skipping ", dest)
+        return(invisible(FALSE))
+    }
+    fetch_xlsx(hit, dest)
+}
 
-rm(psafiles, f)
+# Latest quarterly & annual summary
+fetch_by("Summary(.*)Qrt", "PSA-01Summary_2018PSNA_Qrt.xlsx")
+fetch_by("Summary(.*)Ann", "PSA-01Summary_2018PSNA_Ann.xlsx")
 
+# Long time series
+fetch_by("1981", "PSA-Quarter-Q1-1981-to-latest.xlsx")
+fetch_by("1946", "PSA-Annual-1946-to-latest.xlsx")
+
+# Component (expenditure & industry) files
+for (f in psafiles[str_detect(psafiles,
+                              "(HFCE|DEQ|EOG|EOS|IOG|IOS|AFF|MAQ|MFG|ESWW|CNS|TRD|TAS|AFSA|IAC|FIA|REOD|EDUC|HHSW|OS)")]) {
+    nm <- str_extract(basename(f), "\\d.+(Qrt|Ann)")
+    fetch_xlsx(f, str_c("PSA-", nm, ".xlsx"))
+    Sys.sleep(0.5)
+}
+
+rm(psafiles)
 
 
 # PSA Website Regional Accounts -------------------------------------------

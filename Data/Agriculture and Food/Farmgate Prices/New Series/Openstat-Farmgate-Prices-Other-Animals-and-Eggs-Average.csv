@@ -1,0 +1,757 @@
+Geolocation,Type,2025 Q1,2025 Q2,2025 Q3,2025 Q4,2025 Annual,2026 Q1,2026 Q2,2026 Q3,2026 Q4,2026 Annual
+PHILIPPINES,Horse for Slaughter,134.97,167.31,151.17,133.43,146.72,158.00,*/,*/,*/,*/
+PHILIPPINES,Rabbit for Slaughter,229.06,235.95,220.49,217.73,225.81,213.48,*/,*/,*/,*/
+PHILIPPINES,Sheep for Slaughter,236.07,235.09,238.21,230.46,234.96,220.27,*/,*/,*/,*/
+PHILIPPINES,Goose for Dressing,202.08,255.25,287.26,273.10,254.42,260.00,*/,*/,*/,*/
+PHILIPPINES,Quail for Dressing,112.64,131.32,66.75,96.73,101.86,80.35,*/,*/,*/,*/
+PHILIPPINES,Turkey for Dressing,325.50,304.43,297.92,302.14,307.50,296.40,*/,*/,*/,*/
+PHILIPPINES,Quail Egg,1.70,1.57,1.63,1.59,1.62,1.87,*/,*/,*/,*/
+..National Capital Region (NCR),Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+..National Capital Region (NCR),Rabbit for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+..National Capital Region (NCR),Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+..National Capital Region (NCR),Goose for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+..National Capital Region (NCR),Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+..National Capital Region (NCR),Turkey for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+..National Capital Region (NCR),Quail Egg,..,..,..,..,..,..,*/,*/,*/,*/
+..Cordillera Administrative Region (CAR),Horse for Slaughter,250.00,250.00,..,..,250.00,250.00,*/,*/,*/,*/
+..Cordillera Administrative Region (CAR),Rabbit for Slaughter,216.46,164.12,151.78,155.16,171.88,148.32,*/,*/,*/,*/
+..Cordillera Administrative Region (CAR),Sheep for Slaughter,263.56,313.15,297.67,294.63,292.25,291.81,*/,*/,*/,*/
+..Cordillera Administrative Region (CAR),Goose for Dressing,180.63,..,181.69,124.86,162.39,188.53,*/,*/,*/,*/
+..Cordillera Administrative Region (CAR),Quail for Dressing,..,..,100.00,..,100.00,120.00,*/,*/,*/,*/
+..Cordillera Administrative Region (CAR),Turkey for Dressing,202.61,..,338.89,329.71,290.40,332.02,*/,*/,*/,*/
+..Cordillera Administrative Region (CAR),Quail Egg,1.50,..,1.50,1.50,1.50,..,*/,*/,*/,*/
+....Abra,Horse for Slaughter,..,.,..,..,..,250.00,*/,*/,*/,*/
+....Abra,Rabbit for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Abra,Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Abra,Goose for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Abra,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Abra,Turkey for Dressing,..,..,300.00,300.00,300.00,300.00,*/,*/,*/,*/
+....Abra,Quail Egg,..,..,..,..,..,..,*/,*/,*/,*/
+....Apayao,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Apayao,Rabbit for Slaughter,300.00,170.00,150.00,150.00,192.50,150.00,*/,*/,*/,*/
+....Apayao,Sheep for Slaughter,266.67,316.67,300.00,300.00,295.83,300.00,*/,*/,*/,*/
+....Apayao,Goose for Dressing,..,..,180.00,300.00,240.00,300.00,*/,*/,*/,*/
+....Apayao,Quail for Dressing,..,..,..,..,..,120.00,*/,*/,*/,*/
+....Apayao,Turkey for Dressing,..,..,416.67,400.00,408.33,400.00,*/,*/,*/,*/
+....Apayao,Quail Egg,..,..,..,..,..,..,*/,*/,*/,*/
+....Benguet,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Benguet,Rabbit for Slaughter,150.00,150.00,150.00,130.00,145.00,100.00,*/,*/,*/,*/
+....Benguet,Sheep for Slaughter,..,300.00,..,..,300.00,..,*/,*/,*/,*/
+....Benguet,Goose for Dressing,180.00,..,150.00,150.00,160.00,150.00,*/,*/,*/,*/
+....Benguet,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Benguet,Turkey for Dressing,250.00,..,..,200.00,225.00,200.00,*/,*/,*/,*/
+....Benguet,Quail Egg,..,..,..,..,..,..,*/,*/,*/,*/
+....Ifugao,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Ifugao,Rabbit for Slaughter,150.00,150.00,150.00,150.00,150.00,150.00,*/,*/,*/,*/
+....Ifugao,Sheep for Slaughter,300.00,300.00,300.00,300.00,300.00,300.00,*/,*/,*/,*/
+....Ifugao,Goose for Dressing,180.00,200.00,..,20.00,133.33,180.00,*/,*/,*/,*/
+....Ifugao,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Ifugao,Turkey for Dressing,180.00,..,..,250.00,215.00,..,*/,*/,*/,*/
+....Ifugao,Quail Egg,..,..,..,..,..,..,*/,*/,*/,*/
+....Kalinga,Horse for Slaughter,250.00,250.00,..,..,250.00,..,*/,*/,*/,*/
+....Kalinga,Rabbit for Slaughter,150.00,173.33,150.00,150.00,155.83,..,*/,*/,*/,*/
+....Kalinga,Sheep for Slaughter,230.00,280.00,280.00,280.00,267.50,280.00,*/,*/,*/,*/
+....Kalinga,Goose for Dressing,190.00,..,180.00,200.00,190.00,200.00,*/,*/,*/,*/
+....Kalinga,Quail for Dressing,..,..,100.00,..,100.00,..,*/,*/,*/,*/
+....Kalinga,Turkey for Dressing,200.00,..,300.00,300.00,266.67,300.00,*/,*/,*/,*/
+....Kalinga,Quail Egg,1.50,..,1.50,1.50,1.50,..,*/,*/,*/,*/
+....Mountain Province,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Mountain Province,Rabbit for Slaughter,166.67,193.33,198.12,198.12,189.06,198.12,*/,*/,*/,*/
+....Mountain Province,Sheep for Slaughter,250.00,300.00,..,..,275.00,..,*/,*/,*/,*/
+....Mountain Province,Goose for Dressing,..,..,200.00,..,200.00,200.00,*/,*/,*/,*/
+....Mountain Province,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Mountain Province,Turkey for Dressing,..,..,183.33,..,183.33,..,*/,*/,*/,*/
+....Mountain Province,Quail Egg,..,..,..,..,..,..,*/,*/,*/,*/
+..REGION I (ILOCOS REGION),Horse for Slaughter,271.96,286.98,290.67,295.93,286.38,293.42,*/,*/,*/,*/
+..REGION I (ILOCOS REGION),Rabbit for Slaughter,169.37,252.96,152.70,173.19,187.05,200.97,*/,*/,*/,*/
+..REGION I (ILOCOS REGION),Sheep for Slaughter,249.72,223.46,223.84,237.66,233.67,227.22,*/,*/,*/,*/
+..REGION I (ILOCOS REGION),Goose for Dressing,180.43,194.49,233.17,199.25,201.84,203.18,*/,*/,*/,*/
+..REGION I (ILOCOS REGION),Quail for Dressing,57.62,76.46,100.42,103.22,84.43,99.42,*/,*/,*/,*/
+..REGION I (ILOCOS REGION),Turkey for Dressing,205.00,202.05,212.37,212.60,208.00,189.99,*/,*/,*/,*/
+..REGION I (ILOCOS REGION),Quail Egg,1.54,1.61,1.53,1.74,1.60,1.54,*/,*/,*/,*/
+....Ilocos Norte,Horse for Slaughter,273.33,275.00,300.00,300.00,287.08,300.00,*/,*/,*/,*/
+....Ilocos Norte,Rabbit for Slaughter,140.00,140.00,140.00,140.00,140.00,140.00,*/,*/,*/,*/
+....Ilocos Norte,Sheep for Slaughter,231.17,220.09,220.13,225.08,224.11,225.97,*/,*/,*/,*/
+....Ilocos Norte,Goose for Dressing,170.00,170.00,170.00,170.00,170.00,170.00,*/,*/,*/,*/
+....Ilocos Norte,Quail for Dressing,75.00,75.00,75.00,75.00,75.00,75.00,*/,*/,*/,*/
+....Ilocos Norte,Turkey for Dressing,205.00,200.07,200.00,200.00,201.27,220.00,*/,*/,*/,*/
+....Ilocos Norte,Quail Egg,1.54,1.50,1.50,1.50,1.51,1.96,*/,*/,*/,*/
+....Ilocos Sur,Horse for Slaughter,270.00,300.00,276.67,280.00,281.67,280.00,*/,*/,*/,*/
+....Ilocos Sur,Rabbit for Slaughter,350.00,350.00,345.45,280.00,331.36,293.33,*/,*/,*/,*/
+....Ilocos Sur,Sheep for Slaughter,247.67,253.03,250.00,253.33,251.01,250.00,*/,*/,*/,*/
+....Ilocos Sur,Goose for Dressing,180.00,250.00,250.00,250.00,232.50,250.00,*/,*/,*/,*/
+....Ilocos Sur,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Ilocos Sur,Turkey for Dressing,..,300.00,252.42,300.00,284.14,300.00,*/,*/,*/,*/
+....Ilocos Sur,Quail Egg,2.50,2.50,1.92,1.75,2.17,1.75,*/,*/,*/,*/
+....La Union,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....La Union,Rabbit for Slaughter,140.00,125.00,133.33,123.33,130.42,116.67,*/,*/,*/,*/
+....La Union,Sheep for Slaughter,250.00,250.00,250.00,223.33,243.33,278.33,*/,*/,*/,*/
+....La Union,Goose for Dressing,200.00,..,200.00,223.33,207.78,225.00,*/,*/,*/,*/
+....La Union,Quail for Dressing,65.00,79.29,112.73,..,85.67,..,*/,*/,*/,*/
+....La Union,Turkey for Dressing,..,193.34,200.00,173.33,188.89,168.33,*/,*/,*/,*/
+....La Union,Quail Egg,1.80,1.59,1.51,1.53,1.61,1.60,*/,*/,*/,*/
+....Pangasinan,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Pangasinan,Rabbit for Slaughter,146.67,205.00,200.00,203.33,188.75,140.00,*/,*/,*/,*/
+....Pangasinan,Sheep for Slaughter,319.75,260.00,236.67,249.98,266.60,220.00,*/,*/,*/,*/
+....Pangasinan,Goose for Dressing,200.00,..,300.00,200.00,233.33,190.00,*/,*/,*/,*/
+....Pangasinan,Quail for Dressing,50.00,70.00,100.00,103.33,80.83,100.00,*/,*/,*/,*/
+....Pangasinan,Turkey for Dressing,..,..,250.00,250.00,250.00,200.00,*/,*/,*/,*/
+....Pangasinan,Quail Egg,1.50,1.50,1.50,1.85,1.59,1.50,*/,*/,*/,*/
+..REGION II (CAGAYAN VALLEY),Horse for Slaughter,168.75,131.56,137.61,173.64,152.89,162.71,*/,*/,*/,*/
+..REGION II (CAGAYAN VALLEY),Rabbit for Slaughter,272.33,250.00,277.71,261.26,265.33,286.98,*/,*/,*/,*/
+..REGION II (CAGAYAN VALLEY),Sheep for Slaughter,298.61,284.03,292.52,287.30,290.61,290.84,*/,*/,*/,*/
+..REGION II (CAGAYAN VALLEY),Goose for Dressing,268.98,..,391.99,381.73,347.57,350.40,*/,*/,*/,*/
+..REGION II (CAGAYAN VALLEY),Quail for Dressing,90.98,..,127.14,126.70,114.94,120.00,*/,*/,*/,*/
+..REGION II (CAGAYAN VALLEY),Turkey for Dressing,278.04,..,340.55,334.55,317.71,342.73,*/,*/,*/,*/
+..REGION II (CAGAYAN VALLEY),Quail Egg,1.70,1.84,1.69,1.57,1.70,1.98,*/,*/,*/,*/
+....Batanes,Horse for Slaughter,100.00,100.00,120.00,150.00,117.50,150.00,*/,*/,*/,*/
+....Batanes,Rabbit for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Batanes,Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Batanes,Goose for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Batanes,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Batanes,Turkey for Dressing,200.00,250.00,200.00,200.00,212.50,..,*/,*/,*/,*/
+....Batanes,Quail Egg,..,..,..,..,..,..,*/,*/,*/,*/
+....Cagayan,Horse for Slaughter,250.00,200.00,175.00,175.00,200.00,200.00,*/,*/,*/,*/
+....Cagayan,Rabbit for Slaughter,250.00,250.00,250.00,250.00,250.00,250.00,*/,*/,*/,*/
+....Cagayan,Sheep for Slaughter,281.15,277.92,285.31,268.04,278.11,278.92,*/,*/,*/,*/
+....Cagayan,Goose for Dressing,160.00,..,400.00,400.00,320.00,266.67,*/,*/,*/,*/
+....Cagayan,Quail for Dressing,120.00,..,120.00,120.00,120.00,120.00,*/,*/,*/,*/
+....Cagayan,Turkey for Dressing,350.00,..,180.00,320.00,283.33,300.00,*/,*/,*/,*/
+....Cagayan,Quail Egg,..,..,1.50,1.50,1.50,1.50,*/,*/,*/,*/
+....Isabela,Horse for Slaughter,250.00,..,..,..,250.00,..,*/,*/,*/,*/
+....Isabela,Rabbit for Slaughter,300.00,250.00,..,250.00,266.67,..,*/,*/,*/,*/
+....Isabela,Sheep for Slaughter,350.00,250.00,250.00,250.00,275.00,250.00,*/,*/,*/,*/
+....Isabela,Goose for Dressing,500.00,..,400.00,400.00,433.33,400.00,*/,*/,*/,*/
+....Isabela,Quail for Dressing,90.00,..,128.15,..,109.08,..,*/,*/,*/,*/
+....Isabela,Turkey for Dressing,450.00,..,350.00,350.00,383.33,350.00,*/,*/,*/,*/
+....Isabela,Quail Egg,1.70,1.90,1.70,1.54,1.71,2.00,*/,*/,*/,*/
+....Nueva Vizcaya,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Nueva Vizcaya,Rabbit for Slaughter,300.00,250.00,300.00,300.00,287.50,300.00,*/,*/,*/,*/
+....Nueva Vizcaya,Sheep for Slaughter,300.00,300.00,300.00,300.00,300.00,300.00,*/,*/,*/,*/
+....Nueva Vizcaya,Goose for Dressing,450.00,205.00,..,..,327.50,300.00,*/,*/,*/,*/
+....Nueva Vizcaya,Quail for Dressing,90.00,180.00,120.00,120.00,127.50,120.00,*/,*/,*/,*/
+....Nueva Vizcaya,Turkey for Dressing,230.00,350.00,350.00,350.00,320.00,350.00,*/,*/,*/,*/
+....Nueva Vizcaya,Quail Egg,..,2.00,2.00,2.00,2.00,2.00,*/,*/,*/,*/
+....Quirino,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Quirino,Rabbit for Slaughter,250.00,250.00,250.00,..,250.00,..,*/,*/,*/,*/
+....Quirino,Sheep for Slaughter,300.00,300.00,300.00,300.00,300.00,300.00,*/,*/,*/,*/
+....Quirino,Goose for Dressing,300.00,250.00,283.33,283.33,279.17,300.00,*/,*/,*/,*/
+....Quirino,Quail for Dressing,90.00,..,128.33,128.33,115.56,..,*/,*/,*/,*/
+....Quirino,Turkey for Dressing,350.00,350.00,350.00,350.00,350.00,350.00,*/,*/,*/,*/
+....Quirino,Quail Egg,1.73,..,1.68,1.73,1.72,2.00,*/,*/,*/,*/
+..REGION III (CENTRAL LUZON),Horse for Slaughter,150.00,150.00,175.00,..,158.33,150.00,*/,*/,*/,*/
+..REGION III (CENTRAL LUZON),Rabbit for Slaughter,170.11,168.34,163.22,181.13,170.70,154.17,*/,*/,*/,*/
+..REGION III (CENTRAL LUZON),Sheep for Slaughter,237.59,243.53,235.92,250.36,241.85,241.17,*/,*/,*/,*/
+..REGION III (CENTRAL LUZON),Goose for Dressing,151.69,..,221.22,256.22,209.71,283.14,*/,*/,*/,*/
+..REGION III (CENTRAL LUZON),Quail for Dressing,126.90,147.09,33.50,79.48,96.74,73.04,*/,*/,*/,*/
+..REGION III (CENTRAL LUZON),Turkey for Dressing,216.67,230.81,276.76,299.51,255.94,292.48,*/,*/,*/,*/
+..REGION III (CENTRAL LUZON),Quail Egg,1.66,1.30,1.42,1.40,1.45,1.73,*/,*/,*/,*/
+....Aurora,Horse for Slaughter,150.00,..,..,..,150.00,..,*/,*/,*/,*/
+....Aurora,Rabbit for Slaughter,..,..,..,200.00,200.00,..,*/,*/,*/,*/
+....Aurora,Sheep for Slaughter,..,..,200.00,200.00,200.00,..,*/,*/,*/,*/
+....Aurora,Goose for Dressing,..,..,220.00,220.00,220.00,..,*/,*/,*/,*/
+....Aurora,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Aurora,Turkey for Dressing,..,..,..,400.00,400.00,..,*/,*/,*/,*/
+....Aurora,Quail Egg,..,..,..,..,..,..,*/,*/,*/,*/
+....Bataan,Horse for Slaughter,150.00,150.00,175.00,..,158.33,150.00,*/,*/,*/,*/
+....Bataan,Rabbit for Slaughter,175.00,175.00,175.00,175.00,175.00,175.00,*/,*/,*/,*/
+....Bataan,Sheep for Slaughter,210.00,240.00,240.00,240.00,232.50,240.00,*/,*/,*/,*/
+....Bataan,Goose for Dressing,170.00,..,250.00,250.00,223.33,250.00,*/,*/,*/,*/
+....Bataan,Quail for Dressing,100.00,80.00,100.00,100.00,95.00,100.00,*/,*/,*/,*/
+....Bataan,Turkey for Dressing,200.00,..,250.00,250.00,233.33,250.00,*/,*/,*/,*/
+....Bataan,Quail Egg,1.55,1.60,1.70,1.70,1.64,1.51,*/,*/,*/,*/
+....Bulacan,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Bulacan,Rabbit for Slaughter,181.59,156.00,143.52,185.16,166.57,182.66,*/,*/,*/,*/
+....Bulacan,Sheep for Slaughter,220.00,220.00,220.00,220.00,220.00,220.00,*/,*/,*/,*/
+....Bulacan,Goose for Dressing,..,..,300.00,300.00,300.00,300.00,*/,*/,*/,*/
+....Bulacan,Quail for Dressing,200.00,160.00,30.00,80.00,117.50,78.66,*/,*/,*/,*/
+....Bulacan,Turkey for Dressing,..,..,..,450.00,450.00,450.00,*/,*/,*/,*/
+....Bulacan,Quail Egg,1.70,1.34,1.46,1.41,1.48,1.83,*/,*/,*/,*/
+....Nueva Ecija,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Nueva Ecija,Rabbit for Slaughter,..,..,180.00,..,180.00,..,*/,*/,*/,*/
+....Nueva Ecija,Sheep for Slaughter,243.57,..,250.00,261.21,251.59,267.00,*/,*/,*/,*/
+....Nueva Ecija,Goose for Dressing,..,..,194.53,198.00,196.26,180.00,*/,*/,*/,*/
+....Nueva Ecija,Quail for Dressing,50.00,41.67,58.57,60.00,52.56,60.00,*/,*/,*/,*/
+....Nueva Ecija,Turkey for Dressing,275.00,..,350.00,350.00,325.00,250.10,*/,*/,*/,*/
+....Nueva Ecija,Quail Egg,1.68,1.76,1.91,1.78,1.78,1.60,*/,*/,*/,*/
+....Pampanga,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Pampanga,Rabbit for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Pampanga,Sheep for Slaughter,219.71,220.00,204.77,216.40,215.22,215.00,*/,*/,*/,*/
+....Pampanga,Goose for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Pampanga,Quail for Dressing,80.00,..,..,..,80.00,..,*/,*/,*/,*/
+....Pampanga,Turkey for Dressing,..,460.00,..,460.00,460.00,475.00,*/,*/,*/,*/
+....Pampanga,Quail Egg,1.67,1.18,1.28,1.26,1.35,1.58,*/,*/,*/,*/
+....Tarlac,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Tarlac,Rabbit for Slaughter,214.94,157.23,186.24,138.95,174.34,138.44,*/,*/,*/,*/
+....Tarlac,Sheep for Slaughter,250.00,250.00,258.33,258.33,254.17,260.00,*/,*/,*/,*/
+....Tarlac,Goose for Dressing,190.00,190.00,190.00,193.33,190.83,190.00,*/,*/,*/,*/
+....Tarlac,Quail for Dressing,80.00,30.00,33.33,113.97,64.33,80.00,*/,*/,*/,*/
+....Tarlac,Turkey for Dressing,205.00,184.78,190.00,277.02,214.20,263.72,*/,*/,*/,*/
+....Tarlac,Quail Egg,1.58,0.95,1.35,1.50,1.35,1.50,*/,*/,*/,*/
+....Zambales,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Zambales,Rabbit for Slaughter,150.00,175.00,..,..,162.50,135.00,*/,*/,*/,*/
+....Zambales,Sheep for Slaughter,317.86,..,..,250.00,283.93,300.00,*/,*/,*/,*/
+....Zambales,Goose for Dressing,150.00,300.00,283.33,300.00,258.33,293.33,*/,*/,*/,*/
+....Zambales,Quail for Dressing,73.33,..,..,..,73.33,80.00,*/,*/,*/,*/
+....Zambales,Turkey for Dressing,..,..,325.00,333.33,329.17,350.00,*/,*/,*/,*/
+....Zambales,Quail Egg,1.10,1.25,..,..,1.18,1.33,*/,*/,*/,*/
+..REGION IV-A (CALABARZON),Horse for Slaughter,200.00,231.99,243.91,240.03,228.98,240.03,*/,*/,*/,*/
+..REGION IV-A (CALABARZON),Rabbit for Slaughter,233.39,219.78,264.52,299.43,254.28,185.60,*/,*/,*/,*/
+..REGION IV-A (CALABARZON),Sheep for Slaughter,..,280.00,240.00,..,260.00,246.15,*/,*/,*/,*/
+..REGION IV-A (CALABARZON),Goose for Dressing,220.00,..,200.25,206.76,209.00,200.00,*/,*/,*/,*/
+..REGION IV-A (CALABARZON),Quail for Dressing,..,25.93,210.00,84.88,106.94,61.84,*/,*/,*/,*/
+..REGION IV-A (CALABARZON),Turkey for Dressing,220.00,..,..,209.28,214.64,207.71,*/,*/,*/,*/
+..REGION IV-A (CALABARZON),Quail Egg,1.53,1.48,1.51,1.43,1.49,1.59,*/,*/,*/,*/
+....Batangas,Horse for Slaughter,200.00,200.00,200.00,206.67,201.67,206.67,*/,*/,*/,*/
+....Batangas,Rabbit for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Batangas,Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Batangas,Goose for Dressing,..,..,210.00,220.00,215.00,..,*/,*/,*/,*/
+....Batangas,Quail for Dressing,..,35.00,210.00,166.98,137.33,80.00,*/,*/,*/,*/
+....Batangas,Turkey for Dressing,..,..,..,260.00,260.00,260.00,*/,*/,*/,*/
+....Batangas,Quail Egg,1.42,1.49,1.50,1.40,1.45,1.50,*/,*/,*/,*/
+....Cavite,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Cavite,Rabbit for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Cavite,Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Cavite,Goose for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Cavite,Quail for Dressing,..,..,..,50.00,50.00,55.00,*/,*/,*/,*/
+....Cavite,Turkey for Dressing,..,..,..,..,..,100.00,*/,*/,*/,*/
+....Cavite,Quail Egg,1.31,1.35,..,1.35,1.34,1.30,*/,*/,*/,*/
+....Laguna,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Laguna,Rabbit for Slaughter,..,200.00,330.00,340.00,290.00,..,*/,*/,*/,*/
+....Laguna,Sheep for Slaughter,..,280.00,..,..,280.00,246.15,*/,*/,*/,*/
+....Laguna,Goose for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Laguna,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Laguna,Turkey for Dressing,..,160.00,..,..,160.00,..,*/,*/,*/,*/
+....Laguna,Quail Egg,..,1.20,1.40,1.50,1.37,1.50,*/,*/,*/,*/
+....Quezon,Horse for Slaughter,..,250.00,250.00,250.00,250.00,250.00,*/,*/,*/,*/
+....Quezon,Rabbit for Slaughter,250.00,220.00,170.00,170.00,202.50,200.00,*/,*/,*/,*/
+....Quezon,Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Quezon,Goose for Dressing,220.00,220.00,200.00,200.00,210.00,200.00,*/,*/,*/,*/
+....Quezon,Quail for Dressing,..,25.00,..,60.00,42.50,60.00,*/,*/,*/,*/
+....Quezon,Turkey for Dressing,220.00,240.00,..,200.00,220.00,200.00,*/,*/,*/,*/
+....Quezon,Quail Egg,1.70,1.70,1.70,1.70,1.70,1.62,*/,*/,*/,*/
+....Rizal,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Rizal,Rabbit for Slaughter,200.00,250.00,324.62,350.00,281.16,183.06,*/,*/,*/,*/
+....Rizal,Sheep for Slaughter,..,..,240.00,..,240.00,..,*/,*/,*/,*/
+....Rizal,Goose for Dressing,..,..,200.00,220.00,210.00,..,*/,*/,*/,*/
+....Rizal,Quail for Dressing,..,..,..,96.00,96.00,76.67,*/,*/,*/,*/
+....Rizal,Turkey for Dressing,..,..,..,240.00,240.00,240.00,*/,*/,*/,*/
+....Rizal,Quail Egg,1.50,..,1.50,1.50,1.50,1.55,*/,*/,*/,*/
+..MIMAROPA REGION,Horse for Slaughter,244.36,280.00,250.00,253.33,256.92,280.00,*/,*/,*/,*/
+..MIMAROPA REGION,Rabbit for Slaughter,325.00,265.26,280.87,274.82,286.49,325.00,*/,*/,*/,*/
+..MIMAROPA REGION,Sheep for Slaughter,189.63,278.21,230.56,232.16,232.64,213.79,*/,*/,*/,*/
+..MIMAROPA REGION,Goose for Dressing,200.00,228.04,236.34,231.38,223.94,243.59,*/,*/,*/,*/
+..MIMAROPA REGION,Quail for Dressing,100.00,149.45,106.67,108.33,116.11,109.98,*/,*/,*/,*/
+..MIMAROPA REGION,Turkey for Dressing,246.58,250.64,256.48,261.02,253.68,323.31,*/,*/,*/,*/
+..MIMAROPA REGION,Quail Egg,1.95,1.49,1.99,1.88,1.83,1.99,*/,*/,*/,*/
+....Marinduque,Horse for Slaughter,280.00,280.00,250.00,253.33,265.83,280.00,*/,*/,*/,*/
+....Marinduque,Rabbit for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Marinduque,Sheep for Slaughter,..,..,..,..,..,200.00,*/,*/,*/,*/
+....Marinduque,Goose for Dressing,200.00,..,200.00,190.00,196.67,..,*/,*/,*/,*/
+....Marinduque,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Marinduque,Turkey for Dressing,240.00,..,200.00,200.00,213.33,240.00,*/,*/,*/,*/
+....Marinduque,Quail Egg,..,..,..,..,..,..,*/,*/,*/,*/
+....Occidental Mindoro,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Occidental Mindoro,Rabbit for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Occidental Mindoro,Sheep for Slaughter,..,..,..,..,..,220.00,*/,*/,*/,*/
+....Occidental Mindoro,Goose for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Occidental Mindoro,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Occidental Mindoro,Turkey for Dressing,..,..,..,..,..,300.00,*/,*/,*/,*/
+....Occidental Mindoro,Quail Egg,..,..,..,..,..,..,*/,*/,*/,*/
+....Oriental Mindoro,Horse for Slaughter,229.67,..,..,..,229.67,..,*/,*/,*/,*/
+....Oriental Mindoro,Rabbit for Slaughter,325.00,356.67,356.67,360.00,349.58,325.00,*/,*/,*/,*/
+....Oriental Mindoro,Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Oriental Mindoro,Goose for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Oriental Mindoro,Quail for Dressing,110.00,150.00,..,..,130.00,110.00,*/,*/,*/,*/
+....Oriental Mindoro,Turkey for Dressing,240.00,250.00,300.00,300.00,272.50,276.67,*/,*/,*/,*/
+....Oriental Mindoro,Quail Egg,1.95,1.50,1.99,1.90,1.83,2.00,*/,*/,*/,*/
+....Palawan,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Palawan,Rabbit for Slaughter,..,293.33,306.67,270.00,290.00,..,*/,*/,*/,*/
+....Palawan,Sheep for Slaughter,187.27,278.21,230.56,232.16,232.05,214.44,*/,*/,*/,*/
+....Palawan,Goose for Dressing,200.00,230.22,236.67,236.67,225.89,243.59,*/,*/,*/,*/
+....Palawan,Quail for Dressing,100.00,..,106.67,108.33,105.00,109.33,*/,*/,*/,*/
+....Palawan,Turkey for Dressing,238.34,254.39,246.94,250.00,247.42,250.00,*/,*/,*/,*/
+....Palawan,Quail Egg,..,..,1.25,1.25,1.25,1.28,*/,*/,*/,*/
+....Romblon,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Romblon,Rabbit for Slaughter,..,160.00,180.00,185.00,175.00,..,*/,*/,*/,*/
+....Romblon,Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Romblon,Goose for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Romblon,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Romblon,Turkey for Dressing,250.00,..,250.00,250.00,250.00,350.00,*/,*/,*/,*/
+....Romblon,Quail Egg,..,..,..,..,..,..,*/,*/,*/,*/
+....City of Puerto Princesa,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....City of Puerto Princesa,Rabbit for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....City of Puerto Princesa,Sheep for Slaughter,..,..,..,..,..,210.67,*/,*/,*/,*/
+....City of Puerto Princesa,Goose for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....City of Puerto Princesa,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....City of Puerto Princesa,Turkey for Dressing,..,..,..,..,..,233.33,*/,*/,*/,*/
+....City of Puerto Princesa,Quail Egg,..,..,..,..,..,..,*/,*/,*/,*/
+..REGION V (BICOL REGION),Horse for Slaughter,155.00,240.45,190.09,163.84,187.35,154.89,*/,*/,*/,*/
+..REGION V (BICOL REGION),Rabbit for Slaughter,332.27,321.93,204.90,200.00,264.78,219.68,*/,*/,*/,*/
+..REGION V (BICOL REGION),Sheep for Slaughter,250.00,194.00,201.67,206.07,212.93,205.00,*/,*/,*/,*/
+..REGION V (BICOL REGION),Goose for Dressing,..,..,249.11,210.69,229.90,196.37,*/,*/,*/,*/
+..REGION V (BICOL REGION),Quail for Dressing,90.00,148.66,119.86,107.36,116.47,99.29,*/,*/,*/,*/
+..REGION V (BICOL REGION),Turkey for Dressing,300.00,..,229.46,290.91,273.46,287.16,*/,*/,*/,*/
+..REGION V (BICOL REGION),Quail Egg,2.00,1.73,1.64,1.63,1.75,1.70,*/,*/,*/,*/
+....Albay,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Albay,Rabbit for Slaughter,100.00,150.00,..,..,125.00,120.00,*/,*/,*/,*/
+....Albay,Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Albay,Goose for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Albay,Quail for Dressing,90.00,90.00,100.00,99.52,94.88,99.29,*/,*/,*/,*/
+....Albay,Turkey for Dressing,..,..,300.00,300.00,300.00,350.00,*/,*/,*/,*/
+....Albay,Quail Egg,2.00,1.65,1.66,1.64,1.74,1.70,*/,*/,*/,*/
+....Camarines Norte,Horse for Slaughter,..,296.67,300.00,..,298.33,..,*/,*/,*/,*/
+....Camarines Norte,Rabbit for Slaughter,..,333.33,200.00,..,266.67,156.67,*/,*/,*/,*/
+....Camarines Norte,Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Camarines Norte,Goose for Dressing,..,..,250.00,200.00,225.00,186.67,*/,*/,*/,*/
+....Camarines Norte,Quail for Dressing,90.00,150.00,180.00,163.33,145.83,..,*/,*/,*/,*/
+....Camarines Norte,Turkey for Dressing,..,..,250.00,193.33,221.67,..,*/,*/,*/,*/
+....Camarines Norte,Quail Egg,2.00,2.00,1.42,2.00,1.85,1.50,*/,*/,*/,*/
+....Camarines Sur,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Camarines Sur,Rabbit for Slaughter,..,..,..,..,..,300.00,*/,*/,*/,*/
+....Camarines Sur,Sheep for Slaughter,..,180.00,..,..,180.00,..,*/,*/,*/,*/
+....Camarines Sur,Goose for Dressing,..,..,200.00,..,200.00,200.00,*/,*/,*/,*/
+....Camarines Sur,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Camarines Sur,Turkey for Dressing,300.00,250.00,..,300.00,283.33,250.00,*/,*/,*/,*/
+....Camarines Sur,Quail Egg,..,..,..,..,..,1.25,*/,*/,*/,*/
+....Catanduanes,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Catanduanes,Rabbit for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Catanduanes,Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Catanduanes,Goose for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Catanduanes,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Catanduanes,Turkey for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Catanduanes,Quail Egg,..,..,..,..,..,..,*/,*/,*/,*/
+....Masbate,Horse for Slaughter,155.00,211.00,163.33,163.84,173.29,154.89,*/,*/,*/,*/
+....Masbate,Rabbit for Slaughter,..,..,200.00,200.00,200.00,200.00,*/,*/,*/,*/
+....Masbate,Sheep for Slaughter,250.00,250.00,201.67,206.07,226.93,205.00,*/,*/,*/,*/
+....Masbate,Goose for Dressing,..,..,..,236.67,236.67,..,*/,*/,*/,*/
+....Masbate,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Masbate,Turkey for Dressing,..,..,200.00,225.00,212.50,..,*/,*/,*/,*/
+....Masbate,Quail Egg,..,1.50,1.50,1.50,1.50,2.00,*/,*/,*/,*/
+....Sorsogon,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Sorsogon,Rabbit for Slaughter,350.00,300.00,250.00,230.00,282.50,200.00,*/,*/,*/,*/
+....Sorsogon,Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Sorsogon,Goose for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Sorsogon,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Sorsogon,Turkey for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Sorsogon,Quail Egg,..,..,..,..,..,..,*/,*/,*/,*/
+..REGION VI (WESTERN VISAYAS),Horse for Slaughter,100.00,..,..,..,100.00,..,*/,*/,*/,*/
+..REGION VI (WESTERN VISAYAS),Rabbit for Slaughter,254.37,225.11,280.41,261.81,255.43,282.62,*/,*/,*/,*/
+..REGION VI (WESTERN VISAYAS),Sheep for Slaughter,433.14,280.88,358.08,387.25,364.84,429.63,*/,*/,*/,*/
+..REGION VI (WESTERN VISAYAS),Goose for Dressing,192.48,..,446.31,361.72,333.50,286.29,*/,*/,*/,*/
+..REGION VI (WESTERN VISAYAS),Quail for Dressing,110.00,146.19,175.05,166.20,149.36,165.28,*/,*/,*/,*/
+..REGION VI (WESTERN VISAYAS),Turkey for Dressing,342.06,328.01,439.15,379.02,372.06,334.49,*/,*/,*/,*/
+..REGION VI (WESTERN VISAYAS),Quail Egg,1.95,1.90,1.95,1.98,1.95,2.09,*/,*/,*/,*/
+....Aklan,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Aklan,Rabbit for Slaughter,143.33,192.00,350.00,350.00,258.83,350.00,*/,*/,*/,*/
+....Aklan,Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Aklan,Goose for Dressing,..,300.00,500.00,350.00,383.33,230.75,*/,*/,*/,*/
+....Aklan,Quail for Dressing,..,122.99,150.00,127.90,133.63,130.00,*/,*/,*/,*/
+....Aklan,Turkey for Dressing,350.00,300.00,500.00,400.00,387.50,319.92,*/,*/,*/,*/
+....Aklan,Quail Egg,2.00,1.73,2.00,2.00,1.93,2.50,*/,*/,*/,*/
+....Antique,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Antique,Rabbit for Slaughter,223.39,245.56,221.17,213.25,225.84,188.38,*/,*/,*/,*/
+....Antique,Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Antique,Goose for Dressing,150.00,..,180.00,246.67,192.22,256.67,*/,*/,*/,*/
+....Antique,Quail for Dressing,110.00,..,186.67,111.67,136.11,113.33,*/,*/,*/,*/
+....Antique,Turkey for Dressing,280.00,..,286.67,261.67,276.11,286.67,*/,*/,*/,*/
+....Antique,Quail Egg,..,..,1.93,2.17,2.05,2.17,*/,*/,*/,*/
+....Capiz,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Capiz,Rabbit for Slaughter,425.00,452.50,250.00,247.33,343.71,243.33,*/,*/,*/,*/
+....Capiz,Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Capiz,Goose for Dressing,200.00,500.00,440.00,373.33,378.33,373.33,*/,*/,*/,*/
+....Capiz,Quail for Dressing,..,155.00,185.00,191.67,177.22,191.67,*/,*/,*/,*/
+....Capiz,Turkey for Dressing,300.00,420.00,398.33,391.67,377.50,391.67,*/,*/,*/,*/
+....Capiz,Quail Egg,1.78,1.78,1.82,1.88,1.81,1.90,*/,*/,*/,*/
+....Guimaras,Horse for Slaughter,100.00,..,..,..,100.00,..,*/,*/,*/,*/
+....Guimaras,Rabbit for Slaughter,400.00,220.00,250.00,250.00,280.00,250.00,*/,*/,*/,*/
+....Guimaras,Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Guimaras,Goose for Dressing,150.00,..,250.00,250.00,216.67,250.00,*/,*/,*/,*/
+....Guimaras,Quail for Dressing,..,..,..,100.00,100.00,100.00,*/,*/,*/,*/
+....Guimaras,Turkey for Dressing,350.00,..,350.00,350.00,350.00,383.33,*/,*/,*/,*/
+....Guimaras,Quail Egg,2.00,..,2.00,2.00,2.00,2.00,*/,*/,*/,*/
+....Iloilo,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Iloilo,Rabbit for Slaughter,..,243.33,245.00,245.00,244.44,245.00,*/,*/,*/,*/
+....Iloilo,Sheep for Slaughter,433.14,280.88,358.08,387.25,364.84,429.63,*/,*/,*/,*/
+....Iloilo,Goose for Dressing,..,..,288.33,294.09,291.21,288.79,*/,*/,*/,*/
+....Iloilo,Quail for Dressing,..,151.82,151.76,151.15,151.58,155.00,*/,*/,*/,*/
+....Iloilo,Turkey for Dressing,358.33,..,281.67,285.00,308.33,300.00,*/,*/,*/,*/
+....Iloilo,Quail Egg,2.17,2.00,2.00,2.00,2.04,2.03,*/,*/,*/,*/
+..NEGROS ISLAND REGION (NIR),Horse for Slaughter,239.22,130.00,127.26,127.92,156.10,..,*/,*/,*/,*/
+..NEGROS ISLAND REGION (NIR),Rabbit for Slaughter,300.00,300.00,355.65,300.00,313.91,..,*/,*/,*/,*/
+..NEGROS ISLAND REGION (NIR),Sheep for Slaughter,246.22,250.00,227.14,236.86,240.06,..,*/,*/,*/,*/
+..NEGROS ISLAND REGION (NIR),Goose for Dressing,163.77,160.68,109.84,179.25,153.39,..,*/,*/,*/,*/
+..NEGROS ISLAND REGION (NIR),Quail for Dressing,116.53,..,122.37,121.56,120.15,..,*/,*/,*/,*/
+..NEGROS ISLAND REGION (NIR),Turkey for Dressing,300.00,296.98,281.72,294.88,293.39,..,*/,*/,*/,*/
+..NEGROS ISLAND REGION (NIR),Quail Egg,1.80,..,1.87,1.85,1.84,..,*/,*/,*/,*/
+....Negros Occidental a/,Horse for Slaughter,130.00,130.00,130.00,130.00,130.00,136.57,*/,*/,*/,*/
+....Negros Occidental a/,Rabbit for Slaughter,300.00,300.00,300.00,300.00,300.00,299.63,*/,*/,*/,*/
+....Negros Occidental a/,Sheep for Slaughter,250.00,250.00,250.00,250.00,250.00,250.00,*/,*/,*/,*/
+....Negros Occidental a/,Goose for Dressing,180.00,180.00,180.00,180.00,180.00,177.95,*/,*/,*/,*/
+....Negros Occidental a/,Quail for Dressing,100.00,100.00,100.00,100.00,100.00,110.99,*/,*/,*/,*/
+....Negros Occidental a/,Turkey for Dressing,300.00,300.00,300.00,300.00,300.00,222.97,*/,*/,*/,*/
+....Negros Occidental a/,Quail Egg,1.80,1.80,1.80,2.00,1.85,2.34,*/,*/,*/,*/
+....Negros Oriental b/,Horse for Slaughter,117.00,..,101.67,103.33,107.33,130.00,*/,*/,*/,*/
+....Negros Oriental b/,Rabbit for Slaughter,..,..,375.00,..,375.00,300.00,*/,*/,*/,*/
+....Negros Oriental b/,Sheep for Slaughter,170.00,..,170.00,235.00,191.67,250.00,*/,*/,*/,*/
+....Negros Oriental b/,Goose for Dressing,150.00,150.00,100.00,180.00,145.00,180.00,*/,*/,*/,*/
+....Negros Oriental b/,Quail for Dressing,180.00,130.00,177.00,180.00,166.75,100.00,*/,*/,*/,*/
+....Negros Oriental b/,Turkey for Dressing,300.00,225.00,286.54,275.00,271.64,300.00,*/,*/,*/,*/
+....Negros Oriental b/,Quail Egg,..,2.50,2.42,2.53,2.48,2.00,*/,*/,*/,*/
+....Siquijor b/,Horse for Slaughter,300.00,..,..,..,300.00,145.00,*/,*/,*/,*/
+....Siquijor b/,Rabbit for Slaughter,..,..,..,..,..,75.00,*/,*/,*/,*/
+....Siquijor b/,Sheep for Slaughter,..,..,..,..,..,250.00,*/,*/,*/,*/
+....Siquijor b/,Goose for Dressing,180.00,160.00,160.00,160.00,165.00,176.67,*/,*/,*/,*/
+....Siquijor b/,Quail for Dressing,..,..,..,..,..,186.67,*/,*/,*/,*/
+....Siquijor b/,Turkey for Dressing,..,180.00,180.00,180.00,180.00,173.02,*/,*/,*/,*/
+....Siquijor b/,Quail Egg,..,1.50,1.50,1.50,1.50,2.58,*/,*/,*/,*/
+....City of Bacolod,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....City of Bacolod,Rabbit for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....City of Bacolod,Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....City of Bacolod,Goose for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....City of Bacolod,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....City of Bacolod,Turkey for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....City of Bacolod,Quail Egg,..,..,..,..,..,..,*/,*/,*/,*/
+..REGION VII (CENTRAL VISAYAS),Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+..REGION VII (CENTRAL VISAYAS),Rabbit for Slaughter,..,175.00,116.00,116.00,135.67,150.00,*/,*/,*/,*/
+..REGION VII (CENTRAL VISAYAS),Sheep for Slaughter,150.00,150.00,..,200.00,166.67,200.00,*/,*/,*/,*/
+..REGION VII (CENTRAL VISAYAS),Goose for Dressing,..,..,..,..,..,200.00,*/,*/,*/,*/
+..REGION VII (CENTRAL VISAYAS),Quail for Dressing,150.00,..,220.00,166.00,178.67,150.00,*/,*/,*/,*/
+..REGION VII (CENTRAL VISAYAS),Turkey for Dressing,350.00,..,175.52,350.00,291.84,350.00,*/,*/,*/,*/
+..REGION VII (CENTRAL VISAYAS),Quail Egg,2.50,..,2.18,2.98,2.55,2.84,*/,*/,*/,*/
+....Bohol,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Bohol,Rabbit for Slaughter,..,175.00,116.00,116.00,135.67,..,*/,*/,*/,*/
+....Bohol,Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Bohol,Goose for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Bohol,Quail for Dressing,..,..,220.00,166.00,193.00,..,*/,*/,*/,*/
+....Bohol,Turkey for Dressing,..,..,150.00,..,150.00,..,*/,*/,*/,*/
+....Bohol,Quail Egg,2.50,..,2.00,2.40,2.30,2.50,*/,*/,*/,*/
+....Cebu,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Cebu,Rabbit for Slaughter,..,..,..,..,..,150.00,*/,*/,*/,*/
+....Cebu,Sheep for Slaughter,150.00,150.00,..,200.00,166.67,200.00,*/,*/,*/,*/
+....Cebu,Goose for Dressing,..,150.00,..,..,150.00,200.00,*/,*/,*/,*/
+....Cebu,Quail for Dressing,150.00,40.00,..,..,95.00,150.00,*/,*/,*/,*/
+....Cebu,Turkey for Dressing,350.00,350.00,350.00,350.00,350.00,350.00,*/,*/,*/,*/
+....Cebu,Quail Egg,2.50,2.50,2.20,3.00,2.55,3.00,*/,*/,*/,*/
+..REGION VIII (EASTERN VISAYAS),Horse for Slaughter,140.00,250.00,..,180.00,190.00,..,*/,*/,*/,*/
+..REGION VIII (EASTERN VISAYAS),Rabbit for Slaughter,180.32,193.81,156.53,245.94,194.15,175.16,*/,*/,*/,*/
+..REGION VIII (EASTERN VISAYAS),Sheep for Slaughter,168.00,170.02,180.00,180.00,174.51,179.56,*/,*/,*/,*/
+..REGION VIII (EASTERN VISAYAS),Goose for Dressing,180.58,204.04,192.77,193.03,192.61,203.69,*/,*/,*/,*/
+..REGION VIII (EASTERN VISAYAS),Quail for Dressing,135.00,143.68,149.71,150.00,144.60,149.75,*/,*/,*/,*/
+..REGION VIII (EASTERN VISAYAS),Turkey for Dressing,253.71,279.48,206.09,280.28,254.89,343.71,*/,*/,*/,*/
+..REGION VIII (EASTERN VISAYAS),Quail Egg,2.25,..,2.00,2.48,2.24,2.48,*/,*/,*/,*/
+....Biliran,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Biliran,Rabbit for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Biliran,Sheep for Slaughter,..,..,..,..,..,160.00,*/,*/,*/,*/
+....Biliran,Goose for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Biliran,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Biliran,Turkey for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Biliran,Quail Egg,..,..,..,..,..,..,*/,*/,*/,*/
+....Eastern Samar,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Eastern Samar,Rabbit for Slaughter,180.00,150.00,155.00,155.00,160.00,180.00,*/,*/,*/,*/
+....Eastern Samar,Sheep for Slaughter,..,200.00,..,..,200.00,..,*/,*/,*/,*/
+....Eastern Samar,Goose for Dressing,180.00,..,200.00,200.00,193.33,200.00,*/,*/,*/,*/
+....Eastern Samar,Quail for Dressing,..,..,..,150.00,150.00,150.00,*/,*/,*/,*/
+....Eastern Samar,Turkey for Dressing,250.00,..,200.00,200.00,216.67,200.00,*/,*/,*/,*/
+....Eastern Samar,Quail Egg,2.00,..,2.00,2.00,2.00,..,*/,*/,*/,*/
+....Leyte,Horse for Slaughter,..,250.00,..,..,250.00,..,*/,*/,*/,*/
+....Leyte,Rabbit for Slaughter,..,..,155.00,155.00,155.00,155.00,*/,*/,*/,*/
+....Leyte,Sheep for Slaughter,168.00,169.39,180.00,180.00,174.35,180.30,*/,*/,*/,*/
+....Leyte,Goose for Dressing,..,..,150.00,150.00,150.00,..,*/,*/,*/,*/
+....Leyte,Quail for Dressing,..,143.33,150.00,150.00,147.78,150.00,*/,*/,*/,*/
+....Leyte,Turkey for Dressing,..,..,420.00,420.00,420.00,420.00,*/,*/,*/,*/
+....Leyte,Quail Egg,2.50,2.00,2.00,2.50,2.25,2.50,*/,*/,*/,*/
+....Northern Samar,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Northern Samar,Rabbit for Slaughter,200.00,200.00,..,..,200.00,..,*/,*/,*/,*/
+....Northern Samar,Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Northern Samar,Goose for Dressing,..,..,..,..,..,220.00,*/,*/,*/,*/
+....Northern Samar,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Northern Samar,Turkey for Dressing,..,..,..,..,..,280.00,*/,*/,*/,*/
+....Northern Samar,Quail Egg,..,..,..,..,..,..,*/,*/,*/,*/
+....Samar,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Samar,Rabbit for Slaughter,..,240.00,..,355.00,297.50,..,*/,*/,*/,*/
+....Samar,Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Samar,Goose for Dressing,..,250.00,..,..,250.00,..,*/,*/,*/,*/
+....Samar,Quail for Dressing,..,150.00,..,..,150.00,..,*/,*/,*/,*/
+....Samar,Turkey for Dressing,..,250.00,350.00,355.00,318.33,353.33,*/,*/,*/,*/
+....Samar,Quail Egg,..,2.00,..,2.50,2.25,..,*/,*/,*/,*/
+....Southern Leyte,Horse for Slaughter,140.00,..,..,180.00,160.00,..,*/,*/,*/,*/
+....Southern Leyte,Rabbit for Slaughter,..,..,195.00,195.00,195.00,200.00,*/,*/,*/,*/
+....Southern Leyte,Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Southern Leyte,Goose for Dressing,220.00,..,200.00,200.00,206.67,200.00,*/,*/,*/,*/
+....Southern Leyte,Quail for Dressing,135.00,..,125.00,..,130.00,137.50,*/,*/,*/,*/
+....Southern Leyte,Turkey for Dressing,300.00,..,270.00,260.00,276.67,280.00,*/,*/,*/,*/
+....Southern Leyte,Quail Egg,2.00,..,2.00,2.00,2.00,2.00,*/,*/,*/,*/
+..REGION IX (ZAMBOANGA PENINSULA),Horse for Slaughter,155.69,90.00,77.78,90.56,103.51,138.44,*/,*/,*/,*/
+..REGION IX (ZAMBOANGA PENINSULA),Rabbit for Slaughter,136.47,83.32,89.61,98.30,101.93,120.02,*/,*/,*/,*/
+..REGION IX (ZAMBOANGA PENINSULA),Sheep for Slaughter,258.24,251.10,237.50,250.38,249.30,271.54,*/,*/,*/,*/
+..REGION IX (ZAMBOANGA PENINSULA),Goose for Dressing,269.65,..,276.10,224.12,256.62,192.18,*/,*/,*/,*/
+..REGION IX (ZAMBOANGA PENINSULA),Quail for Dressing,137.46,70.16,100.00,91.67,99.82,118.46,*/,*/,*/,*/
+..REGION IX (ZAMBOANGA PENINSULA),Turkey for Dressing,373.70,342.47,449.95,479.14,411.32,368.49,*/,*/,*/,*/
+..REGION IX (ZAMBOANGA PENINSULA),Quail Egg,2.16,2.03,2.05,2.00,2.06,2.36,*/,*/,*/,*/
+....Sulu d/,Horse for Slaughter,......,......,......,......,......,..,*/,*/,*/,*/
+....Sulu d/,Rabbit for Slaughter,......,......,......,......,......,..,*/,*/,*/,*/
+....Sulu d/,Sheep for Slaughter,......,......,......,......,......,..,*/,*/,*/,*/
+....Sulu d/,Goose for Dressing,......,......,......,......,......,..,*/,*/,*/,*/
+....Sulu d/,Quail for Dressing,......,......,......,......,......,..,*/,*/,*/,*/
+....Sulu d/,Turkey for Dressing,......,......,......,......,......,..,*/,*/,*/,*/
+....Sulu d/,Quail Egg,......,......,......,......,......,..,*/,*/,*/,*/
+....Zamboanga del Norte,Horse for Slaughter,165.00,75.00,70.00,70.00,95.00,146.67,*/,*/,*/,*/
+....Zamboanga del Norte,Rabbit for Slaughter,130.00,80.00,82.00,80.00,93.00,80.00,*/,*/,*/,*/
+....Zamboanga del Norte,Sheep for Slaughter,290.00,280.00,280.00,284.31,283.58,300.00,*/,*/,*/,*/
+....Zamboanga del Norte,Goose for Dressing,300.00,250.00,250.00,250.00,262.50,250.00,*/,*/,*/,*/
+....Zamboanga del Norte,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Zamboanga del Norte,Turkey for Dressing,350.00,300.00,528.00,500.00,419.50,383.33,*/,*/,*/,*/
+....Zamboanga del Norte,Quail Egg,2.00,2.00,2.00,2.00,2.00,2.50,*/,*/,*/,*/
+....Zamboanga del Sur,Horse for Slaughter,150.00,125.00,75.00,75.00,106.25,113.00,*/,*/,*/,*/
+....Zamboanga del Sur,Rabbit for Slaughter,87.50,110.00,107.57,110.00,103.77,93.96,*/,*/,*/,*/
+....Zamboanga del Sur,Sheep for Slaughter,230.00,250.00,250.00,240.00,242.50,230.00,*/,*/,*/,*/
+....Zamboanga del Sur,Goose for Dressing,300.00,400.00,380.00,966.67,511.67,300.00,*/,*/,*/,*/
+....Zamboanga del Sur,Quail for Dressing,130.00,60.00,..,80.00,90.00,130.00,*/,*/,*/,*/
+....Zamboanga del Sur,Turkey for Dressing,400.00,377.54,500.00,1400.00,669.39,400.00,*/,*/,*/,*/
+....Zamboanga del Sur,Quail Egg,2.50,2.00,2.00,2.00,2.13,2.00,*/,*/,*/,*/
+....Zamboanga Sibugay,Horse for Slaughter,175.00,..,120.00,122.50,139.17,150.00,*/,*/,*/,*/
+....Zamboanga Sibugay,Rabbit for Slaughter,250.00,90.00,100.00,100.00,135.00,120.00,*/,*/,*/,*/
+....Zamboanga Sibugay,Sheep for Slaughter,190.00,200.00,220.00,223.33,208.33,230.00,*/,*/,*/,*/
+....Zamboanga Sibugay,Goose for Dressing,200.00,190.00,150.00,150.00,172.50,190.00,*/,*/,*/,*/
+....Zamboanga Sibugay,Quail for Dressing,150.00,88.70,100.00,100.00,109.68,112.67,*/,*/,*/,*/
+....Zamboanga Sibugay,Turkey for Dressing,300.00,383.33,300.00,450.00,358.33,450.00,*/,*/,*/,*/
+....Zamboanga Sibugay,Quail Egg,2.00,2.15,2.04,2.00,2.05,2.00,*/,*/,*/,*/
+....City of Zamboanga,Horse for Slaughter,1/,..,..,..,..,180.00,*/,*/,*/,*/
+....City of Zamboanga,Rabbit for Slaughter,1/,..,96.67,..,96.67,166.67,*/,*/,*/,*/
+....City of Zamboanga,Sheep for Slaughter,1/,250.00,229.34,242.94,240.76,..,*/,*/,*/,*/
+....City of Zamboanga,Goose for Dressing,1/,..,..,..,..,143.33,*/,*/,*/,*/
+....City of Zamboanga,Quail for Dressing,1/,66.41,..,100.00,83.21,..,*/,*/,*/,*/
+....City of Zamboanga,Turkey for Dressing,1/,..,350.00,350.00,350.00,270.00,*/,*/,*/,*/
+....City of Zamboanga,Quail Egg,1/,2.00,2.00,2.00,2.00,3.00,*/,*/,*/,*/
+..REGION X (NORTHERN MINDANAO),Horse for Slaughter,138.94,145.79,187.71,164.42,159.21,182.22,*/,*/,*/,*/
+..REGION X (NORTHERN MINDANAO),Rabbit for Slaughter,347.06,292.29,286.53,275.71,300.40,350.62,*/,*/,*/,*/
+..REGION X (NORTHERN MINDANAO),Sheep for Slaughter,243.67,295.01,299.92,277.31,278.98,238.10,*/,*/,*/,*/
+..REGION X (NORTHERN MINDANAO),Goose for Dressing,208.46,..,238.10,227.22,224.59,229.99,*/,*/,*/,*/
+..REGION X (NORTHERN MINDANAO),Quail for Dressing,205.08,..,210.00,211.04,208.71,210.81,*/,*/,*/,*/
+..REGION X (NORTHERN MINDANAO),Turkey for Dressing,392.82,..,491.62,416.20,433.55,440.11,*/,*/,*/,*/
+..REGION X (NORTHERN MINDANAO),Quail Egg,2.29,..,2.45,2.29,2.34,2.40,*/,*/,*/,*/
+....Bukidnon,Horse for Slaughter,150.00,150.00,150.00,150.00,150.00,150.00,*/,*/,*/,*/
+....Bukidnon,Rabbit for Slaughter,300.00,300.00,300.00,300.00,300.00,250.00,*/,*/,*/,*/
+....Bukidnon,Sheep for Slaughter,242.80,300.00,300.00,300.00,285.70,238.24,*/,*/,*/,*/
+....Bukidnon,Goose for Dressing,206.67,..,206.67,206.67,206.67,200.00,*/,*/,*/,*/
+....Bukidnon,Quail for Dressing,200.00,..,210.00,210.00,206.67,210.00,*/,*/,*/,*/
+....Bukidnon,Turkey for Dressing,483.33,..,483.33,483.33,483.33,500.00,*/,*/,*/,*/
+....Bukidnon,Quail Egg,2.50,..,2.50,2.50,2.50,2.50,*/,*/,*/,*/
+....Camiguin,Horse for Slaughter,100.00,..,150.00,200.00,150.00,200.00,*/,*/,*/,*/
+....Camiguin,Rabbit for Slaughter,250.00,250.85,250.00,250.23,250.27,225.00,*/,*/,*/,*/
+....Camiguin,Sheep for Slaughter,450.00,350.00,..,320.00,373.33,..,*/,*/,*/,*/
+....Camiguin,Goose for Dressing,..,200.00,200.00,200.00,200.00,220.00,*/,*/,*/,*/
+....Camiguin,Quail for Dressing,200.00,30.00,..,240.00,156.67,240.00,*/,*/,*/,*/
+....Camiguin,Turkey for Dressing,600.00,600.00,600.00,600.00,600.00,600.00,*/,*/,*/,*/
+....Camiguin,Quail Egg,3.00,3.00,3.00,3.00,3.00,3.00,*/,*/,*/,*/
+....Lanao del Norte,Horse for Slaughter,186.67,190.00,190.00,190.00,189.17,185.00,*/,*/,*/,*/
+....Lanao del Norte,Rabbit for Slaughter,250.00,250.00,250.00,250.00,250.00,250.00,*/,*/,*/,*/
+....Lanao del Norte,Sheep for Slaughter,240.00,240.00,240.00,243.33,240.83,240.00,*/,*/,*/,*/
+....Lanao del Norte,Goose for Dressing,255.00,..,255.00,255.00,255.00,255.00,*/,*/,*/,*/
+....Lanao del Norte,Quail for Dressing,210.00,..,210.00,210.00,210.00,210.00,*/,*/,*/,*/
+....Lanao del Norte,Turkey for Dressing,350.00,..,350.00,350.00,350.00,350.00,*/,*/,*/,*/
+....Lanao del Norte,Quail Egg,2.00,..,2.00,2.00,2.00,2.00,*/,*/,*/,*/
+....Misamis Occidental,Horse for Slaughter,..,..,..,130.00,130.00,..,*/,*/,*/,*/
+....Misamis Occidental,Rabbit for Slaughter,300.00,300.00,308.33,300.00,302.08,306.67,*/,*/,*/,*/
+....Misamis Occidental,Sheep for Slaughter,230.00,230.00,..,230.00,230.00,230.00,*/,*/,*/,*/
+....Misamis Occidental,Goose for Dressing,266.67,260.00,260.00,260.00,261.67,270.00,*/,*/,*/,*/
+....Misamis Occidental,Quail for Dressing,..,35.00,..,190.00,112.50,183.33,*/,*/,*/,*/
+....Misamis Occidental,Turkey for Dressing,466.67,400.00,458.33,458.33,445.83,468.33,*/,*/,*/,*/
+....Misamis Occidental,Quail Egg,1.58,1.67,1.92,1.92,1.77,1.75,*/,*/,*/,*/
+....Misamis Oriental,Horse for Slaughter,125.00,130.00,..,153.33,136.11,..,*/,*/,*/,*/
+....Misamis Oriental,Rabbit for Slaughter,380.00,350.00,333.33,300.00,340.83,386.67,*/,*/,*/,*/
+....Misamis Oriental,Sheep for Slaughter,256.25,326.67,318.12,279.85,295.22,238.62,*/,*/,*/,*/
+....Misamis Oriental,Goose for Dressing,150.00,293.33,206.67,206.67,214.17,208.33,*/,*/,*/,*/
+....Misamis Oriental,Quail for Dressing,210.00,..,..,200.00,205.00,..,*/,*/,*/,*/
+....Misamis Oriental,Turkey for Dressing,545.00,230.00,350.00,350.00,368.75,400.00,*/,*/,*/,*/
+....Misamis Oriental,Quail Egg,3.00,..,4.00,2.50,3.17,3.00,*/,*/,*/,*/
+..REGION XI (DAVAO REGION),Horse for Slaughter,178.35,145.01,182.71,179.65,171.43,212.34,*/,*/,*/,*/
+..REGION XI (DAVAO REGION),Rabbit for Slaughter,276.22,228.48,281.39,338.52,281.15,186.92,*/,*/,*/,*/
+..REGION XI (DAVAO REGION),Sheep for Slaughter,250.28,238.47,215.71,214.30,229.69,241.23,*/,*/,*/,*/
+..REGION XI (DAVAO REGION),Goose for Dressing,241.96,..,180.20,238.42,220.19,251.63,*/,*/,*/,*/
+..REGION XI (DAVAO REGION),Quail for Dressing,69.24,..,170.16,192.55,143.98,61.95,*/,*/,*/,*/
+..REGION XI (DAVAO REGION),Turkey for Dressing,365.21,..,211.70,345.76,307.55,357.49,*/,*/,*/,*/
+..REGION XI (DAVAO REGION),Quail Egg,1.77,..,1.77,1.83,1.79,1.95,*/,*/,*/,*/
+....Davao de Oro,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Davao de Oro,Rabbit for Slaughter,250.00,350.00,400.00,400.00,350.00,250.00,*/,*/,*/,*/
+....Davao de Oro,Sheep for Slaughter,250.00,250.00,250.00,250.00,250.00,250.00,*/,*/,*/,*/
+....Davao de Oro,Goose for Dressing,250.00,250.00,250.00,250.00,250.00,266.67,*/,*/,*/,*/
+....Davao de Oro,Quail for Dressing,100.00,150.00,120.00,150.00,130.00,..,*/,*/,*/,*/
+....Davao de Oro,Turkey for Dressing,400.00,350.00,400.00,350.00,375.00,383.33,*/,*/,*/,*/
+....Davao de Oro,Quail Egg,2.00,2.00,2.00,2.00,2.00,2.50,*/,*/,*/,*/
+....Davao del Norte,Horse for Slaughter,150.00,150.00,..,..,150.00,..,*/,*/,*/,*/
+....Davao del Norte,Rabbit for Slaughter,150.00,150.00,150.00,350.00,200.00,150.00,*/,*/,*/,*/
+....Davao del Norte,Sheep for Slaughter,250.00,260.00,192.52,200.00,225.63,261.67,*/,*/,*/,*/
+....Davao del Norte,Goose for Dressing,150.00,350.00,150.00,250.00,225.00,203.33,*/,*/,*/,*/
+....Davao del Norte,Quail for Dressing,60.00,90.00,175.00,200.00,131.25,60.00,*/,*/,*/,*/
+....Davao del Norte,Turkey for Dressing,350.00,350.00,170.00,350.00,305.00,366.67,*/,*/,*/,*/
+....Davao del Norte,Quail Egg,1.70,1.70,1.70,1.82,1.73,1.87,*/,*/,*/,*/
+....Davao del Sur,Horse for Slaughter,266.67,..,200.00,200.00,222.22,300.00,*/,*/,*/,*/
+....Davao del Sur,Rabbit for Slaughter,350.00,333.33,323.33,350.00,339.17,329.75,*/,*/,*/,*/
+....Davao del Sur,Sheep for Slaughter,210.86,164.17,148.06,149.45,168.13,220.00,*/,*/,*/,*/
+....Davao del Sur,Goose for Dressing,200.00,350.00,200.00,200.00,237.50,200.00,*/,*/,*/,*/
+....Davao del Sur,Quail for Dressing,100.00,90.00,150.00,100.00,110.00,100.00,*/,*/,*/,*/
+....Davao del Sur,Turkey for Dressing,350.00,450.00,383.33,350.00,383.33,350.00,*/,*/,*/,*/
+....Davao del Sur,Quail Egg,2.50,..,2.00,2.00,2.17,2.00,*/,*/,*/,*/
+....Davao Occidental,Horse for Slaughter,120.00,131.67,176.67,176.67,151.25,175.00,*/,*/,*/,*/
+....Davao Occidental,Rabbit for Slaughter,150.00,286.67,303.33,350.00,272.50,350.00,*/,*/,*/,*/
+....Davao Occidental,Sheep for Slaughter,296.67,226.67,250.00,250.00,255.83,250.00,*/,*/,*/,*/
+....Davao Occidental,Goose for Dressing,180.00,..,180.00,180.00,180.00,180.00,*/,*/,*/,*/
+....Davao Occidental,Quail for Dressing,..,..,200.00,200.00,200.00,..,*/,*/,*/,*/
+....Davao Occidental,Turkey for Dressing,400.00,..,306.67,323.33,343.33,323.33,*/,*/,*/,*/
+....Davao Occidental,Quail Egg,2.00,..,2.00,2.00,2.00,2.00,*/,*/,*/,*/
+....Davao Oriental,Horse for Slaughter,..,..,..,..,..,133.33,*/,*/,*/,*/
+....Davao Oriental,Rabbit for Slaughter,350.00,350.00,350.00,366.67,354.17,293.33,*/,*/,*/,*/
+....Davao Oriental,Sheep for Slaughter,260.00,253.33,253.33,230.00,249.17,266.67,*/,*/,*/,*/
+....Davao Oriental,Goose for Dressing,170.00,..,100.00,96.67,122.22,103.33,*/,*/,*/,*/
+....Davao Oriental,Quail for Dressing,100.00,90.00,90.00,..,93.33,..,*/,*/,*/,*/
+....Davao Oriental,Turkey for Dressing,350.00,350.00,350.00,350.00,350.00,350.00,*/,*/,*/,*/
+....Davao Oriental,Quail Egg,2.00,2.00,2.00,2.00,2.00,2.00,*/,*/,*/,*/
+....City of Davao,Horse for Slaughter,2/,150.00,146.67,150.00,148.89,160.67,*/,*/,*/,*/
+....City of Davao,Rabbit for Slaughter,2/,243.33,193.33,206.67,214.44,..,*/,*/,*/,*/
+....City of Davao,Sheep for Slaughter,2/,200.69,200.00,215.63,205.44,200.00,*/,*/,*/,*/
+....City of Davao,Goose for Dressing,2/,..,..,..,..,..,*/,*/,*/,*/
+....City of Davao,Quail for Dressing,2/,50.00,..,200.00,125.00,200.00,*/,*/,*/,*/
+....City of Davao,Turkey for Dressing,2/,213.33,173.33,188.33,191.67,190.00,*/,*/,*/,*/
+....City of Davao,Quail Egg,2/,1.00,1.50,2.00,1.50,2.00,*/,*/,*/,*/
+..REGION XII (SOCCSKSARGEN),Horse for Slaughter,92.78,171.88,145.27,138.86,137.20,127.33,*/,*/,*/,*/
+..REGION XII (SOCCSKSARGEN),Rabbit for Slaughter,280.55,263.88,259.00,258.27,265.42,258.53,*/,*/,*/,*/
+..REGION XII (SOCCSKSARGEN),Sheep for Slaughter,228.33,214.56,225.54,214.71,220.78,210.44,*/,*/,*/,*/
+..REGION XII (SOCCSKSARGEN),Goose for Dressing,227.12,..,252.08,245.15,241.45,248.63,*/,*/,*/,*/
+..REGION XII (SOCCSKSARGEN),Quail for Dressing,55.22,84.13,91.29,74.89,76.38,73.55,*/,*/,*/,*/
+..REGION XII (SOCCSKSARGEN),Turkey for Dressing,343.23,320.77,283.55,288.01,308.89,270.37,*/,*/,*/,*/
+..REGION XII (SOCCSKSARGEN),Quail Egg,1.63,1.84,1.81,1.82,1.78,1.98,*/,*/,*/,*/
+....Cotabato,Horse for Slaughter,50.00,50.00,50.00,50.00,50.00,70.00,*/,*/,*/,*/
+....Cotabato,Rabbit for Slaughter,300.00,300.00,300.00,300.00,300.00,300.00,*/,*/,*/,*/
+....Cotabato,Sheep for Slaughter,223.33,220.00,220.00,223.33,221.67,216.67,*/,*/,*/,*/
+....Cotabato,Goose for Dressing,250.00,..,266.67,250.00,255.56,250.00,*/,*/,*/,*/
+....Cotabato,Quail for Dressing,110.00,..,125.00,125.00,120.00,83.33,*/,*/,*/,*/
+....Cotabato,Turkey for Dressing,350.00,..,350.00,366.67,355.56,350.00,*/,*/,*/,*/
+....Cotabato,Quail Egg,1.70,..,1.75,1.75,1.73,1.80,*/,*/,*/,*/
+....Sarangani,Horse for Slaughter,150.00,150.00,150.00,150.00,150.00,150.00,*/,*/,*/,*/
+....Sarangani,Rabbit for Slaughter,350.00,350.00,350.00,350.00,350.00,350.00,*/,*/,*/,*/
+....Sarangani,Sheep for Slaughter,230.00,182.63,230.00,230.00,218.16,230.00,*/,*/,*/,*/
+....Sarangani,Goose for Dressing,200.00,200.00,200.00,200.00,200.00,200.00,*/,*/,*/,*/
+....Sarangani,Quail for Dressing,100.00,100.00,100.00,100.00,100.00,100.00,*/,*/,*/,*/
+....Sarangani,Turkey for Dressing,400.00,350.00,350.00,350.00,362.50,400.00,*/,*/,*/,*/
+....Sarangani,Quail Egg,1.80,1.80,1.80,1.80,1.80,1.85,*/,*/,*/,*/
+....South Cotabato,Horse for Slaughter,91.67,190.00,150.00,150.00,145.42,150.00,*/,*/,*/,*/
+....South Cotabato,Rabbit for Slaughter,250.00,250.00,250.00,250.00,250.00,250.00,*/,*/,*/,*/
+....South Cotabato,Sheep for Slaughter,227.56,223.56,225.54,204.68,220.34,199.79,*/,*/,*/,*/
+....South Cotabato,Goose for Dressing,283.33,..,250.00,250.00,261.11,250.00,*/,*/,*/,*/
+....South Cotabato,Quail for Dressing,110.00,71.09,50.00,61.07,73.04,69.47,*/,*/,*/,*/
+....South Cotabato,Turkey for Dressing,500.00,309.78,250.00,250.00,327.45,250.00,*/,*/,*/,*/
+....South Cotabato,Quail Egg,1.80,1.95,1.89,1.90,1.88,1.99,*/,*/,*/,*/
+....Sultan Kudarat,Horse for Slaughter,50.00,93.33,156.00,66.67,91.50,70.00,*/,*/,*/,*/
+....Sultan Kudarat,Rabbit for Slaughter,260.00,260.00,253.33,250.00,255.83,260.00,*/,*/,*/,*/
+....Sultan Kudarat,Sheep for Slaughter,290.39,233.95,250.00,253.45,256.95,270.00,*/,*/,*/,*/
+....Sultan Kudarat,Goose for Dressing,200.00,270.00,246.67,250.00,241.67,300.00,*/,*/,*/,*/
+....Sultan Kudarat,Quail for Dressing,50.00,123.33,..,43.33,72.22,55.00,*/,*/,*/,*/
+....Sultan Kudarat,Turkey for Dressing,330.00,316.67,..,283.33,310.00,290.00,*/,*/,*/,*/
+....Sultan Kudarat,Quail Egg,1.60,1.72,1.73,1.75,1.70,2.50,*/,*/,*/,*/
+..REGION XIII (Caraga),Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+..REGION XIII (Caraga),Rabbit for Slaughter,250.00,250.00,249.78,250.00,249.95,223.40,*/,*/,*/,*/
+..REGION XIII (Caraga),Sheep for Slaughter,325.00,268.42,350.00,350.68,323.53,..,*/,*/,*/,*/
+..REGION XIII (Caraga),Goose for Dressing,300.00,..,450.00,414.30,388.10,389.80,*/,*/,*/,*/
+..REGION XIII (Caraga),Quail for Dressing,..,..,..,66.78,66.78,79.48,*/,*/,*/,*/
+..REGION XIII (Caraga),Turkey for Dressing,423.45,378.39,359.65,423.18,396.17,450.03,*/,*/,*/,*/
+..REGION XIII (Caraga),Quail Egg,2.10,..,2.35,2.45,2.30,2.33,*/,*/,*/,*/
+....Agusan del Norte,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Agusan del Norte,Rabbit for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Agusan del Norte,Sheep for Slaughter,..,218.80,..,..,218.80,..,*/,*/,*/,*/
+....Agusan del Norte,Goose for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Agusan del Norte,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Agusan del Norte,Turkey for Dressing,420.00,380.00,350.00,..,383.33,500.00,*/,*/,*/,*/
+....Agusan del Norte,Quail Egg,..,2.00,2.50,2.50,2.33,2.91,*/,*/,*/,*/
+....Agusan del Sur,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Agusan del Sur,Rabbit for Slaughter,250.00,250.00,250.00,250.00,250.00,223.33,*/,*/,*/,*/
+....Agusan del Sur,Sheep for Slaughter,325.00,325.00,350.00,363.89,340.97,..,*/,*/,*/,*/
+....Agusan del Sur,Goose for Dressing,300.00,350.00,450.00,416.67,379.17,400.00,*/,*/,*/,*/
+....Agusan del Sur,Quail for Dressing,..,..,..,75.00,75.00,70.00,*/,*/,*/,*/
+....Agusan del Sur,Turkey for Dressing,450.00,360.00,500.00,433.33,435.83,448.08,*/,*/,*/,*/
+....Agusan del Sur,Quail Egg,2.00,2.00,2.00,2.00,2.00,2.00,*/,*/,*/,*/
+....Dinagat Islands,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Dinagat Islands,Rabbit for Slaughter,..,..,200.00,250.00,225.00,250.00,*/,*/,*/,*/
+....Dinagat Islands,Sheep for Slaughter,..,250.00,..,220.00,235.00,..,*/,*/,*/,*/
+....Dinagat Islands,Goose for Dressing,..,..,..,300.00,300.00,300.00,*/,*/,*/,*/
+....Dinagat Islands,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Dinagat Islands,Turkey for Dressing,..,..,350.00,350.00,350.00,350.00,*/,*/,*/,*/
+....Dinagat Islands,Quail Egg,2.00,..,2.00,2.00,2.00,2.00,*/,*/,*/,*/
+....Surigao del Norte,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Surigao del Norte,Rabbit for Slaughter,..,..,227.27,..,227.27,..,*/,*/,*/,*/
+....Surigao del Norte,Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Surigao del Norte,Goose for Dressing,..,..,..,..,..,133.33,*/,*/,*/,*/
+....Surigao del Norte,Quail for Dressing,..,..,..,10.00,10.00,119.00,*/,*/,*/,*/
+....Surigao del Norte,Turkey for Dressing,400.00,362.67,310.06,380.75,363.37,393.95,*/,*/,*/,*/
+....Surigao del Norte,Quail Egg,2.50,3.00,2.83,2.97,2.82,3.00,*/,*/,*/,*/
+....Surigao del Sur,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Surigao del Sur,Rabbit for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Surigao del Sur,Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Surigao del Sur,Goose for Dressing,..,..,..,..,..,290.67,*/,*/,*/,*/
+....Surigao del Sur,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Surigao del Sur,Turkey for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Surigao del Sur,Quail Egg,..,..,..,..,..,..,*/,*/,*/,*/
+....City of Butuan,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....City of Butuan,Rabbit for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....City of Butuan,Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....City of Butuan,Goose for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....City of Butuan,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....City of Butuan,Turkey for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....City of Butuan,Quail Egg,..,..,..,..,..,3.00,*/,*/,*/,*/
+..BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO (BARMM),Horse for Slaughter,..,110.00,120.00,120.88,116.96,146.49,*/,*/,*/,*/
+..BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO (BARMM),Rabbit for Slaughter,350.00,350.00,315.38,303.33,329.68,350.00,*/,*/,*/,*/
+..BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO (BARMM),Sheep for Slaughter,233.33,300.37,311.18,165.33,252.55,195.22,*/,*/,*/,*/
+..BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO (BARMM),Goose for Dressing,325.00,..,307.67,300.00,310.89,303.23,*/,*/,*/,*/
+..BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO (BARMM),Quail for Dressing,118.00,..,..,..,118.00,..,*/,*/,*/,*/
+..BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO (BARMM),Turkey for Dressing,340.00,..,321.99,321.75,327.91,323.33,*/,*/,*/,*/
+..BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO (BARMM),Quail Egg,..,..,..,..,..,..,*/,*/,*/,*/
+....Basilan,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Basilan,Rabbit for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Basilan,Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Basilan,Goose for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Basilan,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Basilan,Turkey for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Basilan,Quail Egg,..,..,..,..,..,..,*/,*/,*/,*/
+....Lanao del Sur,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Lanao del Sur,Rabbit for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Lanao del Sur,Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Lanao del Sur,Goose for Dressing,..,..,..,..,..,300.00,*/,*/,*/,*/
+....Lanao del Sur,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Lanao del Sur,Turkey for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Lanao del Sur,Quail Egg,..,..,..,..,..,..,*/,*/,*/,*/
+....Maguindanao,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Maguindanao,Rabbit for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Maguindanao,Sheep for Slaughter,233.33,..,..,..,233.33,..,*/,*/,*/,*/
+....Maguindanao,Goose for Dressing,325.00,..,..,..,325.00,..,*/,*/,*/,*/
+....Maguindanao,Quail for Dressing,118.00,..,..,..,118.00,..,*/,*/,*/,*/
+....Maguindanao,Turkey for Dressing,340.00,..,..,..,340.00,..,*/,*/,*/,*/
+....Maguindanao,Quail Egg,..,..,..,..,..,..,*/,*/,*/,*/
+....Maguindanao del Norte c/,Horse for Slaughter,..,110.00,120.00,120.00,116.67,121.67,*/,*/,*/,*/
+....Maguindanao del Norte c/,Rabbit for Slaughter,..,350.00,350.00,303.33,334.44,350.00,*/,*/,*/,*/
+....Maguindanao del Norte c/,Sheep for Slaughter,..,302.59,263.33,165.33,243.75,190.00,*/,*/,*/,*/
+....Maguindanao del Norte c/,Goose for Dressing,..,..,315.00,300.00,307.50,303.33,*/,*/,*/,*/
+....Maguindanao del Norte c/,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Maguindanao del Norte c/,Turkey for Dressing,..,..,325.00,320.00,322.50,323.33,*/,*/,*/,*/
+....Maguindanao del Norte c/,Quail Egg,..,..,..,..,..,..,*/,*/,*/,*/
+....Maguindanao del Sur c/,Horse for Slaughter,..,110.00,120.00,121.67,117.22,173.10,*/,*/,*/,*/
+....Maguindanao del Sur c/,Rabbit for Slaughter,..,350.00,300.00,303.33,317.78,..,*/,*/,*/,*/
+....Maguindanao del Sur c/,Sheep for Slaughter,..,298.33,358.05,165.33,273.90,200.00,*/,*/,*/,*/
+....Maguindanao del Sur c/,Goose for Dressing,..,..,298.33,300.00,299.17,303.33,*/,*/,*/,*/
+....Maguindanao del Sur c/,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Maguindanao del Sur c/,Turkey for Dressing,..,..,319.17,323.33,321.25,323.33,*/,*/,*/,*/
+....Maguindanao del Sur c/,Quail Egg,..,..,..,..,..,..,*/,*/,*/,*/
+....Sulu,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Sulu,Rabbit for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Sulu,Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Sulu,Goose for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Sulu,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Sulu,Turkey for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Sulu,Quail Egg,..,..,..,..,..,..,*/,*/,*/,*/
+....Tawi-tawi,Horse for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Tawi-tawi,Rabbit for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Tawi-tawi,Sheep for Slaughter,..,..,..,..,..,..,*/,*/,*/,*/
+....Tawi-tawi,Goose for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Tawi-tawi,Quail for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Tawi-tawi,Turkey for Dressing,..,..,..,..,..,..,*/,*/,*/,*/
+....Tawi-tawi,Quail Egg,..,..,..,..,..,..,*/,*/,*/,*/
