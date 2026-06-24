@@ -1,0 +1,561 @@
+year,direction,region,value_usd
+1991,Exports,ASEAN,637729406
+1991,Exports,East Asia,2728401958
+1991,Exports,Europe,1720884764
+1991,Exports,Middle East,145689922
+1991,Exports,North America,3325374515
+1991,Exports,Oceania,106272544
+1991,Exports,Rest of world,148406024
+1991,Exports,South Asia,26754719
+1991,Imports,ASEAN,1215823301
+1991,Imports,East Asia,4870301973
+1991,Imports,Europe,1557393284
+1991,Imports,Middle East,1337001417
+1991,Imports,North America,2792851305
+1991,Imports,Oceania,492708528
+1991,Imports,Rest of world,480384128
+1991,Imports,South Asia,110233018
+1992,Exports,ASEAN,551321345
+1992,Exports,East Asia,2785764847
+1992,Exports,Europe,1940635720
+1992,Exports,Middle East,199119808
+1992,Exports,North America,4038014586
+1992,Exports,Oceania,116818660
+1992,Exports,Rest of world,175566052
+1992,Exports,South Asia,17073283
+1992,Imports,ASEAN,1437861506
+1992,Imports,East Asia,5965556465
+1992,Imports,Europe,2052859035
+1992,Imports,Middle East,1676539285
+1992,Imports,North America,3051895924
+1992,Imports,Oceania,619086462
+1992,Imports,Rest of world,520271640
+1992,Imports,South Asia,137769627
+1993,Exports,ASEAN,797361311
+1993,Exports,East Asia,3116345543
+1993,Exports,Europe,2057917594
+1993,Exports,Middle East,254388506
+1993,Exports,North America,4625817644
+1993,Exports,Oceania,120450055
+1993,Exports,Rest of world,170174112
+1993,Exports,South Asia,232350521
+1993,Imports,ASEAN,2017713798
+1993,Imports,East Asia,7409306822
+1993,Imports,Europe,2285385153
+1993,Imports,Middle East,1566133853
+1993,Imports,North America,3939857452
+1993,Imports,Oceania,613418593
+1993,Imports,Rest of world,763387155
+1993,Imports,South Asia,162111296
+1994,Exports,ASEAN,1435229341
+1994,Exports,East Asia,3595776091
+1994,Exports,Europe,2406448522
+1994,Exports,Middle East,228256681
+1994,Exports,North America,5444924046
+1994,Exports,Oceania,142939535
+1994,Exports,Rest of world,199577914
+1994,Exports,South Asia,29743412
+1994,Imports,ASEAN,2618840947
+1994,Imports,East Asia,9415155029
+1994,Imports,Europe,2715921370
+1994,Imports,Middle East,1669977217
+1994,Imports,North America,4366561888
+1994,Imports,Oceania,716658371
+1994,Imports,Rest of world,946731216
+1994,Imports,South Asia,188136792
+1995,Exports,ASEAN,2367294146
+1995,Exports,East Asia,4797651007
+1995,Exports,Europe,3124918059
+1995,Exports,Middle East,217791299
+1995,Exports,North America,6497984100
+1995,Exports,Oceania,146314513
+1995,Exports,Rest of world,252870098
+1995,Exports,South Asia,42362913
+1995,Imports,ASEAN,3359712456
+1995,Imports,East Asia,11324438935
+1995,Imports,Europe,3280588838
+1995,Imports,Middle East,2388968065
+1995,Imports,North America,5720340644
+1995,Imports,Oceania,916956501
+1995,Imports,Rest of world,1269541906
+1995,Imports,South Asia,226811652
+1996,Exports,ASEAN,2970708890
+1996,Exports,East Asia,5900236829
+1996,Exports,Europe,3663737986
+1996,Exports,Middle East,234301358
+1996,Exports,North America,7293980754
+1996,Exports,Oceania,165972977
+1996,Exports,Rest of world,249910054
+1996,Exports,South Asia,63697551
+1996,Imports,ASEAN,4296468946
+1996,Imports,East Asia,13295882466
+1996,Imports,Europe,4276338001
+1996,Imports,Middle East,2898310877
+1996,Imports,North America,7153501462
+1996,Imports,Oceania,989431938
+1996,Imports,Rest of world,1480079854
+1996,Imports,South Asia,311195468
+1997,Exports,ASEAN,3436272339
+1997,Exports,East Asia,7254606284
+1997,Exports,Europe,4648783533
+1997,Exports,Middle East,226298427
+1997,Exports,North America,9144036919
+1997,Exports,Oceania,212343013
+1997,Exports,Rest of world,244491065
+1997,Exports,South Asia,60871050
+1997,Imports,ASEAN,5234824310
+1997,Imports,East Asia,14782011028
+1997,Imports,Europe,4803359976
+1997,Imports,Middle East,2839891239
+1997,Imports,North America,8018747719
+1997,Imports,Oceania,1441234974
+1997,Imports,Rest of world,1157287927
+1997,Imports,South Asia,303590305
+1998,Exports,ASEAN,3821087395
+1998,Exports,East Asia,8171273806
+1998,Exports,Europe,6120716712
+1998,Exports,Middle East,234924792
+1998,Exports,North America,10458373721
+1998,Exports,Oceania,171396110
+1998,Exports,Rest of world,459059754
+1998,Exports,South Asia,59520578
+1998,Imports,ASEAN,4721750311
+1998,Imports,East Asia,12843568892
+1998,Imports,Europe,3217084227
+1998,Imports,Middle East,1897830067
+1998,Imports,North America,7159048642
+1998,Imports,Oceania,812167541
+1998,Imports,Rest of world,677875569
+1998,Imports,South Asia,200560407
+1999,Exports,ASEAN,4989133538
+1999,Exports,East Asia,11213138010
+1999,Exports,Europe,6950929575
+1999,Exports,Middle East,175575470
+1999,Exports,North America,10945156651
+1999,Exports,Oceania,228452410
+1999,Exports,Rest of world,468624105
+1999,Exports,South Asia,65882901
+1999,Imports,ASEAN,4760179514
+1999,Imports,East Asia,13484494401
+1999,Imports,Europe,3184408197
+1999,Imports,Middle East,2187958554
+1999,Imports,North America,6913491700
+1999,Imports,Oceania,893731966
+1999,Imports,Rest of world,971500345
+1999,Imports,South Asia,172385141
+2000,Exports,ASEAN,5982617134
+2000,Exports,East Asia,12218023802
+2000,Exports,Europe,6972701517
+2000,Exports,Middle East,200696247
+2000,Exports,North America,12049815141
+2000,Exports,Oceania,311203737
+2000,Exports,Rest of world,247379780
+2000,Exports,South Asia,95812436
+2000,Imports,ASEAN,5888093327
+2000,Imports,East Asia,14521780666
+2000,Imports,Europe,3607735546
+2000,Imports,Middle East,3796575049
+2000,Imports,North America,7114987112
+2000,Imports,Oceania,905495336
+2000,Imports,Rest of world,956758368
+2000,Imports,South Asia,210976362
+2001,Exports,ASEAN,4986120103
+2001,Exports,East Asia,10602928136
+2001,Exports,Europe,6323266230
+2001,Exports,Middle East,202276108
+2001,Exports,North America,9449182901
+2001,Exports,Oceania,246018455
+2001,Exports,Rest of world,246100865
+2001,Exports,South Asia,94309894
+2001,Imports,ASEAN,5461683793
+2001,Imports,East Asia,13784644413
+2001,Imports,Europe,3360819519
+2001,Imports,Middle East,3238833919
+2001,Imports,North America,6973170054
+2001,Imports,Oceania,774368846
+2001,Imports,Rest of world,1046837192
+2001,Imports,South Asia,298830320
+2002,Exports,ASEAN,5529685531
+2002,Exports,East Asia,12836537858
+2002,Exports,Europe,6538466030
+2002,Exports,Middle East,194077467
+2002,Exports,North America,9382679128
+2002,Exports,Oceania,357795151
+2002,Exports,Rest of world,256750108
+2002,Exports,South Asia,112167419
+2002,Imports,ASEAN,6539665580
+2002,Imports,East Asia,16214537530
+2002,Imports,Europe,3519958959
+2002,Imports,Middle East,2509243281
+2002,Imports,North America,9949784537
+2002,Imports,Oceania,631919142
+2002,Imports,Rest of world,1234998904
+2002,Imports,South Asia,491854510
+2003,Exports,ASEAN,6581680882
+2003,Exports,East Asia,14815266139
+2003,Exports,Europe,6053347431
+2003,Exports,Middle East,226093745
+2003,Exports,North America,7719734421
+2003,Exports,Oceania,409206515
+2003,Exports,Rest of world,289905160
+2003,Exports,South Asia,135971151
+2003,Imports,ASEAN,7213661581
+2003,Imports,East Asia,16794425993
+2003,Imports,Europe,3760528340
+2003,Imports,Middle East,2895900385
+2003,Imports,North America,9566882923
+2003,Imports,Oceania,602488907
+2003,Imports,Rest of world,1389926187
+2003,Imports,South Asia,351928960
+2004,Exports,ASEAN,6837882859
+2004,Exports,East Asia,17126211151
+2004,Exports,Europe,6850938543
+2004,Exports,Middle East,265671870
+2004,Exports,North America,7539579247
+2004,Exports,Oceania,487747156
+2004,Exports,Rest of world,446714437
+2004,Exports,South Asia,125775217
+2004,Imports,ASEAN,8739238871
+2004,Imports,East Asia,18869485188
+2004,Imports,Europe,4223804583
+2004,Imports,Middle East,2775451493
+2004,Imports,North America,8850774384
+2004,Imports,Oceania,688813599
+2004,Imports,Rest of world,1624676747
+2004,Imports,South Asia,329896170
+2005,Exports,ASEAN,7149949743
+2005,Exports,East Asia,17908862313
+2005,Exports,Europe,7046969473
+2005,Exports,Middle East,306661835
+2005,Exports,North America,7837298402
+2005,Exports,Oceania,498710594
+2005,Exports,Rest of world,357174463
+2005,Exports,South Asia,149056646
+2005,Imports,ASEAN,9325109012
+2005,Imports,East Asia,19648588995
+2005,Imports,Europe,4204699649
+2005,Imports,Middle East,4033699899
+2005,Imports,North America,9632711939
+2005,Imports,Oceania,701410606
+2005,Imports,Rest of world,1529317233
+2005,Imports,South Asia,411884697
+2006,Exports,ASEAN,8192204350
+2006,Exports,East Asia,19690708060
+2006,Exports,Europe,8774521822
+2006,Exports,Middle East,445449001
+2006,Exports,North America,9143199029
+2006,Exports,Oceania,493372750
+2006,Exports,Rest of world,479608616
+2006,Exports,South Asia,191053712
+2006,Imports,ASEAN,10714043583
+2006,Imports,East Asia,21327510206
+2006,Imports,Europe,4940640116
+2006,Imports,Middle East,5383775822
+2006,Imports,North America,9003646931
+2006,Imports,Oceania,844663059
+2006,Imports,Rest of world,1362430074
+2006,Imports,South Asia,501279961
+2007,Exports,ASEAN,8031906316
+2007,Exports,East Asia,22623423970
+2007,Exports,Europe,8639020119
+2007,Exports,Middle East,562625578
+2007,Exports,North America,9036412996
+2007,Exports,Oceania,548123071
+2007,Exports,Rest of world,709206949
+2007,Exports,South Asia,315004920
+2007,Imports,ASEAN,13451063360
+2007,Imports,East Asia,21377235318
+2007,Imports,Europe,5858088749
+2007,Imports,Middle East,5768333520
+2007,Imports,North America,8472464300
+2007,Imports,Oceania,1258349655
+2007,Imports,Rest of world,1236105757
+2007,Imports,South Asia,574111813
+2008,Exports,ASEAN,7089911595
+2008,Exports,East Asia,22557072316
+2008,Exports,Europe,8564433744
+2008,Exports,Middle East,628019947
+2008,Exports,North America,8683426870
+2008,Exports,Oceania,492046269
+2008,Exports,Rest of world,744851211
+2008,Exports,South Asia,317778557
+2008,Imports,ASEAN,15289582781
+2008,Imports,East Asia,20960279010
+2008,Imports,Europe,5088456053
+2008,Imports,Middle East,7281417732
+2008,Imports,North America,8125184475
+2008,Imports,Oceania,1530279383
+2008,Imports,Rest of world,1361961940
+2008,Imports,South Asia,782507785
+2009,Exports,ASEAN,5844310532
+2009,Exports,East Asia,15518022722
+2009,Exports,Europe,8012617661
+2009,Exports,Middle East,484571533
+2009,Exports,North America,7181614552
+2009,Exports,Oceania,333417950
+2009,Exports,Rest of world,780889307
+2009,Exports,South Asia,280361903
+2009,Imports,ASEAN,11671856758
+2009,Imports,East Asia,17734126955
+2009,Imports,Europe,3761721213
+2009,Imports,Middle East,3443753502
+2009,Imports,North America,5798306007
+2009,Imports,Oceania,1036720335
+2009,Imports,Rest of world,1814748460
+2009,Imports,South Asia,616510518
+2010,Exports,ASEAN,11545358571
+2010,Exports,East Asia,21921725933
+2010,Exports,Europe,7519125594
+2010,Exports,Middle East,600102105
+2010,Exports,North America,8188382443
+2010,Exports,Oceania,360580703
+2010,Exports,Rest of world,826553028
+2010,Exports,South Asia,535686230
+2010,Imports,ASEAN,16434495540
+2010,Imports,East Asia,21747377437
+2010,Imports,Europe,4665948923
+2010,Imports,Middle East,4822017333
+2010,Imports,North America,6832133074
+2010,Imports,Oceania,1229124952
+2010,Imports,Rest of world,1938796266
+2010,Imports,South Asia,797911024
+2011,Exports,ASEAN,8693732807
+2011,Exports,East Asia,23098387591
+2011,Exports,Europe,6237819387
+2011,Exports,Middle East,557526792
+2011,Exports,North America,7884361710
+2011,Exports,Oceania,416835307
+2011,Exports,Rest of world,911720627
+2011,Exports,South Asia,504543913
+2011,Imports,ASEAN,15151487622
+2011,Imports,East Asia,24280653085
+2011,Imports,Europe,5110735398
+2011,Imports,Middle East,6598148288
+2011,Imports,North America,7456791077
+2011,Imports,Oceania,1398375992
+2011,Imports,Rest of world,3292115656
+2011,Imports,South Asia,808280739
+2012,Exports,ASEAN,9807597798
+2012,Exports,East Asia,25686627903
+2012,Exports,Europe,6343618631
+2012,Exports,Middle East,548484719
+2012,Exports,North America,8174518599
+2012,Exports,Oceania,412316392
+2012,Exports,Rest of world,705370989
+2012,Exports,South Asia,420985631
+2012,Imports,ASEAN,15062395836
+2012,Imports,East Asia,25564100134
+2012,Imports,Europe,5320922377
+2012,Imports,Middle East,6886253421
+2012,Imports,North America,8015345818
+2012,Imports,Oceania,1642821887
+2012,Imports,Rest of world,2535171710
+2012,Imports,South Asia,812324295
+2013,Exports,ASEAN,8844159196
+2013,Exports,East Asia,29041866243
+2013,Exports,Europe,6859288149
+2013,Exports,Middle East,675202933
+2013,Exports,North America,9138029208
+2013,Exports,Oceania,593634836
+2013,Exports,Rest of world,1178168965
+2013,Exports,South Asia,367515408
+2013,Imports,ASEAN,14281671150
+2013,Imports,East Asia,25747848181
+2013,Imports,Europe,6926066221
+2013,Imports,Middle East,5619375689
+2013,Imports,North America,8024773514
+2013,Imports,Oceania,1769225875
+2013,Imports,Rest of world,2534031818
+2013,Imports,South Asia,835704615
+2014,Exports,ASEAN,9211672966
+2014,Exports,East Asia,32954906957
+2014,Exports,Europe,6984451738
+2014,Exports,Middle East,731328083
+2014,Exports,North America,9693410463
+2014,Exports,Oceania,974092263
+2014,Exports,Rest of world,1168646346
+2014,Exports,South Asia,383110377
+2014,Imports,ASEAN,16404431043
+2014,Imports,East Asia,27750853236
+2014,Imports,Europe,8367180662
+2014,Imports,Middle East,5031081904
+2014,Imports,North America,6544478033
+2014,Imports,Oceania,1378718473
+2014,Imports,Rest of world,2078528267
+2014,Imports,South Asia,1149199664
+2015,Exports,ASEAN,8750864836
+2015,Exports,East Asia,29381869219
+2015,Exports,Europe,7467304531
+2015,Exports,Middle East,632253474
+2015,Exports,North America,10056693775
+2015,Exports,Oceania,528021711
+2015,Exports,Rest of world,1511689721
+2015,Exports,South Asia,498538088
+2015,Imports,ASEAN,18799104098
+2015,Imports,East Asia,31943554440
+2015,Imports,Europe,7432635669
+2015,Imports,Middle East,3813093252
+2015,Imports,North America,8461308234
+2015,Imports,Oceania,1507285071
+2015,Imports,Rest of world,1565807266
+2015,Imports,South Asia,1226840816
+2016,Exports,ASEAN,8646755899
+2016,Exports,East Asia,29037729798
+2016,Exports,Europe,7397677153
+2016,Exports,Middle East,644960067
+2016,Exports,North America,9954166749
+2016,Exports,Oceania,588991015
+2016,Exports,Rest of world,712770612
+2016,Exports,South Asia,423072415
+2016,Imports,ASEAN,23281367032
+2016,Imports,East Asia,41269683042
+2016,Imports,Europe,7672839949
+2016,Imports,Middle East,3231640664
+2016,Imports,North America,8713542845
+2016,Imports,Oceania,1637816708
+2016,Imports,Rest of world,1879877072
+2016,Imports,South Asia,1748353246
+2017,Exports,ASEAN,10127780499
+2017,Exports,East Asia,34707478680
+2017,Exports,Europe,9982006562
+2017,Exports,Middle East,1103478412
+2017,Exports,North America,10849986762
+2017,Exports,Oceania,537610928
+2017,Exports,Rest of world,733807462
+2017,Exports,South Asia,670748095
+2017,Imports,ASEAN,26607300812
+2017,Imports,East Asia,47403744747
+2017,Imports,Europe,7549725129
+2017,Imports,Middle East,4034220563
+2017,Imports,North America,9184500922
+2017,Imports,Oceania,2773809882
+2017,Imports,Rest of world,2308128775
+2017,Imports,South Asia,2040415273
+2018,Exports,ASEAN,11181062330
+2018,Exports,East Asia,33855472625
+2018,Exports,Europe,9277144449
+2018,Exports,Middle East,800300923
+2018,Exports,North America,11869529193
+2018,Exports,Oceania,542164250
+2018,Exports,Rest of world,1067182768
+2018,Exports,South Asia,714569250
+2018,Imports,ASEAN,29966771869
+2018,Imports,East Asia,55391720674
+2018,Imports,Europe,9598048457
+2018,Imports,Middle East,6000833341
+2018,Imports,North America,9594855170
+2018,Imports,Oceania,2581271352
+2018,Imports,Rest of world,3757521036
+2018,Imports,South Asia,2111885890
+2019,Exports,ASEAN,10815672519
+2019,Exports,East Asia,35630546745
+2019,Exports,Europe,8717734283
+2019,Exports,Middle East,870862616
+2019,Exports,North America,12880488421
+2019,Exports,Oceania,471696716
+2019,Exports,Rest of world,894679923
+2019,Exports,South Asia,645300618
+2019,Imports,ASEAN,30619093529
+2019,Imports,East Asia,55497227132
+2019,Imports,Europe,10301562489
+2019,Imports,Middle East,3964467810
+2019,Imports,North America,9361020674
+2019,Imports,Oceania,2305878015
+2019,Imports,Rest of world,3156721039
+2019,Imports,South Asia,2168312865
+2020,Exports,ASEAN,10243822666
+2020,Exports,East Asia,34078516237
+2020,Exports,Europe,7410270016
+2020,Exports,Middle East,670794904
+2020,Exports,North America,10993084056
+2020,Exports,Oceania,433250699
+2020,Exports,Rest of world,720861878
+2020,Exports,South Asia,663915912
+2020,Imports,ASEAN,25089637162
+2020,Imports,East Asia,46338359292
+2020,Imports,Europe,7407233553
+2020,Imports,Middle East,2101743869
+2020,Imports,North America,8124072795
+2020,Imports,Oceania,1469616038
+2020,Imports,Rest of world,2730348302
+2020,Imports,South Asia,1900276869
+2021,Exports,ASEAN,12158415673
+2021,Exports,East Asia,37342249232
+2021,Exports,Europe,9078545097
+2021,Exports,Middle East,605501715
+2021,Exports,North America,13078159659
+2021,Exports,Oceania,603285359
+2021,Exports,Rest of world,932957425
+2021,Exports,South Asia,893994116
+2021,Imports,ASEAN,34231944982
+2021,Imports,East Asia,59205617191
+2021,Imports,Europe,9248058979
+2021,Imports,Middle East,3233258871
+2021,Imports,North America,9375344052
+2021,Imports,Oceania,2439178945
+2021,Imports,Rest of world,3160362635
+2021,Imports,South Asia,2605380144
+2022,Exports,ASEAN,13477814871
+2022,Exports,East Asia,38591911592
+2022,Exports,Europe,9827327844
+2022,Exports,Middle East,694513780
+2022,Exports,North America,14589342704
+2022,Exports,Oceania,646357811
+2022,Exports,Rest of world,923444645
+2022,Exports,South Asia,823391785
+2022,Imports,ASEAN,42312817918
+2022,Imports,East Asia,66016911977
+2022,Imports,Europe,9600410284
+2022,Imports,Middle East,5966816142
+2022,Imports,North America,10944886352
+2022,Imports,Oceania,3864677607
+2022,Imports,Rest of world,3888247382
+2022,Imports,South Asia,2537590692
+2023,Exports,ASEAN,11220261455
+2023,Exports,East Asia,36409972314
+2023,Exports,Europe,9455157181
+2023,Exports,Middle East,777088135
+2023,Exports,North America,13079071779
+2023,Exports,Oceania,647497121
+2023,Exports,Rest of world,844839360
+2023,Exports,South Asia,1183228147
+2023,Imports,ASEAN,39672662599
+2023,Imports,East Asia,57948453172
+2023,Imports,Europe,9591778531
+2023,Imports,Middle East,5878161271
+2023,Imports,North America,10508315618
+2023,Imports,Oceania,4670898622
+2023,Imports,Rest of world,3236206287
+2023,Imports,South Asia,2360144717
+2024,Exports,ASEAN,11015542272
+2024,Exports,East Asia,35650958154
+2024,Exports,Europe,9227825183
+2024,Exports,Middle East,994254776
+2024,Exports,North America,13655053098
+2024,Exports,Oceania,643906608
+2024,Exports,Rest of world,875800667
+2024,Exports,South Asia,1205377739
+2024,Imports,ASEAN,37913333956
+2024,Imports,East Asia,61567180099
+2024,Imports,Europe,9038368136
+2024,Imports,Middle East,5097534287
+2024,Imports,North America,10293124838
+2024,Imports,Oceania,3939188710
+2024,Imports,Rest of world,4504708171
+2024,Imports,South Asia,2766521460
+2025,Exports,ASEAN,11813489278
+2025,Exports,East Asia,39827878296
+2025,Exports,Europe,11086012152
+2025,Exports,Middle East,1285897610
+2025,Exports,North America,16016579037
+2025,Exports,Oceania,1840784271
+2025,Exports,Rest of world,1003081351
+2025,Exports,South Asia,1606152190
+2025,Imports,ASEAN,37155462978
+2025,Imports,East Asia,69674539220
+2025,Imports,Europe,9925189336
+2025,Imports,Middle East,5059559910
+2025,Imports,North America,10087311803
+2025,Imports,Oceania,3463044689
+2025,Imports,Rest of world,4027319847
+2025,Imports,South Asia,2459864751
