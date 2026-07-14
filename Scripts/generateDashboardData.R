@@ -94,7 +94,7 @@ inflation_large <- read_csv("Data/CPI and Inflation/Base 2018/Openstat-cpi1994to
     full_join(read_csv("Data/CPI and Inflation/Base 2018/Openstat-cpi2006to2017.csv", na = "..")) %>%
     full_join(read_csv("Data/CPI and Inflation/Base 2018/Openstat-cpi2018.csv", na = "..") %>%
                   mutate(Geolocation = str_remove(Geolocation, "Bansamoro "))) %>%
-    select(1:(2 + (year(Sys.Date()) - 1994)*13 + (month(Sys.Date()) - 2))) %>%
+    select(1:(2 + (year(Sys.Date()) - 1994)*13 + (month(Sys.Date()) - 1))) %>%
     rename(Commodity = `Commodity Description`) %>%
     pivot_longer(cols = -(Geolocation:Commodity), names_to = "Month",
                  values_to = "CPI", values_transform = list(CPI = as.double)) %>%
