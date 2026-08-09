@@ -153,21 +153,21 @@ POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/NA/AN/1SUM/0122B5C
 Sys.sleep(1)
 
 # Download Quarterly Data; By Expenditure, By Industry, Per Capita
-POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/NA/QT/1SUM/0012B5CEXQ1.px",
+POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/NA/QT/1SUM/0012B5BEXQ1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
     write_csv("Data/National Accounts/Openstat-SNA-Quarterly-Exp.csv") %>%
     suppressMessages() %>% suppressWarnings()
 Sys.sleep(1)
 
-POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/NA/QT/1SUM/0052B5CPRQ1.px",
+POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/NA/QT/1SUM/0052B5BPRQ1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
     write_csv("Data/National Accounts/Openstat-SNA-Quarterly-Ind.csv") %>%
     suppressMessages() %>% suppressWarnings()
 Sys.sleep(1)
 
-POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/NA/QT/1SUM/0122B5CPCQ1.px",
+POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/NA/QT/1SUM/0122B5BPCQ1.px",
      body = '{"query": [], "response": {"format": "csv"}}') %>%
     content(encoding = "UTF-8") %>%
     write_csv("Data/National Accounts/Openstat-SNA-Quarterly-PC.csv") %>%
