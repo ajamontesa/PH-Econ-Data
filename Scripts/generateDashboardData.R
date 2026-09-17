@@ -268,9 +268,10 @@ ngdebt_quarterly <- left_join(
         pivot_wider(names_from = "Particulars", values_from = "MillionPesos") %>%
         transmute(Month = parse_date(Month,  "%B %Y"),
                   Quarter = yq(str_c(str_sub(Month, 1, 4), "Q", quarter(Month))),
-                  `Total Obligations`,
-                  `Domestic Debt` = `Domestic Debt` + `Domestic Guaranteed Obligations`,
-                  `External Debt` = `External Debt` + `External Guaranteed Obligations`) %>%
+                  `Total Obligations` = `Actual Obligations`,
+                  `Domestic Debt` = `Domestic Debt` ,#+ `Domestic Guaranteed Obligations`,
+                  `External Debt` = `External Debt` ,#+ `External Guaranteed Obligations`
+                  ) %>%
         pivot_longer(cols = -(Month:Quarter), names_to = "Particulars", values_to = "MillionPesos") %>%
         mutate(Particulars = as_factor(str_remove_all(Particulars, "\\s|-|/|\\(|\\)"))) %>%
         pivot_wider(names_from = Particulars, values_from = MillionPesos) %>%
@@ -296,9 +297,10 @@ ngdebt_annual <- left_join(
         transmute(Month = str_c(Month, "-12-01"),
                   Month = parse_date(Month),
                   Quarter = yq(str_c(str_sub(Month, 1, 4), "Q", quarter(Month))),
-                  `Total Obligations`,
-                  `Domestic Debt` = `Domestic Debt` + `Domestic Guaranteed Obligations`,
-                  `External Debt` = `External Debt` + `External Guaranteed Obligations`) %>%
+                  `Total Obligations` = `Actual Obligations`,
+                  `Domestic Debt` = `Domestic Debt` ,#+ `Domestic Guaranteed Obligations`,
+                  `External Debt` = `External Debt` ,#+ `External Guaranteed Obligations`
+        ) %>%
         pivot_longer(cols = -(Month:Quarter), names_to = "Particulars", values_to = "MillionPesos") %>%
         mutate(Particulars = as_factor(str_remove_all(Particulars, "\\s|-|/|\\(|\\)"))) %>%
         pivot_wider(names_from = Particulars, values_from = MillionPesos) %>%
