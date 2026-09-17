@@ -176,7 +176,7 @@ if (!file.exists("Data/CPI and Inflation/Base 2018/Openstat-cpi1994to2005.csv"))
     for (code in codes) {
         corecpi2018 <- bind_cols(
             corecpi2018,
-            POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/CPI/2018/0012M4ACP17.px",
+            POST(url = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/CPI/2018NEW/0012M4ACP30.px",
                  body = code) %>%
                 content(encoding = "UTF-8") %>%
                 select(-(1:2)) %>%
